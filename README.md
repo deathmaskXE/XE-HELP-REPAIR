@@ -90,3 +90,6 @@ V4.0 — XE HELP REPAIR: identidad visual negro, grafito, plata y dorado; títul
 
 
 V4.1 — Se elimina el duplicado de títulos H2 encima de cada menú (el título queda solo en summary). Los menús laterales ahora usan negro grafito, dorado, plata y bronce con un destello animado que recorre el borde, variación sutil por sección, y contraste elevado al abrir. Estilos limitados a paneles laterales; BoardView intacto.
+
+
+V4.2 — Dos caras sincronizadas en espejo: la cara opuesta utiliza viewBox reflejado sobre el eje de la placa, tanto en desplazamiento como en zoom. Arrastrar o ampliar cualquiera de las caras actualiza ambas conservando la posición física. El cursor de referencia se transforma al mismo punto físico. La sincronización se fuerza durante la vista doble y se restaura la preferencia anterior al salir. Se preservan los archivos técnicos, anotaciones, mediciones e imágenes originales.
