@@ -152,3 +152,6 @@ V5.7: se eliminan las coordenadas visibles del inspector y del cursor; los datos
 
 
 V5.8: rendimiento de pan optimizado: desplazamiento por viewBox sin reconstruir miles de nodos SVG en cada movimiento; reconstrucción al soltar; hover limitado a un cuadro por frame; índice de pads por componente y lectura de geometría de pantalla una vez por render. Conserva capas y datos.
+
+
+V5.9: contribuciones abren Gmail web (redacción con destinatario y cuerpo prellenados, adjuntar JSON manualmente); nuevo botón animado APOYA AL CREADOR en menú izquierdo de ambas placas, PayPal y CLABEs de Mercado Pago/Banorte ocultas hasta desplegar con botones copiar.
