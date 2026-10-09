@@ -134,3 +134,12 @@ V5.2: imagen frontal overlay de MAIN POWER añadida al panel de referencias, abi
 
 
 V5.3 — MAIN POWER: ficha interactiva del conector USB-C J1, mostrando VBUS/A4, D+/A6, D-/A7, CC/A5, VCONN/B5 y GND/A1/S1. Clic enfoca pads del BoardView y resalta su red original. Se preservan nombres de red KiCad y datos anteriores.
+
+
+## V5.4
+- MAIN POWER: siluetas reales desde líneas de fabricación y serigrafía KiCad (`main_power/huellas_kicad.json`), con aproximaciones donde no hay contorno disponible.
+- Ambos BoardViews: los datos locales guardados se muestran en letras pequeñas junto a la nomenclatura del componente o pad. Los cambios siguen siendo locales hasta exportarlos.
+- MAIN POWER: se corrige la identificación de placa al exportar/importar datos y respaldos.
+
+
+V5.5: Panel de capas por familia de componentes (R/C/D/Q/U/J/L/SW/Otros) y nomenclatura pequeña sobre siluetas. Usa los contornos KiCad disponibles y aproximaciones donde no hay geometría. Ambos visores.
