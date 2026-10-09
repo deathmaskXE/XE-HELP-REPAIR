@@ -149,3 +149,6 @@ V5.6: Los datos agregados por usuarios NO se pintan permanentemente. Aparecen ju
 
 
 V5.7: se eliminan las coordenadas visibles del inspector y del cursor; los datos locales aparecen solo al seleccionar un elemento, usan el mismo tamaño SVG que la nomenclatura base, escalan con el zoom y tienen contorno cyan brillante. Se preservan las coordenadas internas necesarias para el BoardView.
+
+
+V5.8: rendimiento de pan optimizado: desplazamiento por viewBox sin reconstruir miles de nodos SVG en cada movimiento; reconstrucción al soltar; hover limitado a un cuadro por frame; índice de pads por componente y lectura de geometría de pantalla una vez por render. Conserva capas y datos.
