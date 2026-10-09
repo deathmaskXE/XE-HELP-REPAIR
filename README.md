@@ -99,3 +99,11 @@ V4.3 — Multímetro: asignación automática de GND a punta negra; cada selecci
 
 
 V4.4 — Interruptor visible APAGAR/ENCENDER MULTÍMETRO en la barra inferior. Apagado: limpia las puntas, detiene asignación automática y oculta el panel; su botón queda disponible para reactivarlo. Los cinco menús inferiores se presentan como botones de estación de reparación, negro grafito y relieve metálico con acentos dorados. No modifica geometría ni fuentes de BoardView.
+
+
+V4.5 — Arrastre libre desde toda la superficie del BoardView: los rectángulos de componentes dejan pasar el pointerdown al SVG; captura de gestos en fase de captura para evitar bloqueo por capas internas; movimiento y liberación de ambas vistas en fase de captura; touch-action desactivado en ambos SVG para arrastre táctil. Se preserva clic de componente y datos técnicos.
+
+
+V4.6 — Colaboración moderada: botón ENVIAR MODIFICACIÓN AL ADMINISTRADOR en el panel de aportaciones. El técnico lee una explicación, introduce nota y alias, descarga JSON compatible con la importación existente y prepara un correo. Debe adjuntar manualmente el archivo y enviarlo; GitHub Pages no permite enviar archivos por sí solo. El correo del administrador se configura localmente (no se publica ningún correo inventado). Se oculta la interfaz opcional de Supabase; no se elimina la implementación. Los aportes no se publican automáticamente.
+
+V4.7: correo de recepción fijo deathmask1403@gmail.com; el técnico ya no tiene que configurarlo. Sigue siendo necesario adjuntar el JSON manualmente al correo preparado.
