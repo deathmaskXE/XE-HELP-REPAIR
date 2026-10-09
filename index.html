@@ -1,0 +1,1508 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>XE HELP REPAIR | XE Servicio Electrónico</title><style>
+:root{font-family:Inter,Segoe UI,Arial,sans-serif;color:#e8f6fa;background:#07131d}*{box-sizing:border-box}body{margin:0}header{padding:15px 22px;border-bottom:1px solid #20465a;display:flex;justify-content:space-between;align-items:center;background:#0b1f2d}h1{font-size:19px;margin:0;color:#69e5f1}small{color:#8ab4c2}.layout{display:grid;grid-template-columns:280px minmax(0,1fr) 295px;height:calc(100vh - 62px)}aside{padding:18px;background:#0c2230;overflow:auto;border-right:1px solid #234657}.right{border-right:0;border-left:1px solid #234657}h2{font-size:15px;color:#7fe3eb}input,button,select{background:#112f3e;color:#e8f6fa;border:1px solid #315769;border-radius:7px;padding:10px;width:100%;margin:5px 0}button{cursor:pointer}button:hover,.active{background:#146b78;border-color:#4de2ec}.row{display:flex;gap:7px}.row>*{flex:1}.viewer{position:relative;overflow:hidden;background:#06141c}svg{width:100%;height:100%;touch-action:none;cursor:crosshair}svg.dragging{cursor:grabbing}.pad{cursor:crosshair}.info{padding:12px;border:1px solid #305264;border-radius:8px;margin:10px 0;background:#102d3b;line-height:1.6;overflow-wrap:anywhere}.muted{color:#98b6c2;font-size:13px}.legend{position:absolute;bottom:14px;left:15px;background:#102d3bdb;border:1px solid #315466;padding:9px;border-radius:7px;font-size:12px}mark{background:#115d65;color:white}.foot{fill:#b2e8e4;stroke:#1e6874;stroke-width:.22}.pad{fill:#e2ba61;stroke:#6b5528;stroke-width:.13;cursor:pointer}.selected{fill:#ff655c!important;stroke:#fff!important;stroke-width:.12!important}.netPad{fill:#45efff!important;stroke:#102d49!important;stroke-width:.12!important}.netTrace{stroke:#59f6ff;stroke-width:.23;opacity:.95;pointer-events:none}.selectionHalo{fill:none;stroke:#ff695e;stroke-width:.12;pointer-events:none}.netHalo{fill:none;stroke:#52ecff;stroke-width:.1;pointer-events:none}.trace{stroke:#218b84;stroke-width:.2;opacity:.35;pointer-events:none}.netTrace{stroke:#42f5ff!important;stroke-width:.36!important;opacity:1!important;pointer-events:none}.padLabel{fill:#fff4c1;stroke:#0b2430;stroke-width:.025;paint-order:stroke;pointer-events:none}.hoverHalo{fill:none;stroke:#fff7b4;stroke-width:.12;pointer-events:none}.probeTip{pointer-events:none}.probeCover{pointer-events:none;fill-opacity:.38;stroke-width:.11}.probeBody{pointer-events:none;stroke:#081822;stroke-width:.09;stroke-linejoin:round}.probeMetal{pointer-events:none;fill:#e5f2f5;stroke:#546b74;stroke-width:.055}#results{max-height:40vh;overflow:auto}.result{font-size:12px;padding:6px;border-bottom:1px solid #24485a;cursor:pointer}.result:hover{background:#164656}@media(max-width:850px){.layout{display:flex;flex-direction:column;height:auto}aside{width:100%;max-height:none}.viewer{height:65vh;min-height:380px}.right{border:0}}
+
+.meter{background:linear-gradient(155deg,#273844,#101b25);border:2px solid #546a77;border-radius:17px;padding:13px;margin:12px 0;box-shadow:inset 0 2px 8px #050b10,0 4px 16px #0005}.meterhead{display:flex;justify-content:space-between;font-size:11px;letter-spacing:1px;color:#c5e7f2}.meterdisplay{background:#b8d6b4;color:#162c27;border:5px solid #0b1418;border-radius:7px;padding:9px 10px;text-align:right;font-family:Consolas,monospace;font-size:clamp(25px,2.3vw,40px);font-weight:700;min-height:72px;font-variant-numeric:tabular-nums}.meterunit{font-size:13px;margin-left:6px}.meterstatus{font-size:12px;color:#b9d2dc;line-height:1.5;margin-top:7px}.docitem{border-bottom:1px solid #28505d;padding:7px 0;font-size:12px;line-height:1.5}.docitem strong{color:#87e8f0}.docbadge{font-size:11px;color:#f4d48d}.modebox{font-size:12px;color:#9dd5df}
+/* Datos colaborativos locales */
+#knowledgePanel{position:absolute;right:14px;bottom:65px;z-index:11;width:min(350px,calc(100% - 28px));max-height:55vh;overflow:auto;background:#172a36f2;color:#e9f7fc;border:1px solid #8aa9b9;border-radius:12px;box-shadow:0 9px 25px #0007;padding:12px;font-size:12px}
+#knowledgePanel[hidden]{display:none!important}#knowledgePanel h3{margin:0 0 8px;color:#80e7f1;font-size:15px}#knowledgePanel label{display:block;margin-top:7px;color:#c5dce6}#knowledgePanel textarea,#knowledgePanel input,#knowledgePanel select{font-size:12px;padding:7px;margin:3px 0;width:100%;background:#203f4e;color:#fff}#knowledgePanel textarea{min-height:60px;resize:vertical}#knowledgePanel .entry{border-top:1px solid #57727e;padding:8px 0;white-space:pre-wrap;overflow-wrap:anywhere}#knowledgePanel .actions{display:flex;gap:6px}#knowledgePanel .actions button{font-size:11px;padding:6px}#knowledgePanel .minor{font-size:11px;color:#adc3ce}#knowledgePanel button{width:auto}#knowledgePanel .full{width:100%}#knowledgePanel .close{float:right}
+</style><style>
+/* Paneles compactos: todos los grupos cerrados por defecto */
+.layout{grid-template-columns:245px minmax(0,1fr) 260px}
+aside{padding:11px;min-width:0}
+aside>details.panelgroup{border:1px solid #285366;border-radius:9px;margin:7px 0;background:#0c2837;overflow:hidden}
+aside>details.panelgroup>summary{list-style:none;cursor:pointer;color:#82e9f1;font-size:13px;font-weight:700;padding:12px 10px;user-select:none;display:flex;align-items:center;gap:7px}
+aside>details.panelgroup>summary::-webkit-details-marker{display:none}
+aside>details.panelgroup>summary:before{content:'▸';font-size:15px;color:#5ed8e7}
+aside>details.panelgroup[open]>summary:before{content:'▾'}
+aside>details.panelgroup>.panelcontent{padding:0 10px 12px}
+aside h2{margin:0}
+.refimages details{margin:6px 0;padding:7px;border:1px solid #2e5363;border-radius:7px}
+.refimages summary{cursor:pointer;color:#9de5e9;font-size:12px}
+.refimages img{max-width:100%;margin-top:8px;border-radius:6px}
+.factsrow{padding:8px 0;border-bottom:1px solid #315063;font-size:12px;line-height:1.55}
+.factsrow strong{color:#8ee8f0}
+.factsrow .origin{font-size:11px;color:#e7c28a}
+#factsIndex{max-height:48vh;overflow:auto}
+#floatingMeter{position:absolute;z-index:12;top:12px;left:50%;transform:translateX(-50%);width:min(340px,calc(100% - 26px));background:#102330f2;border:1px solid #54818b;border-radius:14px;box-shadow:0 10px 32px #000b;overflow:hidden;touch-action:auto}
+#floatingMeter.collapsed{width:210px}
+#floatingMeter .meter{margin:0;border:0;border-radius:0;box-shadow:none}
+#floatingMeter .meterdisplay{font-size:36px}
+#floatingMeter .meterbuttons{display:flex;gap:7px;padding:0 11px 10px}
+#floatingMeter .meterbuttons button{font-weight:700;margin:0}
+#floatingMeter #red{border-color:#ff727a;color:#ffd6da}
+#floatingMeter #black{border-color:#7bb0ed;color:#d6e7ff}
+#floatingMeter .meteroptions{padding:0 12px 10px;font-size:12px}
+#floatingMeter .meteroptions label{display:flex;gap:6px;align-items:center}
+#floatingMeter .meteroptions input{width:auto;margin:0}
+#floatingMeter .meteroptions #probes{margin:5px 0;padding:6px;font-size:11px}
+#floatingMeter .meterbar{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:#174052;cursor:move;touch-action:none;color:#9ce9f1;font-size:12px;font-weight:bold}
+#floatingMeter .meterbar button{width:auto;padding:3px 10px;margin:0}
+#floatingMeter.collapsed .metercontents{display:none}
+@media(max-width:850px){.layout{display:flex;flex-direction:column;height:auto}.viewer{height:65vh;min-height:380px}#floatingMeter{top:8px}}
+
+/* V1.1 · plata técnico, pistas negras, selección continua */
+:root{color:#e9f0f4;background:#111b22}
+header{background:linear-gradient(110deg,#1c2832,#5b6872 50%,#1c2933);border-bottom:1px solid #aebbc3}
+header h1{color:#dcecf3}header small{color:#d1e2e9}
+aside{background:linear-gradient(155deg,#273540,#141f29);border-color:#6b7d89}
+aside>details.panelgroup{background:#22323d;border-color:#6b7e89}
+aside>details.panelgroup>summary{color:#d7eaf1}
+.viewer{background:radial-gradient(ellipse at 48% 42%,#c6d0d6,#7c8993 75%,#46545f)}
+.info{background:#253642;border-color:#647c88}
+.pad{fill:#aebac2;stroke:#26313a;stroke-width:.07}
+.trace{stroke:#111a20;stroke-width:.19;opacity:.92;stroke-linecap:round;stroke-linejoin:round}
+.netTrace{stroke:#00ecff!important;stroke-width:.28!important;stroke-linecap:round;stroke-linejoin:round;opacity:1!important}
+.netPad{fill:#22e8f5!important;stroke:#063642!important}
+.selected{fill:#ff796b!important;stroke:#17232b!important}
+.foot{fill:#d6dee3;stroke:#52636d}
+.padLabel{fill:#12222b;stroke:#eef5f7;stroke-width:.09;paint-order:stroke}
+.legend{background:#22313eea;color:#e3eef4}
+#floatingMeter{border-color:#c5d3d9;background:#1b2b36f5}
+#floatingMeter .meterbar{background:linear-gradient(90deg,#364a56,#6c7c86);color:#fff}
+#overlayToggle{width:auto;margin-left:7px}
+.boardTag{pointer-events:none;paint-order:stroke;stroke:#dce8ec;stroke-width:.10;fill:#13242d;font-weight:bold}
+.boardTagBg{fill:#e9f2f3;fill-opacity:.86;stroke:#5e7680;stroke-width:.08;pointer-events:none}
+#meterMode{margin:0 10px 8px;width:calc(100% - 20px);font-size:12px}
+
+/* Ficha contextual del BoardView: se coloca en pantalla, no en coordenadas de placa. */
+#boardInfoCard{position:absolute;z-index:22;left:18px;top:85px;width:min(370px,calc(100% - 24px));max-height:min(65vh,540px);overflow:auto;background:linear-gradient(150deg,#f8fbfc,#dce6eb);color:#182b34;border:1px solid #879da8;border-left:4px solid #00b8d5;border-radius:12px;box-shadow:0 12px 34px #0007;padding:12px 14px;font-size:13px;line-height:1.48}
+#boardInfoCard[hidden]{display:none!important}#boardInfoCard .cardHead{display:flex;justify-content:space-between;align-items:start;gap:8px;border-bottom:1px solid #b9cbd1;padding-bottom:7px;margin-bottom:7px}
+#boardInfoCard button{width:auto;margin:0;padding:2px 9px;background:#e8f1f4;color:#152a34;border:1px solid #9bb1bd;font-size:17px}
+#boardInfoCard .factItem{padding:8px 0;border-bottom:1px solid #c2d2d9}#boardInfoCard .factItem:last-child{border-bottom:0}
+#boardInfoCard .factSource{font-size:11px;color:#46636f;margin-top:5px}#boardInfoCard .factWarning{color:#8d3c21;font-weight:650}
+#boardInfoCard input{background:white;color:#172d36;border:1px solid #91a6b0;padding:7px;margin:4px 0;width:100%}
+#boardInfoCard .measureResult{padding:7px;background:#e8eff2;border-radius:5px;white-space:pre-wrap}
+#boardInfoCard .noData{color:#516a76}
+</style><style>.restoreSystem{margin-top:12px;padding:12px;border:1px solid #8ca6b3;border-radius:12px;background:linear-gradient(135deg,#eef2f4,#c2cdd2);color:#142c39;font-size:12px}.restoreSystem h3{margin:0 0 6px;color:#123b4c}.restoreSystem p{line-height:1.4}.restoreSystem button,.restoreSystem select,.restoreUpload{font-size:12px;background:#eaf0f3;color:#163342;border:1px solid #8ea6b1;border-radius:7px;padding:8px;width:100%;display:block;margin:6px 0;cursor:pointer}.restoreSystem .danger{background:#fff0eb;border-color:#c68e7d}.restoreSystem .restoreUpload{text-align:center}.restoreSystem #restoreStatus{font-weight:600;color:#385260}</style><style>
+#xeImageClickNotes{position:absolute;right:12px;bottom:82px;width:min(370px,calc(100% - 24px));max-height:42%;overflow:auto;z-index:16;border:1px solid #7b939d;border-left:4px solid #00bcd4;border-radius:12px;background:linear-gradient(145deg,#f5f8fa,#c8d2d8);box-shadow:0 12px 30px #1d303b55;color:#152d3b;padding:10px;font-size:12px}
+#xeImageClickNotes[hidden]{display:none!important}
+#xeImageClickNotes .xeClickHead{display:flex;align-items:center;justify-content:space-between;gap:8px;position:sticky;top:-10px;background:#e3ebef;padding:7px 3px;border-bottom:1px solid #9bb0bc}
+#xeImageClickNotes .xeClickHead button{width:auto;padding:3px 9px;color:#183b48;background:#eaf2f5;border:1px solid #93aeb9;border-radius:6px}
+#xeImageClickNotes .xeClickFact{border-bottom:1px solid #a5b5bd;padding:8px 2px;line-height:1.45}
+#xeImageClickNotes .xeClickFact strong{display:block;color:#0c5262;margin-bottom:4px}
+#xeImageClickNotes .xeClickSource{font-size:11px;color:#4b6270;margin-top:5px}
+#xeImageClickNotes a{color:#075e78;text-decoration:underline}
+</style>
+<style id="xeDockStyles">
+/* Herramientas ancladas bajo el BoardView: sin ventanas que tapen pistas. */
+.board-workspace{min-width:0;min-height:0;display:flex;flex-direction:column;overflow:hidden;background:#b8c2cb}
+.board-workspace>.viewer{flex:1 1 auto;min-height:220px;height:auto;overflow:hidden}
+#xeToolDock{flex:0 0 auto;background:linear-gradient(145deg,#dfe6ec,#aebdc8);border-top:2px solid #7895a5;color:#142630;padding:8px;box-shadow:0 -4px 20px #0b1b2430;z-index:3}
+#xeDockTabs{display:flex;gap:7px;flex-wrap:wrap}
+#xeDockTabs button{width:auto;flex:1 1 115px;margin:0;padding:9px 11px;background:linear-gradient(#f7fbfd,#b7c6cf);color:#17323e;border:1px solid #91a9b6;font-size:12px;font-weight:800}
+#xeDockTabs button[aria-selected="true"]{background:linear-gradient(#116c83,#063e52);color:#e5fbff;border-color:#0b7895}
+#xeDockContent{max-height:min(38vh,380px);overflow:auto;background:#172d3a;color:#e8f6fa;border-radius:0 0 9px 9px}
+#xeDockContent:empty{display:none}
+#xeDockContent>.xeDockPane{position:static!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;transform:none!important;display:block!important;width:100%!important;max-width:none!important;max-height:none!important;min-height:0!important;overflow:visible!important;box-shadow:none!important;border:0!important;border-radius:0!important;margin:0!important}
+#xeDockContent>.xeDockPane[hidden]{display:none!important}
+#xeDockContent #floatingMeter{padding:8px!important;background:#162d39!important}
+#xeDockContent #meterDrag{cursor:default!important}
+#xeDockContent #xeImageClickNotes,#xeDockContent #boardInfoCard,#xeDockContent #knowledgePanel{padding:12px!important}
+#xeDockContent .meter{max-width:480px;margin:4px auto}
+#xeDockContent .meterbuttons,#xeDockContent .meteroptions{max-width:700px;margin:auto}
+#xeDockContent #meterCollapse{width:auto}
+#xeDockContent .meterbar{display:flex;align-items:center;justify-content:space-between}
+#xeDockContent .meterbar button{max-width:48px}
+@media(max-width:850px){
+ .board-workspace{width:100%;overflow:visible}
+ .board-workspace>.viewer{height:58vh;min-height:350px;flex:none}
+ #xeDockContent{max-height:45vh}
+}
+</style>
+<style id="xeV30Style">
+.xeExactFootprint{color:#334650;pointer-events:none;opacity:.92}
+.xeExactFootprint polyline{vector-effect:non-scaling-stroke;stroke-width:1.15px}
+.xeExactSelected{color:#008ca8;opacity:1}
+.xeExactSelected polyline{stroke-width:1.9px}
+.xeFootprintHit{fill:transparent;stroke:none;pointer-events:all;cursor:pointer}
+.xeFootprintHit:hover{fill:#00cce5;fill-opacity:.07}
+.xeApproximate{stroke-dasharray:2 2;opacity:.4}
+</style>
+<style id="xeLuxuryChromeV4">
+:root{--xeGold:#c9a865;--xeSilver:#c9cbd0;--xeBlack:#08090b}
+body{background:#08090b;color:#dedee0}
+body>header{
+ min-height:92px;padding:15px 28px;position:relative;justify-content:center!important;
+ background:linear-gradient(115deg,#060608 0%,#1d1e22 23%,#090a0d 50%,#29292b 76%,#08090a 100%)!important;
+ border-bottom:1px solid #ac8d53!important;box-shadow:inset 0 -1px #f2dfad33,0 6px 26px #0008;
+ text-align:center;overflow:hidden
+}
+body>header:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(105deg,transparent 30%,#ffffff08 44%,transparent 55%);}
+body>header>div:first-child{position:relative;z-index:1}
+body>header h1{
+ font-family:Georgia,'Times New Roman',serif;font-size:clamp(23px,2.4vw,36px);
+ font-weight:700;letter-spacing:.15em;margin:3px 0;
+ color:#d9c28b!important;
+ text-shadow:0 1px 0 #fff4c4,0 2px 0 #9c7b42,0 3px 0 #554021,0 5px 8px #000,0 0 16px #e3c78535
+}
+body>header h1 small{font-family:Inter,Segoe UI,Arial,sans-serif;font-size:11px;color:#dadce1!important;letter-spacing:.1em;vertical-align:middle;text-shadow:0 1px 2px #000}
+.xeBrandEyebrow{font:600 9px Inter,Segoe UI,sans-serif;letter-spacing:.32em;color:#b5b5b8;text-shadow:0 2px 2px #000}
+.xeBrandSub{font:500 10px Inter,Segoe UI,sans-serif;letter-spacing:.21em;color:#b6b8c0;text-shadow:0 1px 2px #000}
+.xeHeaderSignature{position:absolute;right:23px;top:50%;transform:translateY(-50%);font:600 9px Inter,Segoe UI,sans-serif;letter-spacing:.12em;color:#aaa8a4}
+.xeHeaderSignature span{color:#c9a865;padding:0 5px}
+main.layout{height:calc(100vh - 92px)}
+main.layout>aside{
+ background:linear-gradient(140deg,#222326 0%,#101114 32%,#18191c 74%,#0a0b0d 100%)!important;
+ border-color:#5e5546!important;color:#d8d8dc;
+ box-shadow:inset -1px 0 #d1b77c12;
+}
+main.layout>aside.right{box-shadow:inset 1px 0 #d1b77c15}
+main.layout>aside h2,main.layout>aside h3{
+ color:#d6bc7d!important;font-weight:800;letter-spacing:.07em;
+ text-shadow:0 1px 0 #f8e7b43b,0 2px 0 #4b3c23,0 3px 5px #000;
+}
+main.layout>aside .info,main.layout>aside .restoreSystem,main.layout>aside .refimages,
+main.layout>aside #xeDocs,main.layout>aside .xeDiag{
+ background:linear-gradient(140deg,#252629,#16171a)!important;
+ color:#e0e0e3!important;border-color:#62553e!important;box-shadow:inset 0 1px #ffffff0a,0 4px 12px #0004;
+}
+main.layout>aside .muted,main.layout>aside .minor,main.layout>aside .xeDocSmall,
+main.layout>aside .xeDiagFine{color:#b4b4b8!important}
+main.layout>aside input,main.layout>aside select,main.layout>aside textarea{
+ background:#17181b!important;color:#e9e9ec!important;border:1px solid #736a5b!important;
+}
+main.layout>aside button,main.layout>aside .restoreUpload{
+ background:linear-gradient(180deg,#444348,#26262a 55%,#111214)!important;
+ border:1px solid #9e8555!important;color:#f0e4ca!important;
+ box-shadow:inset 0 1px #ffffff30,0 2px 0 #070708,0 5px 9px #0006!important;
+ text-shadow:0 1px 0 #000,0 2px 3px #000!important;font-weight:700
+}
+main.layout>aside button:hover,main.layout>aside button.active{
+ background:linear-gradient(180deg,#7b6642,#3b3328 55%,#171719)!important;
+ border-color:#e6c787!important;color:#fff4d9!important
+}
+main.layout>aside .xeDocItem,main.layout>aside .xeDocEvidence,main.layout>aside .xeDiagRoute,
+main.layout>aside .xeDiagWarning{background:#26272a!important;color:#eee!important;border-color:#9d875d!important}
+main.layout>aside .xeDocItem:hover{background:#3c372e!important}
+main.layout>aside .xeDiagTable td,main.layout>aside .xeDiagTable th{border-color:#645a49!important;color:#ddd}
+main.layout>aside a{color:#dec48e}
+@media(max-width:1100px){.xeHeaderSignature{display:none}}
+@media(max-width:850px){main.layout{height:auto}body>header{min-height:90px;padding:12px}}
+</style>
+<style id="xeElegantMenusV41">
+/* Menús laterales solamente. No afecta la mesa, el SVG ni las herramientas del BoardView. */
+@property --xeBorderAngle{syntax:'<angle>';initial-value:0deg;inherits:false}
+@keyframes xeBorderTravel{to{--xeBorderAngle:360deg}}
+@keyframes xeBorderBreath{0%,100%{box-shadow:0 0 2px #c9a76540,inset 0 1px #fff1}50%{box-shadow:0 0 12px #d5b47865,0 0 3px #fff5,inset 0 1px #fff2}}
+main.layout>aside>details.panelgroup{
+ --xeAccent:#c9a765;--xeAccentSoft:#77603e;
+ border:1.5px solid transparent!important;
+ border-radius:11px!important;
+ background:linear-gradient(150deg,#303136,#16171b 75%,#101114) padding-box,
+ conic-gradient(from var(--xeBorderAngle),#51493d 0deg,#5e5548 58deg,var(--xeAccent) 90deg,#e9e0c7 107deg,var(--xeAccent) 121deg,#51493d 160deg,#51493d 360deg) border-box!important;
+ box-shadow:0 0 4px #c9a76544,inset 0 1px #fff1;
+ animation:xeBorderTravel 5s linear infinite,xeBorderBreath 3s ease-in-out infinite;
+ overflow:hidden;
+ margin:9px 0!important;
+ transition:transform .2s ease,filter .2s ease;
+}
+main.layout>aside>details.panelgroup:nth-of-type(4n+1){--xeAccent:#d4b16f;--xeAccentSoft:#75603b}
+main.layout>aside>details.panelgroup:nth-of-type(4n+2){--xeAccent:#c4c8d0;--xeAccentSoft:#626b77}
+main.layout>aside>details.panelgroup:nth-of-type(4n+3){--xeAccent:#b99a70;--xeAccentSoft:#65503b}
+main.layout>aside>details.panelgroup:nth-of-type(4n){--xeAccent:#a9b2be;--xeAccentSoft:#505c6b}
+main.layout>aside>details.panelgroup>summary{
+ color:#e8e0d2!important;
+ background:linear-gradient(115deg,#2b2b30 0%,#191a1e 55%,#29292d 100%)!important;
+ text-shadow:0 1px 0 #000,0 2px 3px #000b!important;
+ font-size:12px!important;font-weight:800!important;letter-spacing:.035em;
+ padding:13px 11px!important;line-height:1.4;
+}
+main.layout>aside>details.panelgroup>summary:before{
+ color:var(--xeAccent)!important;
+ text-shadow:0 0 7px var(--xeAccent)!important;
+}
+main.layout>aside>details.panelgroup[open]{filter:brightness(1.16)}
+main.layout>aside>details.panelgroup[open]>summary{
+ background:linear-gradient(115deg,#3a342c,#1c1d20 70%,#35343a)!important;
+ border-bottom:1px solid var(--xeAccentSoft);
+}
+main.layout>aside>details.panelgroup:hover{filter:brightness(1.22)}
+main.layout>aside>details.panelgroup:focus-within{outline:1px solid var(--xeAccent);outline-offset:2px}
+main.layout>aside>details.panelgroup>.panelcontent{background:#17181b!important;color:#e0e0e2;padding:12px 10px!important}
+/* Oculta exclusivamente los encabezados H2 que por compatibilidad quedaran fuera del grupo. */
+main.layout>aside>h2{display:none!important}
+@media(prefers-reduced-motion:reduce){main.layout>aside>details.panelgroup{animation:none!important;border-color:#bda373!important}}
+</style></head><body><header><div><div class="xeBrandEyebrow">XE SERVICIO ELECTRÓNICO · LABORATORIO DIGITAL</div><h1>XE HELP REPAIR <small>V4.1</small></h1><div class="xeBrandSub">CONTROL SERIES 1914 · DIAGNÓSTICO ELECTRÓNICO</div></div><div class="xeHeaderSignature">PRECISIÓN <span>◆</span> TECNOLOGÍA <span>◆</span> EXPERIENCIA</div></header><main class="layout"><aside><h2>PLACA</h2><div class="info">CONTROL XBOX SERIES 1914<br><span class="muted">Placa MCU · documentación y diagnóstico colaborativo</span></div><h2>CAPA VISIBLE</h2><div class="row"><button id="front" class="active">Superior</button><button id="back">Inferior</button><button id="xeDualToggle" type="button">Dos caras</button></div><label class="muted"><input id="xeCrosshairToggle" type="checkbox" checked style="width:auto"> Cursor de referencia sincronizado entre caras</label><label class="muted"><input id="xeViasToggle" type="checkbox" checked style="width:auto"> Mostrar vías originales XE</label><label class="muted"><input id="xeSyncViews" type="checkbox" checked style="width:auto"> Zoom y desplazamiento sincronizados</label><h2>BUSCAR COMPONENTE O RED</h2><input id="search" placeholder="Ej. U1, R23, GND, VBUS"/><div id="results"></div><h2>VISTA</h2><label class="muted"><input type="checkbox" id="labels" style="width:auto"> Mostrar referencias de componentes</label><label class="muted"><input type="checkbox" id="adaptive" checked style="width:auto"> Etiquetas inteligentes (se reducen con zoom)</label><div class="row"><button id="zin">Zoom +</button><button id="zout">Zoom −</button><button id="reset">Centrar</button></div><label class="muted"><input type="checkbox" id="traces" checked style="width:auto"> Mostrar pistas de cobre</label><label class="muted"><input type="checkbox" id="overlayToggle" checked style="width:auto"> Datos técnicos sobre BoardView</label><label class="muted"><input type="checkbox" id="autoReference" style="width:auto"> Abrir ficha de referencia automáticamente</label><button id="openReference" type="button">Ver referencia del punto seleccionado</button><label class="muted"><input type="checkbox" id="netshow" checked style="width:auto"> Resaltar pads y pistas de la misma red</label><label class="muted">Tamaño de marcadores <span id="markersizeval">35%</span><input type="range" id="markersize" min="15" max="100" value="35" step="5"></label><section id="restoreSystem" class="restoreSystem"><h3>RESTAURADOR · BOARDVIEW</h3><p>Protege los datos agregados por técnicos. La geometría original XE es de solo lectura.</p><div class="restoreButtons"><button id="restoreSnapshot">Crear punto de restauración</button><button id="restoreDownload">Descargar respaldo JSON</button><label class="restoreUpload">Importar respaldo JSON<input id="restoreUpload" type="file" accept=".json,application/json" hidden></label></div><label for="restoreHistory">Versiones disponibles</label><select id="restoreHistory"></select><button id="restoreApply" class="danger">Restaurar versión seleccionada</button><button id="restoreFactory" class="danger">Restaurar datos originales (sin aportes)</button><p id="restoreStatus" role="status">Los cambios en los aportes generan copias locales automáticas (máximo 20).</p></section></aside><section class="viewer"><div id="knowledgePanel" hidden><button class="close" id="knowledgeClose" type="button">× Cerrar</button><h3>+ Datos del BoardView</h3><div id="knowledgeTarget" class="minor"></div><div id="knowledgeEntries"></div><details id="knowledgeForm"><summary>+ Agregar dato a este punto</summary><label>Tipo de dato<select id="knowledgeType"><option>Medición</option><option>Falla</option><option>Solución</option><option>Componente</option><option>Nota técnica</option></select></label><label>Valor y unidad (opcional)<input id="knowledgeValue" placeholder="Ej. 1.79 V, 33 Ω" maxlength="100"></label><label>Condiciones de medición<input id="knowledgeConditions" placeholder="USB conectado, placa encendida..." maxlength="220"></label><label>Descripción<textarea id="knowledgeNote" placeholder="Describe el hallazgo y su fuente" maxlength="2500"></textarea></label><label>Autor o alias<input id="knowledgeAuthor" placeholder="Técnico" maxlength="80"></label><button id="knowledgeSave" class="full" type="button">Guardar en este BoardView</button><div id="knowledgeError" class="minor"></div></details></div><div id="xeImageClickNotes" hidden aria-live="polite"></div><div id="boardInfoCard" hidden aria-live="polite"></div><div id="floatingMeter"><div class="meterbar" id="meterDrag"><span>XE MULTÍMETRO · DC V</span><button type="button" id="meterCollapse" aria-label="Minimizar multímetro">−</button></div><div class="metercontents" id="meterContents"></div></div><svg id="svg" xmlns="http://www.w3.org/2000/svg"><g id="world"></g></svg><div id="xeDualViewer" hidden><div class="xeDualTitle">CARA INFERIOR · ESPEJO <span>Selecciona un pad o pista</span></div><svg id="xeDualSvg" xmlns="http://www.w3.org/2000/svg"><g id="xeDualWorld"></g></svg></div><div class="legend">Contorno XE · Inferior en espejo · Pads · 🔴 Selección · 🔵 Red · Puntas R/N · punta dibujada y pad cubierto<br>Rueda: zoom · Arrastrar: mover · Clic en pad: seleccionar · Etiquetas adaptativas</div></section><aside class="right"><h2>DATOS APORTADOS AL BOARDVIEW</h2><div class="info"><button id="knowledgeOpen" type="button">+ Agregar / ver datos del punto</button><button id="knowledgeExport" type="button">Exportar datos JSON</button><label class="muted">Importar copia de datos JSON<input id="knowledgeImport" type="file" accept=".json,application/json"></label><div class="muted">Los datos se guardan en este navegador. No se comparten con otros técnicos hasta conectar una base de datos en línea. Cada aporte queda vinculado al pad y a la revisión del PCB.</div></div><h2>INSPECTOR ELÉCTRICO</h2><div id="inspector" class="info">Selecciona un componente o pad para ver sus datos.</div><h2>DATOS DOCUMENTADOS · MCU / JOYSTICKS</h2><div id="tpinfo" class="info muted">Selecciona un TP para consultar la hoja de datos de la placa MCU.</div><div class="refimages"><details><summary>Referencia SUPERIOR · Diagnóstico</summary><a href="referencia_superior.png" target="_blank" rel="noopener"><img src="referencia_superior.png" alt="Anotaciones de la cara superior MCU" loading="lazy"></a></details><details><summary>Referencia INFERIOR · REMASTERED</summary><a href="referencia_inferior.png" target="_blank" rel="noopener"><img src="referencia_inferior.png" alt="Anotaciones de la cara inferior MCU" loading="lazy"></a></details></div><p class="muted">Imágenes documentales; no son una superposición calibrada. Las anotaciones también se muestran como fichas de datos.</p><h2>DATOS EXTRAÍDOS DE LA IMAGEN MCU</h2><div id="imagefacts" class="info muted">Selecciona un TP o un componente para consultar anotaciones técnicas.</div><h2>ÍNDICE DE DATOS DE LAS IMÁGENES</h2><div id="factsIndex" class="info muted">Cargando referencias documentales…</div><h2>SEGUIMIENTO DE PISTAS Y REDES</h2><div class="info"><label class="muted"><input type="checkbox" id="xeBothSides" checked style="width:auto"> Mostrar conexiones de ambas caras en la lista</label><div id="xeNetSummary" class="muted">Toca una pista o un pad para seguir su red.</div><button id="xeNetNext" type="button">Ir al siguiente punto conectado</button><button id="xeNetClear" type="button">Limpiar selección de red</button></div><h2>CONEXIONES DE RED</h2><div id="xeLayerSummary" class="info muted">Selecciona una red para consultar su distribución por caras.</div><div id="netinfo" class="info muted">Selecciona un pad para consultar otros pads de su misma red.</div><h2>MULTÍMETRO DIGITAL · SIMULADOR</h2><div class="meter"><div class="meterhead"><span>XE · DMM</span><span>SIMULACIÓN / DC V</span></div><div class="meterdisplay"><span id="meterValue">---- </span><span class="meterunit" id="xeMeterUnit">V</span></div><label class="modebox">Asignación de puntas <select id="meterMode"><option value="auto">Automático (2 clics roja, 3 clics negra)</option><option value="manual">Manual (botones roja / negra)</option></select></label><label class="modebox">Fuente de lectura <select id="meterSource"><option value="auto">Automática: aporte guardado / referencia</option><option value="saved">Solo mediciones guardadas</option><option value="nominal">Solo referencia nominal</option></select></label><div id="meterEvidence" class="meterstatus"></div><div id="meterStatus" class="meterstatus">Selecciona una punta roja y una negra. Solo se simulan referencias documentadas.</div></div><label class="modebox"><input type="checkbox" id="usbPower" checked style="width:auto"> Simular USB conectado (VBUS)</label><p class="muted">No lee voltajes reales ni detecta fallas. El signo corresponde a V(roja) − V(negra). Valores nominales documentales.</p><h2>PUNTAS DEL MULTÍMETRO</h2><div class="row"><button id="red">Marcar roja</button><button id="black">Marcar negra</button></div><button id="clear">Borrar marcadores</button><div id="probes" class="info muted">Selecciona un pad y pulsa el color de la punta.</div><h2>DIAGNÓSTICO POR SÍNTOMAS · PROTOTIPO</h2><select id="symptom"><option value="general">Inspección general</option><option value="power">No enciende</option><option value="charge">No carga por USB</option><option value="sync">No sincroniza</option><option value="stick">Falla de joystick</option></select><div class="row"><button id="prevstep">Anterior</button><button id="nextstep">Siguiente</button></div><div class="info" id="stepinfo"></div><h2>INSPECCIÓN DEL PAD · ETAPA 1</h2><div class="info" id="diag">Selecciona un pad para iniciar la revisión de su red.</div><div class="info">Los nombres de red provienen del PCB KiCad. <strong>No equivalen a mediciones reales ni garantizan voltajes en funcionamiento.</strong></div><h2>ADVERTENCIA</h2><p class="muted">Este visor es un sistema colaborativo de exploración. No coloques puntas sobre la placa basándote únicamente en las posiciones mostradas sin cotejarlas con la revisión física.</p></aside></main><script>
+let tpData={};let imageFacts=[];let stepIndex=0;let hoverPad=null;let mirrorAxis=0;let data,side='F',selected=null,probe={red:null,black:null},view=null,drag=null;const $=x=>document.getElementById(x),svg=$('svg');const ns='http://www.w3.org/2000/svg';function el(t,a,parent){let n=document.createElementNS(ns,t);for(let [k,v] of Object.entries(a||{}))n.setAttribute(k,v);parent.append(n);return n}function mx(x){return side==='B'?2*mirrorAxis-x:x}function init(){let pts=data.pads.concat(data.footprints);let xs=pts.map(p=>p.x),ys=pts.map(p=>p.y);let minX=Math.min(...xs)-7,minY=Math.min(...ys)-7,maxX=Math.max(...xs)+7,maxY=Math.max(...ys)+7;mirrorAxis=(minX+maxX)/2;view=[minX,minY,maxX-minX,maxY-minY];draw()}function labelConfig(){
+  // mm de alto en SVG: decrece al acercar el zoom, con límites para evitar letras gigantes.
+  const base=0.72, relative=Math.sqrt(Math.max(0.04,view[2]/100));
+  const size=$('adaptive').checked?Math.max(0.22,Math.min(0.9,base*relative)):base;
+  const pxPerMm=svg.clientWidth/Math.max(view[2],0.01);
+  return {size,pxPerMm};
+}
+let edgeCuts=[],factOverlayIndex=[];let autoClickCount=0;
+function drawOutline(g){
+ if(!edgeCuts.length){el('rect',{x:view[0]+2,y:view[1]+2,width:view[2]-4,height:view[3]-4,fill:'#d1d9dd',stroke:'#455661','stroke-width':.45},g);return;}
+ const group=el('g',{'pointer-events':'none'},g);
+ // Edge.Cuts son geometría de fabricación; los arcos se reconstruyen a través de 3 puntos.
+ for(const e of edgeCuts){
+   let d=`M ${mx(e.start[0])} ${e.start[1]} `;
+   if(e.kind==='arc'&&e.mid){
+     const [x1,y1]=e.start,[x2,y2]=e.mid,[x3,y3]=e.end;
+     const D=2*(x1*(y2-y3)+x2*(y3-y1)+x3*(y1-y2));
+     if(Math.abs(D)>1e-8){
+       const ux=((x1*x1+y1*y1)*(y2-y3)+(x2*x2+y2*y2)*(y3-y1)+(x3*x3+y3*y3)*(y1-y2))/D;
+       const uy=((x1*x1+y1*y1)*(x3-x2)+(x2*x2+y2*y2)*(x1-x3)+(x3*x3+y3*y3)*(x2-x1))/D;
+       const radius=Math.hypot(x1-ux,y1-uy);
+       const a=Math.atan2(y1-uy,x1-ux),b=Math.atan2(y2-uy,x2-ux),c=Math.atan2(y3-uy,x3-ux);
+       const ccw=((b-a+Math.PI*2)%(Math.PI*2))<=((c-a+Math.PI*2)%(Math.PI*2));
+       const delta=ccw?((c-a+Math.PI*2)%(Math.PI*2)):((a-c+Math.PI*2)%(Math.PI*2));
+       const sweep=(side==='B'?!ccw:ccw)?1:0;
+       d+=`A ${radius} ${radius} 0 ${delta>Math.PI?1:0} ${sweep} ${mx(x3)} ${y3}`;
+     }else d+=`L ${mx(x3)} ${y3}`;
+   }else d+=`L ${mx(e.end[0])} ${e.end[1]}`;
+   el('path',{d,fill:'none',stroke:'#24343e','stroke-width':.30,'stroke-linecap':'round','stroke-linejoin':'round'},group);
+ }
+}
+function rebuildFactIndex(){
+ factOverlayIndex=[];
+ if(!data||!imageFacts.length)return;
+ for(const f of imageFacts){
+  const fs=(f.side||'inferior')==='superior'?'F':'B';
+  for(const ref of (f.refs||[])){
+   const pads=data.pads.filter(p=>p.ref===ref&&(p.side===fs||p.side==='Both'));
+   const foot=data.footprints.find(p=>p.ref===ref&&p.side===fs);
+   const anchor=pads[0]||foot;
+   if(anchor)factOverlayIndex.push({fact:f,anchor,side:fs});
+  }
+ }
+}
+function drawBoardFacts(g){
+ if(!$('overlayToggle')?.checked||!factOverlayIndex.length)return;
+ const list=factOverlayIndex.filter(x=>x.side===side),scale=labelConfig();
+ const shown=new Set();let count=0;
+ for(const item of list){
+  const {fact,anchor}=item,ref=anchor.ref;
+  const key=ref+':'+fact.title;
+  if(shown.has(key))continue;shown.add(key);
+  if(!selected||selected.ref!==ref)continue;
+  const x=mx(anchor.x),y=anchor.y,highlight=selected?.ref===ref;
+  const size=Math.max(.17,Math.min(.34,scale.size*.55));
+  const label=(ref+' · '+fact.title).slice(0,38);
+  const width=Math.min(28,label.length*size*.56+1);
+  const off=(count%3)*1.7;count++;
+  const bx=x+1.6,by=y-1.8-off;
+  el('line',{x1:x,y1:y,x2:bx,y2:by,stroke:highlight?'#00b9d6':'#516875','stroke-width':.075,'pointer-events':'none'},g);
+  // Etiqueta sin globo ni rectángulo de fondo.
+  const t=el('text',{x:bx+.2,y:by,'font-size':size,class:'xeSelectedComponentLabel'},g);t.textContent=label;
+ }
+}
+function draw(){let g=$('world');g.replaceChildren();svg.setAttribute('viewBox',view.join(' '));const fs=data.footprints.filter(p=>p.side===side),ps=data.pads.filter(p=>p.side===side||p.side==='Both');let pset=ps.map(p=>[p.x,p.y]);let xmin=Math.min(...pset.map(x=>x[0]))-3,xmax=Math.max(...pset.map(x=>x[0]))+3,ymin=Math.min(...pset.map(x=>x[1]))-3,ymax=Math.max(...pset.map(x=>x[1]))+3;drawOutline(g);if($('traces').checked)data.segments.filter(p=>p[4]===side).forEach(p=>{let active=$('netshow').checked&&selected&&selected.net&&data.netIds[String(p[5])]===selected.net;el('line',{x1:mx(p[0]),y1:p[1],x2:mx(p[2]),y2:p[3],class:active?'netTrace':'trace'},g)});const cfg=labelConfig(), occupied=new Set();
+fs.forEach(f=>{let p=el('rect',{x:mx(f.x)-.55,y:f.y-.42,width:1.1,height:.84,rx:.08,fill:'#b2bec6',stroke:'#4e606b','stroke-width':.13,opacity:.85},g);
+if($('labels').checked){
+  const important=selected&&selected.ref===f.ref;
+  // Con poco zoom se ocultan referencias diminutas y se evita superponer etiquetas.
+  if(!important&&cfg.size*cfg.pxPerMm<4.5)return;
+  const x=mx(f.x)+.6,y=f.y-.55;
+  const cell=Math.max(cfg.size*5,1.5);
+  const key=Math.floor(x/cell)+','+Math.floor(y/cell);
+  if(!important&&occupied.has(key))return;
+  occupied.add(key);
+  let t=el('text',{x,y,fill:important?'#082c38':'#273d49','font-size':important?Math.max(cfg.size,.38):cfg.size,'font-weight':important?'bold':'normal','pointer-events':'none'},g);t.textContent=f.ref;
+}});const net=selected&&selected.net&&$('netshow').checked?selected.net:null;
+ps.forEach(p=>{let same=net&&p.net===net,sel=selected&&selected.uuid===p.uuid;
+ let radius=Math.max(.17,Math.min(p.w,p.h)/2);
+ let n=el('circle',{cx:mx(p.x),cy:p.y,r:radius,class:'pad'+(same?' netPad':'')+(sel?' selected':'')},g);
+
+ if(same&&!sel)el('circle',{cx:mx(p.x),cy:p.y,r:radius+markerRadius(.1),class:'netHalo'},g);
+ if(sel)el('circle',{cx:mx(p.x),cy:p.y,r:radius+markerRadius(.18),class:'selectionHalo'},g);
+ if(hoverPad&&hoverPad.uuid===p.uuid&&!sel)el('circle',{cx:mx(p.x),cy:p.y,r:radius+markerRadius(.14),class:'hoverHalo'},g);
+ if(sel||hoverPad&&hoverPad.uuid===p.uuid){let t=el('text',{x:mx(p.x)+radius+.2,y:p.y-radius-.12,'font-size':Math.max(.25,Math.min(.55,labelConfig().size)),'class':'padLabel'},g);t.textContent=p.ref+' / '+p.num+' · '+(p.net||'sin red')}
+});
+drawBoardFacts(g);
+for(let [k,p] of Object.entries(probe)){if(p&&(p.side===side||p.side==='Both')){
+  const x=mx(p.x),y=p.y,pr=Math.max(.17,Math.min(p.w,p.h)/2),color=k==='red'?'#ff525e':'#202a35';
+  // El área de contacto cubre el pad completo; la punta física se dibuja fuera del cobre.
+  el('circle',{cx:x,cy:y,r:pr,fill:color,stroke:k==='red'?'#ffd7da':'#9ad9ff',class:'probeCover'},g);
+  const tipX=x+pr*.10,tipY=y-pr*.10,sz=Math.max(.52,Math.min(1.05,pr*1.45));
+  const pg=el('g',{class:'probeTip',transform:`translate(${tipX} ${tipY}) rotate(-43)`},g);
+  el('path',{d:`M 0 0 L ${-sz*.17} ${-sz*.48} L ${sz*.17} ${-sz*.48} Z`,class:'probeMetal'},pg);
+  el('path',{d:`M ${-sz*.20} ${-sz*.46} L ${-sz*.29} ${-sz*1.40} Q 0 ${-sz*1.60} ${sz*.29} ${-sz*1.40} L ${sz*.20} ${-sz*.46} Z`,fill:color,class:'probeBody'},pg);
+  el('path',{d:`M ${-sz*.12} ${-sz*.72} L ${-sz*.17} ${-sz*1.28}`,stroke:k==='red'?'#ffc1c5':'#a2afbf','stroke-width':sz*.07,'stroke-linecap':'round','pointer-events':'none'},pg);
+}}}
+function markerRadius(base){let scale=Number($('markersize').value)/100;return Math.max(.06,Math.min(.42,base*scale*Math.sqrt(Math.max(.2,view[2]/28))));}
+function updateNetInfo(){let box=$('netinfo');box.replaceChildren();if(!selected||!selected.net){box.textContent='Sin red asignada o sin pad seleccionado.';return;}
+ const matches=data.pads.filter(p=>p.net===selected.net);
+ let head=document.createElement('div');head.textContent='Red: '+selected.net+' · '+matches.length+' pads asociados en el PCB';box.append(head);
+ let seen=new Set();for(let p of matches){let id=p.ref+'/'+p.num+'/'+p.side;if(seen.has(id))continue;seen.add(id);let d=document.createElement('div');d.className='result';d.textContent=p.ref+' · pin '+p.num+' ('+p.side+')';d.onclick=()=>focus(p);box.append(d)}
+ let note=document.createElement('p');note.className='muted';note.textContent='Coincidencia por nombre de red XE; no certifica continuidad física ni voltajes.';box.append(note);
+}function updateDiag(){let d=$('diag');if(!selected||selected.num===undefined){d.textContent='Selecciona un pad numerado para comenzar.';return}let net=selected.net||'';let peers=data.pads.filter(p=>p.net===net&&net);d.replaceChildren();let h=document.createElement('strong');h.textContent='Inspección de '+selected.ref+' pin '+selected.num;d.append(h);for(let line of ['Red XE: '+(net||'sin asignar'),'Puntos vinculados en PCB: '+peers.length,'1. Confirma la revisión física de la placa y el número del pad.','2. Inspecciona corrosión, soldaduras y daños con el equipo desconectado.','3. Contrasta la red con el esquemático antes de medir.','4. Consulta la ficha documental del TP si existe; los valores aún no están certificados.']){let p=document.createElement('p');p.textContent=line;d.append(p)}}
+const diagnosticGuides={
+ general:['Identifica visualmente la revisión de la placa y la cara correcta.','Selecciona un pad y verifica su referencia y red XE.','Con el equipo desconectado, inspecciona daños, corrosión y soldaduras.','Antes de medir, coteja el pin con el esquema y la placa física.'],
+ power:['Confirma el síntoma y el estado de la alimentación externa o batería, sin abrir circuitos energizados.','Localiza en el BoardView las redes de alimentación y GND; sus nombres no son mediciones.','Con alimentación desconectada, inspecciona conectores y daños visibles.','Consulta el esquema para determinar puntos y condiciones de medición; no se dispone de valores certificados.'],
+ charge:['Comprueba visualmente el estado del puerto USB-C y su cable, sin realizar puentes.','Busca las redes VBUS y GND y verifica físicamente los puntos antes de usar puntas.','Con el control desconectado, inspecciona corrosión y soldaduras del puerto.','Consulta el esquema para las líneas CC y protección; esta guía aún no certifica voltajes.'],
+ sync:['Verifica el comportamiento de conexión USB frente a inalámbrica para delimitar el síntoma.','Inspecciona conectores, antena y daños visibles con el equipo desconectado.','Ubica las redes implicadas solo si están documentadas en el esquema.','No se han validado señales de radio ni valores de prueba para esta revisión.'],
+ stick:['Identifica si falla LSX, LSY, RSX o RSY; sus TP documentados son TP64, TP63, TP112 y TP65.','Selecciona el TP y coteja su ubicación con la placa MCU física.','Revisa la referencia de 1.8 V y el punto medio aproximado de 0.9 V indicados en la imagen, sin asumir que aplican a todas las posiciones ni tipos de joystick.','Con el equipo apagado, inspecciona pistas, resistencias, soldaduras y conectores.','Para una lectura real utiliza un multímetro externo; el multímetro en pantalla es una simulación.']};
+function renderGuide(){const type=$('symptom').value,steps=diagnosticGuides[type];stepIndex=Math.max(0,Math.min(stepIndex,steps.length-1));$('stepinfo').textContent='Paso '+(stepIndex+1)+' de '+steps.length+': '+steps[stepIndex];$('prevstep').disabled=stepIndex===0;$('nextstep').disabled=stepIndex===steps.length-1;}
+$('symptom').onchange=()=>{stepIndex=0;renderGuide()};$('prevstep').onclick=()=>{stepIndex--;renderGuide()};$('nextstep').onclick=()=>{stepIndex++;renderGuide()};renderGuide();
+
+function renderImageFacts(p){
+ const box=$('imagefacts');box.replaceChildren();
+ const matches=imageFacts.filter(f=>f.refs.includes(p.ref)||f.nets.some(n=>n===p.net));
+ if(!matches.length){box.textContent='No hay anotación específica de la imagen para este componente. Consulta la ficha de TP si existe.';return}
+ for(const f of matches){let item=document.createElement('div');item.className='docitem';let title=document.createElement('strong');title.textContent=f.title;item.append(title);let desc=document.createElement('div');desc.textContent=f.detail;item.append(desc);let tag=document.createElement('div');tag.className='docbadge';tag.textContent='Fuente: '+f.source+' · '+f.status;item.append(tag);box.append(item)}
+}
+function documentedPotential(p){
+ if(!p)return null;
+ const name=(p.net||'').toUpperCase().replace(/\s+/g,'');
+ const ref=p.ref.toUpperCase();
+ if(['GND','/GND'].includes(name)||['FT1','FT2','TP21','TP22','TP24','TP26'].includes(ref))return 0;
+ // Referencias explícitas del archivo MCU: evitar inferir que cualquier red de señal es una alimentación.
+ if(ref==='TP5')return $('usbPower').checked?5:null;
+ if(ref==='TP9')return 3.3;
+ if(ref==='TP7')return 3.6;
+ // Se admiten nodos de alimentación claramente identificados en el PCB, no señales analógicas.
+ if(['+1V8','+1.8V','1V8'].includes(name))return 1.8;
+ if(['+3.3V','3V3','+3V3'].includes(name))return 3.3;
+ return null;
+}
+function savedVoltage(p){
+ if(!p||typeof kbEntries==='undefined')return null;
+ const target=kbTarget(p);
+ const entries=kbEntries.filter(e=>{
+  if(e.target!==target||!/^medici[oó]n$/i.test(String(e.type||'').trim()))return false;
+  return /^[+-]?(?:\d+(?:[.,]\d+)?|[.,]\d+)\s*(?:v|voltios?|volts?)?$/i.test(String(e.value||'').trim());
+ }).sort((a,b)=>String(b.updated||b.created).localeCompare(String(a.updated||a.created)));
+ if(!entries.length)return null;
+ const e=entries[0];const v=Number(String(e.value).trim().replace(/\s*(?:v|voltios?|volts?)$/i,'').replace(',','.'));
+ return Number.isFinite(v)?{v,entry:e}:null;
+}
+function panelVoltages(p){
+ if(!p)return [];
+ const out=[];
+ const facts=(typeof imageFacts!=='undefined'?imageFacts:[]).filter(f=>(f.refs||[]).includes(p.ref)||((f.nets||[]).length&&(f.nets||[]).includes(p.net)));
+ for(const f of facts){
+  const values=[...String(f.detail||'').matchAll(/(?:^|[^\d.,])([+-]?\d+(?:[.,]\d+)?)\s*(?:V|voltios?)(?![a-z])/gi)].map(m=>Number(m[1].replace(',','.')));
+  if(values.length)out.push({values:[...new Set(values)],source:'Nota de imagen: '+f.title,detail:f.detail,status:f.status});
+ }
+ const tp=(typeof tpData!=='undefined'?tpData[p.ref]:null);
+ if(tp){const values=[...String(tp.description||'').matchAll(/(?:^|[^\d.,])([+-]?\d+(?:[.,]\d+)?)\s*(?:V|voltios?)(?![a-z])/gi)].map(m=>Number(m[1].replace(',','.')));if(values.length)out.push({values:[...new Set(values)],source:'Ficha TP '+p.ref,detail:tp.description,status:tp.verification});}
+ return out;
+}
+function updateMeter(){
+ if(window.xeMeterOhms&&window.xeMeterOhms())return;
+ const r=$('meterValue'),status=$('meterStatus'),evidence=$('meterEvidence'),source=$('meterSource')?.value||'auto';
+ if(evidence)evidence.textContent='';
+ const chosen=selected||probe.red||probe.black;
+ const preview=chosen?savedVoltage(chosen):null;
+ const docs=chosen?panelVoltages(chosen):[];
+ const savedR=probe.red?savedVoltage(probe.red):null,savedB=probe.black?savedVoltage(probe.black):null;
+ const nominalR=probe.red?documentedPotential(probe.red):null,nominalB=probe.black?documentedPotential(probe.black):null;
+ const grounded=e=>/\b(?:gnd|masa|tierra|ground)\b/i.test(e?.conditions||'');
+ const ground=p=>p&&documentedPotential(p)===0;
+ // Una diferencia solo es legítima si ambos potenciales tienen referencia compatible.
+ if(probe.red&&probe.black){
+  let vr=null,vb=null,entry=null,origin='';
+  if(source!=='nominal'&&ground(probe.black)&&savedR&&grounded(savedR.entry)){vr=savedR.v;vb=0;entry=savedR.entry;origin='aporte'}
+  else if(source!=='nominal'&&ground(probe.red)&&savedB&&grounded(savedB.entry)){vr=0;vb=savedB.v;entry=savedB.entry;origin='aporte'}
+  else if(source!=='saved'&&nominalR!==null&&nominalB!==null){vr=nominalR;vb=nominalB;origin='nominal'}
+  if(vr!==null&&vb!==null){r.textContent=(vr-vb).toFixed(2);status.textContent=(origin==='aporte'?'DIFERENCIA DE MEDICIONES GUARDADAS':'DIFERENCIA NOMINAL SIMULADA')+' · '+probe.red.ref+' − '+probe.black.ref+' · No es lectura en vivo.';if(evidence)evidence.textContent=entry?'Autor: '+(entry.author||'Sin autor')+' · '+(entry.conditions||'Sin condiciones'):'Potenciales nominales documentados';return;}
+ }
+ // Mostrar el voltaje asociado al punto seleccionado, aunque no se declare GND.
+ if(source!=='nominal'&&preview){
+  r.textContent=preview.v.toFixed(2);
+  status.textContent='MEDICIÓN GUARDADA · '+chosen.ref+' · Referencia de medición: '+(preview.entry.conditions||'no especificada')+' · No es lectura en vivo.';
+  if(evidence)evidence.textContent='Autor: '+(preview.entry.author||'Sin autor')+' · '+(preview.entry.updated||preview.entry.created||'Sin fecha')+' · Se muestra el valor registrado, NO la diferencia entre las puntas.';
+  return;
+ }
+ if(source!=='saved'&&chosen){
+  const values=[...new Set(docs.flatMap(x=>x.values))];
+  if(values.length===1){r.textContent=values[0].toFixed(2);status.textContent='VOLTAJE EN REFERENCIA DOCUMENTAL · '+chosen.ref+' · No es lectura en vivo.';if(evidence)evidence.textContent=docs.map(x=>x.source+' — '+x.detail).join(' | ');return;}
+  if(values.length>1){r.textContent='VARIOS';status.textContent='Las notas de '+chosen.ref+' mencionan distintos voltajes. Consulta el detalle; no se puede elegir una lectura única.';if(evidence)evidence.textContent=docs.map(x=>x.source+': '+x.values.join(' / ')+' V · '+x.detail).join(' | ');return;}
+  const nominal=documentedPotential(chosen);
+  if(nominal!==null){r.textContent=nominal.toFixed(2);status.textContent='POTENCIAL NOMINAL · '+chosen.ref+' · No es lectura en vivo.';if(evidence)evidence.textContent='Referencia documental de la red, no medición real';return;}
+ }
+ r.textContent='----';status.textContent='No hay voltaje documentado ni medición guardada para este punto.';
+}
+
+function showTP(p){const box=$('tpinfo');box.replaceChildren();const item=tpData[p.ref];if(!item){box.textContent='Sin ficha TP de la placa MCU para esta referencia.';return;}const title=document.createElement('strong');title.textContent=p.ref+' — '+item.description;box.append(title);for(const s of ['Fuente: '+item.source,'Red del PCB: '+(p.net||'sin asignar'),'Estado: '+item.verification]){let d=document.createElement('p');d.textContent=s;box.append(d)}if(/\d+(?:[.,]\d+)?\s*v|\d+\s*hz|duty/i.test(item.description)){const w=document.createElement('p');w.className='muted';w.textContent='Valor tomado de la hoja, no medido ni validado en esta placa.';box.append(w)}}
+let boardInfoDismissed=false;
+function boardFactsFor(p){
+ if(!p)return [];
+ return imageFacts.filter(f=>(f.refs||[]).includes(p.ref)||((f.nets||[]).length&&f.nets.includes(p.net)));
+}
+function factNode(tag,cls,text,parent){let n=document.createElement(tag);if(cls)n.className=cls;n.textContent=text;parent.append(n);return n}
+function showBoardInfo(p){
+ const card=$('boardInfoCard');if(!p){card.hidden=true;return}
+ card.replaceChildren();card.hidden=false;
+ const head=document.createElement('div');head.className='cardHead';
+ const title=document.createElement('strong');title.textContent=p.ref+(p.num!==undefined?' · Pad '+p.num:'')+' · '+(side==='B'?'INFERIOR':'SUPERIOR');
+ const close=document.createElement('button');close.textContent='×';close.title='Cerrar ficha';close.onclick=()=>{card.hidden=true;boardInfoDismissed=true};head.append(title,close);card.append(head);
+ factNode('div','', 'Red XE: '+(p.net||'sin asignar')+' · Dato de referencia de la biblioteca XE',card);
+ const facts=boardFactsFor(p);
+ if(!facts.length){factNode('p','noData','No existe una anotación técnica específica para este punto en las imágenes. Puedes consultar su red y sus pads asociados.',card)}
+ else for(const f of facts){const item=document.createElement('div');item.className='factItem';factNode('strong','',f.title,item);factNode('div','',f.detail,item);factNode('div','factSource',f.source+' · '+f.status,item);if(/conflicto|consultar|pendiente de aportaciones/i.test(f.status))factNode('div','factWarning','⚠ Referencia pendiente de documentación',item);card.append(item)}
+ const tp=tpData[p.ref];if(tp&&!facts.some(f=>(f.detail||'').includes(tp.description))){const item=document.createElement('div');item.className='factItem';factNode('strong','','Ficha TP · '+p.ref,item);factNode('div','',tp.description,item);factNode('div','factSource',tp.source+' · '+tp.verification,item);card.append(item)}
+ const section=document.createElement('div');section.className='factItem';factNode('strong','','Comparar medición real (DC V)',section);
+ const label=document.createElement('label');label.textContent='Voltaje medido respecto a GND (V)';section.append(label);
+ const input=document.createElement('input');input.type='number';input.step='any';input.placeholder='Ej. 1.79';input.setAttribute('aria-label','Voltaje real medido');section.append(input);
+ const result=factNode('div','measureResult','Introduce una medición real para compararla con la referencia disponible.',section);
+ input.addEventListener('input',()=>{
+   if(input.value===''){result.textContent='Introduce una medición real para compararla con la referencia disponible.';return}
+   const measured=Number(input.value);if(!Number.isFinite(measured)){result.textContent='Medición no válida.';return}
+   const nominal=documentedPotential(p);
+   if(nominal===null||nominal===undefined){result.textContent='Lectura registrada: '+measured+' V. Sin referencia DC nominal comprobable para este pad: no se puede comparar.';return}
+   const delta=measured-nominal;
+   result.textContent='Medición introducida: '+measured.toFixed(3)+' V\nReferencia nominal simulada: '+nominal.toFixed(3)+' V\nDiferencia: '+(delta>=0?'+':'')+delta.toFixed(3)+' V\nAgrega tolerancia y condiciones de prueba para comparar resultados.';
+ });card.append(section);
+}
+function select(p){selected=p;if(!$("knowledgePanel").hidden)kbRender();showTP(p);renderImageFacts(p);if(typeof xeComponentSelect==="function")xeComponentSelect(p);$('inspector').innerHTML='<strong>'+p.ref+(p.num!==undefined?' · Pad '+p.num:'')+'</strong><br>Cara: '+(p.side==='F'?'Superior':'Inferior')+'<br>Posición: '+p.x.toFixed(2)+', '+p.y.toFixed(2)+' mm'+(p.net!==undefined?'<br>Red: '+(p.net||'(sin asignar)')+'<br><strong>Estado: nombre de red extraído de XE; valor eléctrico por completar.</strong>':'');updateNetInfo();updateDiag();updateMeter();draw();if($('autoReference').checked&&!boardInfoDismissed)showBoardInfo(p);else $('boardInfoCard').hidden=true}function focus(p){boardInfoDismissed=false;side=p.side==='Both'?'F':p.side;buttons();select(p);view=[mx(p.x)-14,p.y-12,28,24];draw()}function buttons(){$('front').classList.toggle('active',side==='F');$('back').classList.toggle('active',side==='B')}function search(){let q=$('search').value.trim().toLowerCase(),res=$('results');res.replaceChildren();if(!q)return;let list=data.pads.filter(p=>p.ref.toLowerCase().includes(q)||p.net.toLowerCase().includes(q)).slice(0,100);if(!list.length){res.textContent='Sin resultados';return}list.forEach(p=>{let d=document.createElement('div');d.className='result';d.textContent=p.ref+' / '+p.num+' · '+(p.net||'sin red')+' ('+p.side+')';d.onclick=()=>focus(p);res.append(d)})}function probeText(){updateMeter();$('probes').innerHTML=['red','black'].map(k=>'<div>'+ (k==='red'?'🔴 Roja':'🔵 Negra')+': '+(probe[k]?probe[k].ref+' pad '+probe[k].num+' · '+(probe[k].net||'sin red'):'Sin asignar')+'</div>').join('')}$('openReference').onclick=()=>{if(!selected){alert('Selecciona primero un punto del BoardView.');return}boardInfoDismissed=false;showBoardInfo(selected)};$('autoReference').onchange=()=>{if(!$('autoReference').checked)$('boardInfoCard').hidden=true;else if(selected){boardInfoDismissed=false;showBoardInfo(selected)}};$('overlayToggle').onchange=draw;$('labels').onchange=draw;$('adaptive').onchange=draw;for(let s of ['front','back'])$(s).onclick=()=>{side=s==='front'?'F':'B';buttons();$('boardInfoCard').hidden=true;$('xeImageClickNotes').hidden=true;draw()};$('search').oninput=search;$('traces').onchange=draw;$('netshow').onchange=draw;$('markersize').oninput=()=>{$('markersizeval').textContent=$('markersize').value+'%';draw()};$('reset').onclick=init;function zoom(k){let [x,y,w,h]=view;view=[x+w*(1-k)/2,y+h*(1-k)/2,w*k,h*k];draw()}$('zin').onclick=()=>zoom(.7);$('zout').onclick=()=>zoom(1.4);for(let k of ['red','black'])$(k).onclick=()=>{if(selected&&selected.num!==undefined){probe[k]=selected;probeText();draw()}else alert('Selecciona primero un pad')};$('usbPower').onchange=updateMeter;$('meterSource').onchange=updateMeter;$('meterMode').onchange=()=>{autoClickCount=0;};$('clear').onclick=()=>{probe={red:null,black:null};autoClickCount=0;probeText();draw()};svg.addEventListener('wheel',e=>{e.preventDefault();zoom(e.deltaY>0?1.13:.885)},{passive:false});// Selección geométrica: el SVG se redibuja al mover la placa; no dependemos del DOM de un círculo.
+function boardPoint(e){const pt=svg.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;const m=svg.getScreenCTM();return m?pt.matrixTransform(m.inverse()):null}
+function nearestPad(e){if(!data)return null;const pt=boardPoint(e),scale=svg.getScreenCTM();if(!pt||!scale)return null;const mmPerPx=1/Math.max(.001,Math.hypot(scale.a,scale.b));let best=null,score=Infinity;
+ for(const p of data.pads){if(p.side!==side&&p.side!=='Both')continue;const dx=pt.x-mx(p.x),dy=pt.y-p.y,dist=Math.hypot(dx,dy);const radius=Math.max(.17,Math.min(p.w,p.h)/2);const reach=radius+11*mmPerPx;if(dist<=reach&&dist/reach<score){best=p;score=dist/reach}}return best}
+svg.addEventListener('pointerdown',e=>{if(e.button!==0&&e.pointerType==='mouse')return;drag={x:e.clientX,y:e.clientY,original:view.slice(),moved:false,id:e.pointerId};svg.setPointerCapture(e.pointerId)});
+svg.addEventListener('pointermove',e=>{if(!drag){const p=nearestPad(e);if((p?.uuid||null)!==(hoverPad?.uuid||null)){hoverPad=p;draw()}return}const dxpx=e.clientX-drag.x,dypx=e.clientY-drag.y;if(Math.hypot(dxpx,dypx)<5&&!drag.moved)return;drag.moved=true;svg.classList.add('dragging');const m=svg.getScreenCTM();if(!m)return;const scaleX=Math.hypot(m.a,m.b),scaleY=Math.hypot(m.c,m.d);view=[drag.original[0]-dxpx/scaleX,drag.original[1]-dypx/scaleY,drag.original[2],drag.original[3]];draw()});
+svg.addEventListener('pointerup',e=>{if(!drag)return;const wasMoved=drag.moved;drag=null;svg.classList.remove('dragging');if(!wasMoved){const p=nearestPad(e);if(p){hoverPad=p;boardInfoDismissed=false;select(p);xeShowImageClickNotes(p);if($('meterMode')?.value==='auto'){autoClickCount++;if(autoClickCount===2){probe.red=p;probeText();draw()}else if(autoClickCount>=3){probe.black=p;probeText();draw();autoClickCount=0}}}else{hoverPad=null;const trace=xeNearestTrace(e);if(trace)xeSelectTrace(trace);else draw()}}});
+svg.addEventListener('pointercancel',()=>{drag=null;svg.classList.remove('dragging')});
+svg.addEventListener('pointerleave',()=>{if(!drag&&hoverPad){hoverPad=null;draw()}});
+fetch('imagen_mcu_datos.json').then(r=>r.json()).then(d=>{imageFacts=d;rebuildFactIndex();if(data)draw();if(selected&&!$('xeImageClickNotes').hidden&&window.xeShowImageClickNotes)xeShowImageClickNotes(selected);if(selected){renderImageFacts(selected);if(!$('boardInfoCard').hidden)showBoardInfo(selected)}if(window.renderFactsIndex)window.renderFactsIndex()}).catch(()=>{$('imagefacts').textContent='No se pudo cargar imagen_mcu_datos.json'});fetch('tp_mcu.json').then(r=>r.json()).then(d=>{tpData=d;if(selected){showTP(selected);if(!$('boardInfoCard').hidden)showBoardInfo(selected)}}).catch(()=>{$('tpinfo').textContent='No se pudo cargar tp_mcu.json'});fetch('outline.json').then(r=>r.json()).then(d=>{edgeCuts=d;if(data)draw()}).catch(()=>{});fetch('board.json').then(r=>r.json()).then(d=>{data=d;rebuildFactIndex();init()}).catch(e=>{$('inspector').textContent='No se pudo cargar board.json. Ejecuta un servidor local o abre GitHub Pages.'});
+
+// Base de conocimientos local. La identidad del pad incluye revisión de placa y UUID KiCad.
+const KB_KEY='xe.navigator.mcu1914.board2.knowledge.v1';
+let kbEntries=[];let kbEditing=null;
+try{const stored=JSON.parse(localStorage.getItem(KB_KEY)||'[]');if(Array.isArray(stored))kbEntries=stored.filter(e=>e&&typeof e.id==='string'&&typeof e.target==='string').slice(0,3000)}catch(e){}
+function kbTarget(p){if(!p)return null;return 'MCU_Board(2)|'+p.ref+'|'+(p.num===undefined?'COMP':p.num)+'|'+(p.uuid||`${p.x.toFixed(3)},${p.y.toFixed(3)},${p.side}`)}
+function kbPersist(){try{localStorage.setItem(KB_KEY,JSON.stringify(kbEntries));return true}catch(e){$('knowledgeError').textContent='No se pudo guardar. Comprueba el espacio o los permisos del navegador.';return false}}
+function kbText(t){return document.createTextNode(String(t??''))}
+function kbButton(text,cb){const b=document.createElement('button');b.type='button';b.textContent=text;b.onclick=cb;return b}
+function kbClearForm(){kbEditing=null;for(const id of ['knowledgeValue','knowledgeConditions','knowledgeNote'])$(id).value='';$('knowledgeType').value='Medición';$('knowledgeError').textContent=''}
+function kbShow(){const panel=$('knowledgePanel');if(!selected){$('knowledgeError').textContent='Selecciona primero un pad o componente.';panel.hidden=false;return}panel.hidden=false;kbRender()}
+function kbRender(){const panel=$('knowledgePanel'),target=kbTarget(selected),list=$('knowledgeEntries');list.replaceChildren();$('knowledgeTarget').textContent=selected?`${selected.ref} · ${selected.num===undefined?'Componente':'Pin '+selected.num} · ${selected.net||'Sin red'} · ${selected.side}`:'Sin punto seleccionado';if(!target)return;
+ const records=kbEntries.filter(e=>e.target===target).sort((a,b)=>String(b.created).localeCompare(String(a.created)));
+ if(!records.length){const p=document.createElement('p');p.className='minor';p.textContent='Aún no hay aportaciones guardadas en este punto.';list.append(p)}
+ for(const e of records){const box=document.createElement('div');box.className='entry';const h=document.createElement('strong');h.textContent=e.type+(e.value?' · '+e.value:'');box.append(h);const d=document.createElement('div');d.textContent=e.note||'Sin descripción';box.append(d);if(e.conditions){const c=document.createElement('div');c.className='minor';c.textContent='Condiciones: '+e.conditions;box.append(c)}const m=document.createElement('div');m.className='minor';m.textContent=`${e.author||'Sin autor'} · ${e.created} · Aporte local, pendiente de aportaciones`;box.append(m);const actions=document.createElement('div');actions.className='actions';actions.append(kbButton('Editar',()=>{kbEditing=e.id;$('knowledgeType').value=e.type;$('knowledgeValue').value=e.value||'';$('knowledgeConditions').value=e.conditions||'';$('knowledgeNote').value=e.note||'';$('knowledgeAuthor').value=e.author||'';$('knowledgeForm').open=true;$('knowledgeError').textContent='Editando registro existente.'}),kbButton('Eliminar',()=>{if(!confirm('¿Eliminar este aporte local?'))return;kbEntries=kbEntries.filter(r=>r.id!==e.id);kbPersist();kbRender();updateMeter()}));box.append(actions);list.append(box)}
+}
+$('knowledgeOpen').onclick=kbShow;$('knowledgeClose').onclick=()=>{$('knowledgePanel').hidden=true};
+$('knowledgeSave').onclick=()=>{if(!selected){$('knowledgeError').textContent='Selecciona un punto primero.';return}const note=$('knowledgeNote').value.trim(),value=$('knowledgeValue').value.trim();if(!note&&!value){$('knowledgeError').textContent='Escribe un valor o una descripción.';return}const now=new Date().toISOString(),existing=kbEntries.find(e=>e.id===kbEditing);const item={id:existing?.id||('local-'+Date.now()+'-'+Math.random().toString(36).slice(2,8)),target:kbTarget(selected),ref:selected.ref,pin:selected.num??null,net:selected.net||'',side:selected.side,type:$('knowledgeType').value,value,conditions:$('knowledgeConditions').value.trim(),note,author:$('knowledgeAuthor').value.trim(),created:existing?.created||now,updated:now,status:'unverified'};if(existing)kbEntries=kbEntries.map(e=>e.id===existing.id?item:e);else kbEntries.push(item);if(!kbPersist())return;kbClearForm();$('knowledgeForm').open=false;kbRender();updateMeter()};
+$('knowledgeExport').onclick=()=>{const blob=new Blob([JSON.stringify({schema:'xe-board-knowledge-v1',board:'MCU_Board(2)',exported:new Date().toISOString(),entries:kbEntries},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='XE-BoardView-datos-MCU1914.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+$('knowledgeImport').onchange=async e=>{const f=e.target.files?.[0];if(!f)return;try{if(f.size>3_000_000)throw Error('Archivo demasiado grande');const payload=JSON.parse(await f.text());if(payload.schema!=='xe-board-knowledge-v1'||payload.board!=='MCU_Board(2)'||!Array.isArray(payload.entries))throw Error('Archivo o revisión de placa incompatible');const safe=payload.entries.filter(r=>r&&typeof r.id==='string'&&typeof r.target==='string'&&r.target.startsWith('MCU_Board(2)|')&&typeof r.type==='string'&&typeof r.note==='string').slice(0,3000).map(r=>({id:r.id,target:r.target,ref:String(r.ref||'').slice(0,80),pin:r.pin,net:String(r.net||'').slice(0,120),side:r.side,type:r.type.slice(0,50),value:String(r.value||'').slice(0,100),conditions:String(r.conditions||'').slice(0,220),note:r.note.slice(0,2500),author:String(r.author||'').slice(0,80),created:String(r.created||''),updated:String(r.updated||''),status:'unverified'}));const ids=new Set(kbEntries.map(r=>r.id));let count=0;for(const r of safe){if(!ids.has(r.id)){kbEntries.push(r);ids.add(r.id);count++}}if(!kbPersist())return;kbRender();updateMeter();alert('Importados '+count+' aportes nuevos (sin consultar).')}catch(err){alert('No se importó: '+err.message)}finally{e.target.value=''}};
+
+// Restauración de aportaciones: instantáneas automáticas antes de cada guardado.
+const RESTORE_KEY='xe.navigator.mcu1914.board2.restore.v1';
+function restoreRead(){try{const a=JSON.parse(localStorage.getItem(RESTORE_KEY)||'[]');return Array.isArray(a)?a.filter(x=>x&&Array.isArray(x.entries)&&typeof x.id==='string').slice(-20):[]}catch(_){return []}}
+function restoreValidate(entries){if(!Array.isArray(entries)||entries.length>3000)throw Error('Número de registros inválido');return entries.map(e=>{if(!e||typeof e!=='object'||typeof e.id!=='string'||typeof e.target!=='string'||!e.target.startsWith('MCU_Board(2)|')||typeof e.type!=='string'||typeof e.note!=='string')throw Error('Registro incompatible');return {id:e.id.slice(0,140),target:e.target.slice(0,250),ref:String(e.ref||'').slice(0,80),pin:e.pin,net:String(e.net||'').slice(0,120),side:e.side,type:e.type.slice(0,50),value:String(e.value||'').slice(0,100),conditions:String(e.conditions||'').slice(0,220),note:e.note.slice(0,2500),author:String(e.author||'').slice(0,80),created:String(e.created||''),updated:String(e.updated||''),status:'unverified'}})}
+function restoreSnapshot(label,entries){const history=restoreRead();const snapshot={id:new Date().toISOString()+'-'+Math.random().toString(36).slice(2,7),date:new Date().toISOString(),label,entries:restoreValidate(entries)};history.push(snapshot);try{localStorage.setItem(RESTORE_KEY,JSON.stringify(history.slice(-20)));restoreList();return true}catch(err){restoreMessage('No se pudo crear copia automática: '+err.message);return false}}
+function restoreMessage(message){const el=document.getElementById('restoreStatus');if(el)el.textContent=message}
+function restoreList(){const sel=document.getElementById('restoreHistory');if(!sel)return;const current=sel.value;sel.replaceChildren();const h=restoreRead();for(const snap of [...h].reverse()){const o=document.createElement('option');o.value=snap.id;o.textContent=new Date(snap.date).toLocaleString('es-MX')+' · '+snap.label+' ('+snap.entries.length+' registros)';sel.append(o)}if(h.some(x=>x.id===current))sel.value=current;if(!h.length){const o=document.createElement('option');o.textContent='No hay copias todavía';o.value='';sel.append(o)}}
+const originalKbPersist=kbPersist;
+kbPersist=function(){const previous=(()=>{try{return JSON.parse(localStorage.getItem(KB_KEY)||'[]')}catch(_){return []}})();if(!Array.isArray(previous))return originalKbPersist();if(!restoreSnapshot('Antes de modificar aportes',previous)){restoreMessage('No se guardó: no se pudo proteger la versión anterior. Exporta un respaldo.');return false}const ok=originalKbPersist();if(ok)restoreMessage('Guardado correctamente · copia anterior disponible.');return ok};
+function restoreApplyEntries(entries,description){const clean=restoreValidate(entries);if(!restoreSnapshot('Antes de restaurar '+description,kbEntries))return;const previous=kbEntries;kbEntries=clean;try{localStorage.setItem(KB_KEY,JSON.stringify(kbEntries));kbClearForm();kbRender();updateMeter();if(selected){renderImageFacts(selected);if(typeof showBoardInfo==='function'&&!document.getElementById('boardInfoCard').hidden)showBoardInfo(selected)}if(data)draw();restoreMessage('Restaurado: '+description+' · '+clean.length+' registros.')}catch(err){kbEntries=previous;restoreMessage('Error de almacenamiento: '+err.message)}}
+document.getElementById('restoreSnapshot').onclick=()=>{if(restoreSnapshot('Copia manual',kbEntries))restoreMessage('Punto de restauración creado.')};
+document.getElementById('restoreDownload').onclick=()=>{const payload={schema:'xe-board-restore-v1',board:'MCU_Board(2)',exported:new Date().toISOString(),entries:kbEntries};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='XE-RESTAURAR-MCU1914-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);restoreMessage('Respaldo descargado. Guárdalo fuera del navegador.')};
+document.getElementById('restoreApply').onclick=()=>{const id=document.getElementById('restoreHistory').value,snap=restoreRead().find(x=>x.id===id);if(!snap)return restoreMessage('Selecciona una copia válida.');if(confirm('¿Restaurar la versión '+new Date(snap.date).toLocaleString('es-MX')+'? Los datos actuales tendrán una copia previa.'))restoreApplyEntries(snap.entries,'copia del '+snap.date)};
+document.getElementById('restoreFactory').onclick=()=>{if(confirm('¿Quitar TODOS los aportes locales y volver a la base XE original? Se guardará una copia de seguridad antes.'))restoreApplyEntries([],'estado original sin aportes')};
+document.getElementById('restoreUpload').onchange=async event=>{const file=event.target.files?.[0];if(!file)return;try{if(file.size>3_000_000)throw Error('Archivo demasiado grande');const payload=JSON.parse(await file.text());if(payload.board!=='MCU_Board(2)'||!['xe-board-restore-v1','xe-board-knowledge-v1'].includes(payload.schema))throw Error('No corresponde a la placa MCU1914');const clean=restoreValidate(payload.entries);if(confirm('¿Reemplazar aportes actuales por los '+clean.length+' del respaldo? Se hará copia previa.'))restoreApplyEntries(clean,'respaldo importado')}catch(err){restoreMessage('Importación rechazada: '+err.message)}finally{event.target.value=''}};
+restoreList();
+</script><script>
+(function(){
+ const $id=id=>document.getElementById(id);
+ // Move the original working meter and its original buttons (preserves event handlers).
+ const meter=$id('floatingMeter'),content=$id('meterContents');
+ const oldMeter=document.querySelector('aside.right .meter');
+ if(oldMeter)content.append(oldMeter);
+ const buttons=document.createElement('div');buttons.className='meterbuttons';
+ for(const id of ['red','black']){const btn=$id(id);if(btn)buttons.append(btn)}
+ content.append(buttons);
+ const mode=document.createElement('select');mode.id='meterMode';mode.innerHTML='<option value="auto">Automático · clic 1 selecciona, clic 2 roja, clic 3 negra</option><option value="manual">Manual · botones roja / negra</option>';content.append(mode);
+ const options=document.createElement('div');options.className='meteroptions';
+ const usb=$id('usbPower');if(usb&&usb.parentElement)options.append(usb.parentElement);
+ for(const id of ['clear','probes']){const node=$id(id);if(node)options.append(node)}
+ const note=document.createElement('p');note.className='muted';note.textContent='Simulación documental, no medición física. Lectura = V(roja) − V(negra).';options.append(note);
+ content.append(options);
+ $id('meterCollapse').addEventListener('click',()=>{meter.classList.toggle('collapsed');$id('meterCollapse').textContent=meter.classList.contains('collapsed')?'+':'−'});
+ // Drag only from title bar, keeping buttons clickable.
+ let origin=null;const bar=$id('meterDrag');
+ bar.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;origin={x:e.clientX,y:e.clientY,left:meter.getBoundingClientRect().left-meter.parentElement.getBoundingClientRect().left,top:meter.offsetTop};meter.style.left=origin.left+'px';meter.style.transform='none';bar.setPointerCapture(e.pointerId)});
+ bar.addEventListener('pointermove',e=>{if(!origin)return;meter.style.left=(origin.left+e.clientX-origin.x)+'px';meter.style.top=(origin.top+e.clientY-origin.y)+'px';meter.style.transform='none'});
+ bar.addEventListener('pointerup',()=>{origin=null});bar.addEventListener('pointercancel',()=>{origin=null});
+ // Every sidebar section starts collapsed. Existing nodes are MOVED, not cloned.
+ for(const aside of document.querySelectorAll('main.layout > aside')){
+   const nodes=[...aside.childNodes];const fragment=document.createDocumentFragment();
+   let current=null,inner=null;
+   for(const node of nodes){
+     if(node.nodeType===1 && node.tagName==='H2'){
+       current=document.createElement('details');current.className='panelgroup';
+       const summary=document.createElement('summary');summary.textContent=node.textContent;
+       node.remove(); // No dejar encabezados H2 sueltos encima de los desplegables.
+       inner=document.createElement('div');inner.className='panelcontent';
+       current.append(summary,inner);fragment.append(current);
+     }else if(inner){inner.append(node)}else{fragment.append(node)}
+   }
+   aside.append(fragment);
+ }
+ // Group headings in source order: move right sidebar meter heading only as a harmless description.
+ window.renderFactsIndex=function(){
+   const root=$id('factsIndex');if(!root||!Array.isArray(window.imageFacts)&&typeof imageFacts==='undefined')return;
+   const arr=(typeof imageFacts!=='undefined'?imageFacts:window.imageFacts)||[];root.replaceChildren();
+   for(const side of ['superior','inferior']){
+     const group=document.createElement('details');group.className='refdata';
+     const summary=document.createElement('summary');summary.textContent=(side==='superior'?'SUPERIOR':'INFERIOR / REMASTERED')+' · '+arr.filter(f=>(f.side||'inferior')===side).length+' anotaciones';summary.style.cssText='cursor:pointer;color:#7fe3eb;padding:8px 0;font-weight:bold';
+     group.append(summary);
+     for(const f of arr.filter(f=>(f.side||'inferior')===side)){
+       const row=document.createElement('div');row.className='factsrow';
+       const title=document.createElement('strong');title.textContent=f.title;
+       const desc=document.createElement('div');desc.textContent=f.detail;
+       const origin=document.createElement('div');origin.className='origin';origin.textContent=(f.refs?.length?'Refs: '+f.refs.join(', ')+' · ':'')+f.status;
+       row.append(title,desc,origin);group.append(row);
+     }root.append(group);
+   }
+ };
+ if(typeof imageFacts!=='undefined'&&imageFacts.length)window.renderFactsIndex();
+})();
+</script><script src="colaboracion.js"></script><style>
+#xeComponentCatalog{background:linear-gradient(145deg,#d9e1e5,#b9c7d0);color:#152a36;border:1px solid #849ba9;border-radius:10px;padding:12px;margin:12px 0}
+#xeComponentCatalog h3{color:#183747;margin:4px 0 8px;font-size:14px}
+#xeComponentCatalog input,#xeComponentCatalog select{background:#f6f9fb;color:#152a36;border-color:#8199a6}
+#xeComponentCatalog .xeRows{max-height:320px;overflow:auto}
+#xeComponentCatalog .xeItem{padding:7px 3px;border-bottom:1px solid #93a6b0;cursor:pointer;font-size:12px}
+#xeComponentCatalog .xeItem:hover{background:#dceaf0}
+#xeComponentCard{position:absolute;top:75px;right:14px;width:min(320px,45%);z-index:25;background:linear-gradient(150deg,#f3f6f7,#bccbd2);border:1px solid #8197a3;color:#182b36;padding:12px;border-radius:11px;box-shadow:0 12px 30px #0005;font-size:13px}
+#xeComponentCard[hidden]{display:none}
+#xeComponentCard strong{color:#123747}
+#xeComponentCard button{background:#dae6ec;color:#1a3644;border-color:#8ca2ad;width:auto;padding:5px 10px;float:right}
+</style>
+<script>
+(function(){
+let catalog=[];let active=null;
+const wrap=document.createElement('section');wrap.id='xeComponentCatalog';
+wrap.innerHTML='<h3>COMPONENTES · VALORES DEL ESQUEMA</h3><p style="font-size:12px">Datos extraídos de XE. DNI = no instalar; C/D = sin capacitancia documentada.</p><input id="xeCompSearch" placeholder="Buscar R16, C27, U8..." aria-label="Buscar componente"><select id="xeCompType"><option value="all">Todos los componentes</option><option value="Resistencia">Resistencias</option><option value="Capacitor">Capacitores</option><option value="Otro">Otros</option></select><div class="xeRows" id="xeCompRows"></div>';
+const sidePanel=document.querySelector('aside.right')||document.querySelectorAll('aside')[1]||document.querySelector('aside');sidePanel.appendChild(wrap);
+const card=document.createElement('div');card.id='xeComponentCard';card.hidden=true;document.querySelector('.viewer').appendChild(card);
+const e=id=>document.getElementById(id);
+function format(c){let v=c.value||'Sin valor';if(c.status==='valor no especificado')v='No especificado ('+c.raw+')';return v}
+function render(){const q=e('xeCompSearch').value.trim().toUpperCase(),t=e('xeCompType').value,box=e('xeCompRows');box.replaceChildren();const filtered=catalog.filter(c=>(t==='all'||c.type===t)&&(!q||c.ref.toUpperCase().includes(q)||String(c.value).toUpperCase().includes(q)));for(const c of filtered){const d=document.createElement('div');d.className='xeItem';d.textContent=c.ref+' · '+c.type+' · '+format(c)+' · '+(c.side==='F'?'Superior':'Inferior');d.onclick=()=>{e('xeCompSearch').value=c.ref;render();const p=(typeof data!=='undefined'?data.pads:[]).find(p=>p.ref===c.ref);if(p&&typeof focus==='function')focus(p);else show(c)};box.appendChild(d)}if(!filtered.length)box.textContent='No hay coincidencias.'}
+function show(c){active=c;card.replaceChildren();const close=document.createElement('button');close.textContent='Cerrar ×';close.onclick=()=>card.hidden=true;card.appendChild(close);for(const [label,value] of [['Referencia',c.ref],['Tipo',c.type],['Valor en esquema',format(c)],['Estado',c.status],['Cara',c.side==='F'?'Superior':'Inferior'],['Fuente','MCU_Board(2).kicad_sch']]){const p=document.createElement('p');const b=document.createElement('strong');b.textContent=label+': ';p.append(b,document.createTextNode(value));card.appendChild(p)}const note=document.createElement('p');note.textContent='Valor documental: consultar revisión, encapsulado y placa física. ';card.appendChild(note);card.hidden=false}
+window.xeComponentShowByRef=function(ref){const c=catalog.find(x=>x.ref===ref);if(c)show(c);};
+window.xeComponentSelect=function(p){const c=catalog.find(x=>x.ref===p.ref);if(c)show(c);else card.hidden=true};
+e('xeCompSearch').addEventListener('input',render);e('xeCompType').addEventListener('change',render);
+fetch('componentes_esquema.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(j=>{catalog=j.components||[];render();}).catch(err=>{e('xeCompRows').textContent='No se pudo cargar el catálogo: '+err.message});
+})();
+</script><script>
+// Click annotations are separate from the opt-in complete reference card.
+// Only literal reference matches or explicitly linked nets are shown; no guessed component locations.
+(function(){
+ const $e=id=>document.getElementById(id);
+ window.xeShowImageClickNotes=function(p){
+  const panel=$e('xeImageClickNotes');if(!panel||!p)return;
+  panel.replaceChildren();
+  const all=(typeof imageFacts!=='undefined'&&Array.isArray(imageFacts))?imageFacts:[];
+  const facts=all.filter(f=>{
+    const refs=Array.isArray(f.refs)?f.refs:[];
+    const nets=Array.isArray(f.nets)?f.nets:[];
+    return refs.includes(p.ref)||(p.net&&nets.includes(p.net));
+  });
+  if(!facts.length){panel.hidden=true;return}
+  const head=document.createElement('div');head.className='xeClickHead';
+  const title=document.createElement('strong');title.textContent='NOTAS DE IMÁGENES · '+p.ref+(p.num!==undefined?' / '+p.num:'');
+  const close=document.createElement('button');close.type='button';close.textContent='×';close.title='Cerrar notas';close.onclick=()=>panel.hidden=true;
+  head.append(title,close);panel.append(head);
+  for(const f of facts){
+    const box=document.createElement('div');box.className='xeClickFact';
+    const name=document.createElement('strong');name.textContent=f.title||'Anotación';box.append(name);
+    const detail=document.createElement('div');detail.textContent=f.detail||'Sin detalle transcrito';box.append(detail);
+    const source=document.createElement('div');source.className='xeClickSource';source.textContent='Fuente: '+(f.source||'Imagen')+' · '+(f.status||'sin consultar');box.append(source);
+    const sides=(f.side==='superior'?['superior']:f.side==='inferior'?['inferior']:['superior','inferior']);
+    for(const side of sides){const a=document.createElement('a');a.href='referencia_'+side+'.png';a.target='_blank';a.rel='noopener';a.textContent='Ver imagen '+side.toUpperCase()+' ↗';a.style.marginRight='10px';box.append(a)}
+    panel.append(box);
+  }
+  const disclaimer=document.createElement('div');disclaimer.className='xeClickSource';disclaimer.textContent='Transcripción y contexto documental de las imágenes; confirma físicamente el punto. Las anotaciones sin referencia inequívoca no se asignan a pads.';panel.append(disclaimer);
+  panel.hidden=false;
+ };
+})();
+</script>
+<script id="xeDockScript">
+(function(){
+ const viewer=document.querySelector('main.layout > section.viewer');
+ if(!viewer)return;
+ const workspace=document.createElement('div');workspace.className='board-workspace';
+ viewer.parentNode.insertBefore(workspace,viewer);workspace.appendChild(viewer);
+ const dock=document.createElement('div');dock.id='xeToolDock';
+ dock.innerHTML='<div id="xeDockTabs" role="tablist" aria-label="Herramientas del BoardView"></div><div id="xeDockContent"></div>';
+ workspace.appendChild(dock);
+ const tabs=dock.querySelector('#xeDockTabs'),content=dock.querySelector('#xeDockContent');
+ const tools=[
+  {id:'floatingMeter',label:'Multímetro'},
+  {id:'xeImageClickNotes',label:'Notas de imágenes'},
+  {id:'boardInfoCard',label:'Referencia'},
+  {id:'knowledgePanel',label:'Agregar / ver datos'},
+  {id:'xeComponentCard',label:'Componente'}
+ ];
+ let active='floatingMeter';
+ const nodes={};
+ for(const tool of tools){
+  const el=document.getElementById(tool.id);if(!el)continue;
+  nodes[tool.id]=el;el.classList.add('xeDockPane');content.appendChild(el);
+  const b=document.createElement('button');b.type='button';b.textContent=tool.label;b.dataset.panel=tool.id;b.setAttribute('role','tab');b.setAttribute('aria-controls',tool.id);
+  b.onclick=()=>show(tool.id);tabs.appendChild(b);
+ }
+ function show(id){
+  active=id;
+  for(const [key,el] of Object.entries(nodes)){
+   const visible=key===id;
+   // El contenido de las referencias se mantiene optativo:
+   // solo se abre si el usuario activa su pestaña.
+   el.hidden=!visible;
+  }
+  for(const b of tabs.querySelectorAll('button'))b.setAttribute('aria-selected',String(b.dataset.panel===id));
+  if(id==='boardInfoCard'&&typeof selected!=='undefined'&&selected&&typeof showBoardInfo==='function')showBoardInfo(selected);
+  if(id==='xeImageClickNotes'&&typeof selected!=='undefined'&&selected&&typeof window.xeShowImageClickNotes==='function')window.xeShowImageClickNotes(selected);
+  if(id==='knowledgePanel'&&typeof selected!=='undefined'&&selected&&typeof kbRender==='function')kbRender();
+ }
+ show('floatingMeter');
+ // Las notas pueden abrirse por clic en un pad; se muestra su pestaña,
+ // sin ocultar la placa ni desplegar la ficha de referencia completa.
+ const notes=nodes.xeImageClickNotes;
+ if(notes)new MutationObserver(()=>{
+  if(!notes.hidden && active!=='xeImageClickNotes')show('xeImageClickNotes');
+ }).observe(notes,{attributes:true,attributeFilter:['hidden']});
+ // Los botones existentes del programa siguen abriendo el panel correspondiente.
+ const kb=document.getElementById('knowledgeOpen');
+ if(kb)kb.addEventListener('click',()=>show('knowledgePanel'));
+ const ref=document.getElementById('openReference');
+ if(ref)ref.addEventListener('click',()=>show('boardInfoCard'));
+ // Desactivar el arrastre antiguo del multímetro: ya está anclado al panel.
+ const drag=document.getElementById('meterDrag');
+ if(drag)drag.style.touchAction='auto';
+ const collapse=document.getElementById('meterCollapse');
+ if(collapse)collapse.title='Contraer o expandir el multímetro dentro del panel';
+})();
+</script>
+<style id="xeComponentOverlayCSS">
+.xeFootprintShape{fill:#9caab4;fill-opacity:.25;stroke:#334651;stroke-width:.10;vector-effect:non-scaling-stroke;cursor:pointer}
+.xeFootprintShape:hover{stroke:#00bbd9;stroke-width:1.4px;fill-opacity:.35}
+.xeFootprintSelected{stroke:#007a99;stroke-width:1.8px;fill:#e6f5fa;fill-opacity:.32}
+.xeSelectedComponentLabel{font-family:Arial,sans-serif;font-weight:400;fill:#080808;stroke:#fff;stroke-width:2.4px;paint-order:stroke fill;stroke-linejoin:round;pointer-events:none;user-select:none}
+#xeComponentOverlayControl{padding:9px;background:#102f3d;border:1px solid #386b7c;border-radius:9px;margin:9px 0;color:#d5f7ff;font-size:12px}
+</style>
+<script id="xeComponentOverlayJS">
+(function(){
+const panel=document.createElement('section');panel.id='xeComponentOverlayControl';
+panel.innerHTML='<strong>SILUETAS DE COMPONENTES</strong><p style="margin:6px 0">Se muestran contornos sin textos. Toca una pista, pad o componente para consultar únicamente su información.</p><label><input id="xeSilhouettes" type="checkbox" checked> Mostrar siluetas de componentes</label>';
+document.querySelector('main.layout > aside').appendChild(panel);
+const toggle=document.getElementById('xeSilhouettes');
+const originalDraw=draw;
+function value(f){let v=String(f.value||'').trim();if(!v||['C','D','~','?'].includes(v))return 'Valor no especificado';if(v==='DNI')return 'DNI';if(/^R/i.test(f.ref)&&/^\d+(?:\.\d+)?k?$/i.test(v))return v+' Ω';return v}
+function boxFor(f){
+ const pads=data.pads.filter(p=>p.ref===f.ref&&(p.side===side||p.side==='Both'));
+ const xs=pads.map(p=>mx(p.x)),ys=pads.map(p=>p.y);
+ const cx=mx(f.x),cy=f.y;
+ // El esquema aporta centros y dimensiones de pads, no contornos físicos de todos los encapsulados.
+ // Se aproxima el cuerpo a partir de la envolvente de pads sin modificar sus posiciones.
+ let minX=xs.length?Math.min(...xs):cx,maxX=xs.length?Math.max(...xs):cx;
+ let minY=ys.length?Math.min(...ys):cy,maxY=ys.length?Math.max(...ys):cy;
+ const t=(f.ref.match(/^[A-Za-z]+/)||[''])[0].toUpperCase();
+ const minSize=t==='U'?2.2:t==='J'||t==='P'?1.5:t==='R'||t==='C'||t==='D'||t==='FB'?1.0:1.25;
+ let w=Math.max(minSize,maxX-minX+.55),h=Math.max(t==='U'?1.8:.75,maxY-minY+.55);
+ w=Math.min(w,18);h=Math.min(h,16);
+ return {x:(minX+maxX)/2-w/2,y:(minY+maxY)/2-h/2,w,h};
+}
+function activeFootprint(){if(!selected)return null;return data.footprints.find(f=>f.ref===selected.ref&&f.side===side)||null}
+draw=function(){
+ originalDraw();if(!data)return;
+ const g=document.getElementById('world'),fs=data.footprints.filter(f=>f.side===side),active=activeFootprint();
+ const layer=el('g',{'class':'xeFootprintSilhouettes'},g);
+ // Insertar detrás de pads y textos, delante del contorno del PCB.
+ g.insertBefore(layer,g.children[1]||null);
+ if(toggle.checked)for(const f of fs){
+   const b=boxFor(f),isSelected=active&&active.ref===f.ref;
+   const entry=window.xeKiCadFootprints&&window.xeKiCadFootprints[f.ref];
+   const group=el('g',{'class':'xeExactFootprint'+(isSelected?' xeExactSelected':'')},layer);
+   if(entry&&entry.side===side&&entry.shapes.length){
+     const available=entry.shapes.some(s=>s.layer==='Fab');
+     entry.shapes.filter(s=>available?s.layer==='Fab':s.layer==='SilkS').forEach(part=>{
+       const coords=part.points.map(pt=>mx(pt[0])+','+pt[1]).join(' ');
+       el('polyline',{points:coords,fill:'none',stroke:'currentColor','stroke-width':Math.max(.045,part.w||.07),'stroke-linecap':'round','stroke-linejoin':'round'},group);
+     });
+   }else{
+     el('rect',{x:b.x,y:b.y,width:b.w,height:b.h,rx:.10,class:'xeFootprintShape xeApproximate'},group);
+   }
+   const title=el('title',{},group);title.textContent=f.ref+' · '+value(f);
+   const hit=el('rect',{x:b.x,y:b.y,width:Math.max(b.w,.35),height:Math.max(b.h,.35),class:'xeFootprintHit'},group);
+   hit.addEventListener('pointerdown',ev=>ev.stopPropagation());
+   hit.addEventListener('pointerup',ev=>{ev.preventDefault();ev.stopPropagation();
+     const pad=data.pads.find(p=>p.ref===f.ref&&(p.side===side||p.side==='Both'));
+     if(pad)select(pad);else{selected={...f,num:undefined,net:''};if(typeof xeComponentSelect==='function')xeComponentSelect(selected);draw();}
+     if(window.xeComponentShowByRef)window.xeComponentShowByRef(f.ref);
+   });
+ }
+ // Una sola etiqueta pequeña y fina; texto negro con borde blanco.
+ if(false&&active){const b=boxFor(active),pxPerMm=document.getElementById('svg').getBoundingClientRect().width/Math.max(view[2],.1);
+ const font=Math.max(.18,Math.min(.45,9/Math.max(pxPerMm,.1)));
+ const txt=el('text',{x:b.x+b.w+.18,y:b.y-.18,'font-size':font,'class':'xeSelectedComponentLabel'},g);
+ txt.textContent=active.ref+' · '+value(active);
+ }
+};
+toggle.addEventListener('change',()=>draw());
+if(data)draw();
+fetch('huellas_kicad.json').then(r=>{if(!r.ok)throw Error('huellas');return r.json()}).then(j=>{window.xeKiCadFootprints=j.footprints;draw();}).catch(e=>console.warn('Huellas XE no disponibles; se mantienen aproximaciones',e));
+})();
+</script>
+<style id="xeV25Style">
+/* Ficha técnica anclada bajo la placa, semitransparente. */
+#xeDockContent>#xeComponentCard.xeDockPane{
+ background:rgba(225,238,244,.80)!important;
+ color:#132c38!important;
+ backdrop-filter:blur(4px);
+ padding:12px 16px!important;
+ border-radius:0!important;
+}
+#xeComponentCard p{margin:6px 0;font-size:12px;line-height:1.4}
+#xeComponentCard strong{font-weight:600}
+#xeComponentCard button{font-size:11px;padding:4px 8px}
+#xeSelectedStatus{
+ position:absolute;top:8px;left:50%;transform:translateX(-50%);
+ z-index:4;pointer-events:none;max-width:65%;
+ color:#080808;-webkit-text-stroke:.35px white;
+ text-shadow:1px 1px white,-1px -1px white,1px -1px white,-1px 1px white;
+ font:400 11px/1.3 Arial,sans-serif;
+ white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+#xeDockContent>.xeDockPane[hidden]{display:none!important}
+.boardTagBg{display:none!important}
+.boardTag{font-size:10px;font-weight:400;fill:#080808;stroke:white;stroke-width:.045px;paint-order:stroke fill}
+</style>
+<script id="xeV25Script">
+(function(){
+ const viewer=document.querySelector('.viewer');
+ if(!viewer)return;
+ const status=document.createElement('div');status.id='xeSelectedStatus';
+ viewer.appendChild(status);
+ const previousSelect=select;
+ select=function(p){
+  previousSelect(p);
+  const f=data&&data.footprints.find(x=>x.ref===p.ref&&(x.side===side||x.side==='Both'));
+  const v=f?String(f.value||'').trim():'';
+  const short=v&&!['C','D','?','~'].includes(v)?' · '+v:'';
+  status.textContent=p.ref+short+(p.net?' · '+p.net:'');
+ };
+ const previousFocus=focus;
+ focus=function(p){previousFocus(p);};
+ const dock=document.getElementById('xeDockTabs');
+ if(dock){
+  const componentButton=[...dock.querySelectorAll('button')].find(x=>x.dataset.panel==='xeComponentCard');
+  if(componentButton)componentButton.title='Consultar la ficha técnica del componente seleccionado';
+ }
+ // La tarjeta se queda en el dock; nunca se superpone al BoardView.
+ const card=document.getElementById('xeComponentCard');
+ if(card){card.hidden=true;card.style.position='static';}
+})();
+</script>
+
+<style id="xeV31Style">
+#xeNetSummary{line-height:1.5;padding:6px 0}
+#xeDockContent .meterunit{font-size:14px}
+#xeNetNext,#xeNetClear{font-size:12px}
+</style>
+<script id="xeV31Script">
+(function(){
+let netCursor=0, lastNet='';
+const $id=id=>document.getElementById(id);
+const board=()=>typeof data!=='undefined'?data:null;
+const netName=id=>board()?.netIds?.[String(id)]||'';
+function netPads(name){
+ const all=(board()?.pads||[]).filter(p=>p.net===name);
+ return $id('xeBothSides')?.checked===false?all.filter(p=>p.side===side||p.side==='Both'):all;
+}
+function netSegments(name){return (board()?.segments||[]).filter(s=>netName(s[5])===name)}
+function netSummary(){
+ const p=typeof selected!=='undefined'?selected:null;
+ const box=$id('xeNetSummary');if(!box)return;
+ if(!p?.net){box.textContent='Selecciona una pista o pad para consultar su red.';return}
+ const pads=netPads(p.net),segments=netSegments(p.net),refs=[...new Set(pads.map(x=>x.ref))];
+ box.textContent='RED: '+p.net+' · '+pads.length+' pads · '+segments.length+' tramos de cobre · '+refs.length+' componentes ('+refs.slice(0,12).join(', ')+(refs.length>12?'…':'')+'). Selecciona un punto de la lista para navegar.';
+ if(lastNet!==p.net){netCursor=0;lastNet=p.net}
+}
+window.xeNearestTrace=function(e){
+ const b=board();if(!b)return null;
+ const pt=boardPoint(e),ctm=svg.getScreenCTM();
+ if(!pt||!ctm)return null;
+ const scale=Math.max(.01,Math.hypot(ctm.a,ctm.b));
+ const threshold=7/scale;
+ let best=null,closest=threshold;
+ for(const seg of b.segments){
+  if(seg[4]!==side)continue;
+  const x1=mx(seg[0]),y1=seg[1],x2=mx(seg[2]),y2=seg[3];
+  const vx=x2-x1,vy=y2-y1,den=vx*vx+vy*vy;
+  const t=den?Math.max(0,Math.min(1,((pt.x-x1)*vx+(pt.y-y1)*vy)/den)):0;
+  const d=Math.hypot(pt.x-(x1+t*vx),pt.y-(y1+t*vy));
+  if(d<closest&&netName(seg[5])){best=seg;closest=d}
+ }
+ return best;
+};
+window.xeSelectTrace=function(seg){
+ const name=netName(seg[5]);if(!name)return;
+ const pads=(board()?.pads||[]).filter(p=>p.net===name);
+ let p=pads.find(x=>x.side===side)||pads[0];
+ if(!p)p={ref:'RED',num:'—',net:name,side,x:seg[0],y:seg[1],w:.3,h:.3,uuid:'net-'+seg[5]};
+ selected=p;
+ if(p.ref!=='RED')select(p);else{updateNetInfo();updateMeter();draw()}
+ netSummary();
+};
+$id('xeNetNext')?.addEventListener('click',()=>{
+ const name=selected?.net;if(!name)return;
+ const pts=netPads(name);if(!pts.length)return;
+ const p=pts[netCursor++%pts.length];
+ if(p.side!==side&&p.side!=='Both'){$id(p.side==='B'?'back':'front')?.click()}
+ focus(p);netSummary();
+});
+$id('xeNetClear')?.addEventListener('click',()=>{
+ selected=null;lastNet='';netCursor=0;
+ $id('xeNetSummary').textContent='Selección de red borrada.';
+ updateNetInfo();updateMeter();draw();
+});
+$id('xeBothSides')?.addEventListener('change',()=>{if(selected?.net){updateNetInfo();netSummary()}});
+const originalSelect=select;
+select=function(p){originalSelect(p);netSummary()};
+const originalNetInfo=updateNetInfo;
+updateNetInfo=function(){
+ originalNetInfo();
+ if(!selected?.net)return;
+ const box=$id('netinfo');
+ const ps=netPads(selected.net);
+ const more=document.createElement('div');
+ more.className='muted';
+ more.textContent='Seguimiento: '+netSegments(selected.net).length+' segmentos de cobre; '+ps.length+' pads según filtro de caras. La conexión se basa en el identificador de red XE, no en una medición de continuidad.';
+ box.append(more);netSummary();
+};
+const voltageMeter=updateMeter;
+function readOhms(text){
+ const rx=/(?:^|[^\w\d])([+-]?\d+(?:[.,]\d+)?)\s*(MΩ|kΩ|Ω|Mohms?|kohms?|ohms?|megaohmios?|kiloohmios?|megaohms?|kiloohms?)(?![a-z])/gi;
+ const arr=[];let m;
+ while((m=rx.exec(String(text||'')))!==null){
+  const v=Number(m[1].replace(',','.'));
+  const unit=m[2].toLowerCase();
+  const mult=/^m|mega/.test(unit)?1e6:/^k|kilo/.test(unit)?1e3:1;
+  if(Number.isFinite(v))arr.push(v*mult);
+ }
+ return arr;
+}
+function resistanceEvidence(p){
+ if(!p)return [];
+ const result=[];
+ const records=typeof kbEntries!=='undefined'?kbEntries:[];
+ for(const e of records){
+  if(typeof kbTarget==='function'&&e.target===kbTarget(p)){
+   const values=readOhms(e.value);
+   if(values.length)result.push({values,source:'Aporte: '+(e.author||'técnico'),details:e.conditions||e.note||''});
+  }
+ }
+ const facts=(typeof imageFacts!=='undefined'?imageFacts:[]).filter(f=>(f.refs||[]).includes(p.ref)||(p.net&&(f.nets||[]).includes(p.net)));
+ for(const f of facts){
+  const values=readOhms((f.detail||'')+' '+(f.title||''));
+  if(values.length)result.push({values,source:'Imagen: '+f.title,details:f.detail||''});
+ }
+ const tp=typeof tpData!=='undefined'?tpData[p.ref]:null;
+ if(tp){const values=readOhms(tp.description);if(values.length)result.push({values,source:'Ficha '+p.ref,details:tp.description})}
+ // Valor de componente del esquema: sólo se muestra como resistencia nominal del componente,
+ // nunca como resistencia entre dos puntos de una red.
+ const f=(board()?.footprints||[]).find(f=>f.ref===p.ref);
+ if(f&&/^R\d+$/i.test(f.ref)){
+  const v=String(f.value||'').trim();
+  let val=null;
+  if(/^\d+(?:[.,]\d+)?$/.test(v))val=Number(v.replace(',','.'));
+  else if(/^\d+(?:[.,]\d+)?\s*[kKmM]$/.test(v)){
+   val=parseFloat(v.replace(',','.'))*(/[mM]$/.test(v)?1e6:1e3);
+  }else if(/^\d+[rR]\d+$/.test(v))val=Number(v.replace(/[rR]/,'.'));
+  if(val!==null&&Number.isFinite(val))result.push({values:[val],source:'Esquema XE · '+f.ref,details:'Resistencia nominal del componente: '+v+' Ω. Valor nominal del esquema.'});
+ }
+ return result;
+}
+function fmtOhms(v){
+ if(v>=1e6)return {value:(v/1e6).toFixed(2),unit:'MΩ'};
+ if(v>=1e3)return {value:(v/1e3).toFixed(2),unit:'kΩ'};
+ return {value:v.toFixed(2),unit:'Ω'};
+}
+window.xeMeterOhms=function(){
+ const chosen=selected||probe.red||probe.black;
+ const list=resistanceEvidence(chosen);
+ const unit=$id('xeMeterUnit'),head=$id('meterDrag')?.querySelector('span');
+ if(!list.length){
+  if(unit)unit.textContent='V';
+  if(head)head.textContent='XE MULTÍMETRO · DC V';
+  return false;
+ }
+ const values=[...new Set(list.flatMap(x=>x.values))];
+ const r=$id('meterValue'),status=$id('meterStatus'),evidence=$id('meterEvidence');
+ if(head)head.textContent='XE MULTÍMETRO · Ω DOCUMENTAL';
+ if(values.length===1){
+  const fmt=fmtOhms(values[0]);r.textContent=fmt.value;if(unit)unit.textContent=fmt.unit;
+  status.textContent='RESISTENCIA DOCUMENTADA · '+chosen.ref+' · No es lectura en vivo ni continuidad medida.';
+ }else{
+  r.textContent='VARIOS';if(unit)unit.textContent='Ω';
+  status.textContent='Existen '+values.length+' valores de resistencia asociados a '+chosen.ref+'. Consulta sus fuentes; no se asigna un valor único.';
+ }
+ if(evidence)evidence.textContent=list.map(x=>x.source+': '+x.values.map(v=>fmtOhms(v).value+' '+fmtOhms(v).unit).join(', ')+' · '+x.details).join(' | ');
+ return true;
+};
+const priorUpdate=updateMeter;
+updateMeter=function(){
+ const isOhms=window.xeMeterOhms();
+ if(isOhms)return;
+ priorUpdate();
+};
+})();
+</script>
+
+<style id="xeDualStyles">
+.board-workspace>.viewer.xeDualMode{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:minmax(0,1fr) auto;column-gap:5px;min-width:0;min-height:260px;position:relative}
+.viewer.xeDualMode>#svg{grid-column:1;grid-row:1;width:100%;height:100%;min-width:0;min-height:0;background:#aebac3}
+.viewer.xeDualMode>#xeDualViewer{grid-column:2;grid-row:1;position:relative;display:block!important;min-width:0;min-height:0;overflow:hidden;border-left:2px solid #13788e;background:#aebac3}
+#xeDualViewer[hidden]{display:none!important}
+#xeDualSvg{display:block;width:100%;height:100%;touch-action:none;cursor:crosshair}
+#xeDualViewer .xeDualTitle{position:absolute;top:5px;left:8px;z-index:2;pointer-events:none;font-size:10px;letter-spacing:.04em;color:#063949;background:#d8edf1c7;padding:4px 7px;border-radius:5px}
+#xeDualViewer .xeDualTitle span{opacity:.7}
+.viewer.xeDualMode>.legend{grid-column:1 / 3;grid-row:2;position:relative;bottom:auto;left:auto;right:auto}
+.viewer.xeDualMode #xeSelectedStatus{top:6px;left:25%;max-width:40%;font-size:10px}
+#xeLayerSummary{font-size:12px;line-height:1.5}
+@media(max-width:780px){.board-workspace>.viewer.xeDualMode{min-height:440px}.viewer.xeDualMode>#svg,.viewer.xeDualMode>#xeDualViewer{min-height:350px}#xeDualViewer .xeDualTitle{font-size:9px}}
+</style>
+<script id="xeDualScript">
+(function(){
+ const main=document.getElementById('svg'),second=document.getElementById('xeDualSvg'),world2=document.getElementById('xeDualWorld');
+ const holder=document.getElementById('xeDualViewer'),toggle=document.getElementById('xeDualToggle'),sync=document.getElementById('xeSyncViews');
+ const viewer=main?.closest('.viewer');if(!main||!second||!viewer||!toggle)return;
+ let enabled=false,rendering=false,secondView=null,drag2=null;
+ const drawOriginal=draw;
+ function currentSecondarySide(){return side==='F'?'B':'F'}
+ function renderSecond(){
+  if(!enabled||rendering||!data||!view)return;
+  rendering=true;
+  const currentSide=side,currentView=view.slice(),oldHover=hoverPad;
+  const mainClone=document.getElementById('world').cloneNode(true);
+  const secondarySide=currentSecondarySide();
+  try{
+   side=secondarySide;
+   if(!sync.checked&&secondView)view=secondView.slice();
+   drawOriginal();
+   world2.replaceChildren(...[...document.getElementById('world').childNodes].map(n=>n.cloneNode(true)));
+   second.setAttribute('viewBox',view.join(' '));
+   second.dataset.side=secondarySide;
+  }finally{
+   side=currentSide;view=currentView;hoverPad=oldHover;
+   const mainWorld=document.getElementById('world');
+   mainWorld.replaceChildren(...[...mainClone.childNodes]);
+   main.setAttribute('viewBox',view.join(' '));
+   rendering=false;
+  }
+ }
+ draw=function(){drawOriginal();renderSecond();renderLayerSummary()};
+ function renderLayerSummary(){
+  const box=document.getElementById('xeLayerSummary');if(!box||!data)return;
+  if(!selected?.net){box.textContent='Selecciona una pista o pad para ver la red en ambas caras.';return}
+  const net=selected.net,pads=data.pads.filter(p=>p.net===net);
+  const segs=data.segments.filter(s=>data.netIds[String(s[5])]===net);
+  const fs=pads.filter(p=>p.side==='F'),bs=pads.filter(p=>p.side==='B');
+  const frontSeg=segs.filter(s=>s[4]==='F').length,backSeg=segs.filter(s=>s[4]==='B').length;
+  const uniq=a=>[...new Set(a.map(p=>p.ref))].join(', ')||'ninguno';
+  box.textContent='Red '+net+' | Superior: '+fs.length+' pads, '+frontSeg+' tramos ('+uniq(fs)+') | Inferior: '+bs.length+' pads, '+backSeg+' tramos ('+uniq(bs)+'). Un nombre de red común no demuestra continuidad física ni identifica por sí solo una vía.';
+ }
+ function setDual(on){
+  enabled=on;viewer.classList.toggle('xeDualMode',on);holder.hidden=!on;
+  toggle.classList.toggle('active',on);toggle.setAttribute('aria-pressed',String(on));
+  toggle.textContent=on?'Vista individual':'Dos caras';
+  if(on){secondView=view?view.slice():null;if(data&&view)draw();}
+  else{drawOriginal();renderLayerSummary()}
+ }
+ toggle.addEventListener('click',()=>setDual(!enabled));
+ sync.addEventListener('change',()=>{secondView=view.slice();draw()});
+ // In dual mode main stays the selected side, the opposite is rendered in the secondary SVG.
+ // A click on the secondary side switches the active board to that side and selects the
+ // actual KiCad pad/trace; this preserves existing inspector, notes and meter behaviors.
+ function localPoint(e){
+  const pt=second.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;
+  const m=second.getScreenCTM();return m?pt.matrixTransform(m.inverse()):null;
+ }
+ function nearestSecondaryPad(e){
+  const pt=localPoint(e);if(!pt)return null;
+  const secondary=currentSecondarySide();
+  const scale=second.getScreenCTM(),mmPerPx=1/Math.max(.001,Math.hypot(scale.a,scale.b));
+  let found=null,best=Infinity;
+  for(const p of data.pads){
+   if(p.side!==secondary&&p.side!=='Both')continue;
+   const x=secondary==='B'?2*mirrorAxis-p.x:p.x;
+   const d=Math.hypot(pt.x-x,pt.y-p.y),radius=Math.max(.17,Math.min(p.w,p.h)/2);
+   const reach=radius+9*mmPerPx;
+   if(d<=reach&&d/reach<best){found=p;best=d/reach}
+  }
+  return found;
+ }
+ function nearestSecondaryTrace(e){
+  const pt=localPoint(e);if(!pt)return null;
+  const secondary=currentSecondarySide();
+  const ctm=second.getScreenCTM();if(!pt||!ctm)return null;
+  const reach=7/Math.max(.01,Math.hypot(ctm.a,ctm.b));
+  let found=null,best=reach;
+  for(const s of data.segments){
+   if(s[4]!==secondary)continue;
+   const x1=secondary==='B'?2*mirrorAxis-s[0]:s[0],x2=secondary==='B'?2*mirrorAxis-s[2]:s[2];
+   const y1=s[1],y2=s[3],dx=x2-x1,dy=y2-y1,den=dx*dx+dy*dy;
+   const t=den?Math.max(0,Math.min(1,((pt.x-x1)*dx+(pt.y-y1)*dy)/den)):0;
+   const d=Math.hypot(pt.x-x1-t*dx,pt.y-y1-t*dy);
+   if(d<best&&data.netIds[String(s[5])]){found=s;best=d}
+  }
+  return found;
+ }
+ second.addEventListener('pointerdown',e=>{
+  if(e.button!==0&&e.pointerType==='mouse')return;
+  drag2={x:e.clientX,y:e.clientY,initial:(sync.checked?view:secondView||view).slice(),moved:false,id:e.pointerId};
+  second.setPointerCapture(e.pointerId);
+ });
+ second.addEventListener('pointermove',e=>{
+  if(!drag2)return;
+  const dx=e.clientX-drag2.x,dy=e.clientY-drag2.y;
+  if(Math.hypot(dx,dy)<5&&!drag2.moved)return;
+  drag2.moved=true;
+  const ctm=second.getScreenCTM();if(!ctm)return;
+  const sx=Math.max(.001,Math.hypot(ctm.a,ctm.b)),sy=Math.max(.001,Math.hypot(ctm.c,ctm.d));
+  const newView=[drag2.initial[0]-dx/sx,drag2.initial[1]-dy/sy,drag2.initial[2],drag2.initial[3]];
+  if(sync.checked)view=newView;else secondView=newView;
+  draw();
+ });
+ second.addEventListener('pointerup',e=>{
+  if(!drag2)return;
+  const moved=drag2.moved;drag2=null;if(moved)return;
+  const p=nearestSecondaryPad(e),seg=p?null:nearestSecondaryTrace(e);
+  if(!p&&!seg)return;
+  const next=currentSecondarySide();
+  side=next;buttons();
+  if(p){select(p);if(typeof xeShowImageClickNotes==='function')xeShowImageClickNotes(p)}
+  else xeSelectTrace(seg);
+  draw();
+ });
+ second.addEventListener('pointercancel',()=>drag2=null);
+ second.addEventListener('wheel',e=>{
+  e.preventDefault();const k=e.deltaY>0?1.13:.885;
+  const v=(sync.checked?view:secondView||view).slice();
+  const next=[v[0]+v[2]*(1-k)/2,v[1]+v[3]*(1-k)/2,v[2]*k,v[3]*k];
+  if(sync.checked)view=next;else secondView=next;
+  draw();
+ },{passive:false});
+ // Front/back buttons continue working and update the opposite preview.
+ document.getElementById('front')?.addEventListener('click',()=>setTimeout(draw,0));
+ document.getElementById('back')?.addEventListener('click',()=>setTimeout(draw,0));
+ // Save view preference locally, without changing KiCad data.
+ try{if(localStorage.getItem('xe.navigator.dualview.v1')==='true')setDual(true)}catch(e){}
+ toggle.addEventListener('click',()=>{try{localStorage.setItem('xe.navigator.dualview.v1',String(enabled))}catch(e){}});
+})();
+</script>
+
+<style id="xeV33Style">
+.xeCursorCrosshair{pointer-events:none}
+.xeCursorCrosshair line{stroke:#030e13;stroke-width:.10;stroke-dasharray:.6 .55;vector-effect:non-scaling-stroke}
+.xeCursorCrosshair circle{fill:none;stroke:#00a6c7;stroke-width:1.2;vector-effect:non-scaling-stroke}
+.xeCursorCrosshair text{font:400 2px Arial,sans-serif;fill:#090f13;stroke:white;stroke-width:.35;paint-order:stroke;stroke-linejoin:round}
+.xeViasLayer{pointer-events:none}
+.xeViasLayer circle{vector-effect:non-scaling-stroke}
+</style>
+<script id="xeV33Script">
+(function(){
+ const ns='http://www.w3.org/2000/svg',a=document.getElementById('svg'),b=document.getElementById('xeDualSvg');
+ const cursorToggle=document.getElementById('xeCrosshairToggle'),viasToggle=document.getElementById('xeViasToggle');
+ if(!a||!b)return;
+ let vias=[],pos=null;
+ const make=(tag,attrs,parent)=>{const e=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs||{}))e.setAttribute(k,v);parent.append(e);return e};
+ function makeLayer(svg){
+  const via=make('g',{class:'xeViasLayer'},svg);
+  const cross=make('g',{class:'xeCursorCrosshair',visibility:'hidden'},svg);
+  const xline=make('line',{},cross),yline=make('line',{},cross);
+  const dot=make('circle',{r:1.2},cross),txt=make('text',{},cross);
+  return {svg,via,cross,xline,yline,dot,txt};
+ }
+ const layers=[makeLayer(a),makeLayer(b)];
+ const secondaryActive=()=>!document.getElementById('xeDualViewer').hidden;
+ const physical=(x,boardSide)=>boardSide==='B'?2*mirrorAxis-x:x;
+ function activeSide(i){return i===0?side:side==='F'?'B':'F'}
+ function update(){
+  const enabled=cursorToggle.checked&&!!pos;
+  for(let i=0;i<2;i++){
+   const l=layers[i],visible=i===0||secondaryActive();
+   l.cross.setAttribute('visibility',enabled&&visible?'visible':'hidden');
+   if(!enabled||!visible)continue;
+   const v=l.svg.viewBox.baseVal;
+   const x=physical(pos.x,activeSide(i)),y=pos.y;
+   l.xline.setAttribute('x1',v.x);l.xline.setAttribute('y1',y);
+   l.xline.setAttribute('x2',v.x+v.width);l.xline.setAttribute('y2',y);
+   l.yline.setAttribute('x1',x);l.yline.setAttribute('y1',v.y);
+   l.yline.setAttribute('x2',x);l.yline.setAttribute('y2',v.y+v.height);
+   l.dot.setAttribute('cx',x);l.dot.setAttribute('cy',y);
+   const right=x+2.5<v.x+v.width-15;
+   l.txt.setAttribute('x',right?x+2:x-2);
+   l.txt.setAttribute('text-anchor',right?'start':'end');
+   l.txt.setAttribute('y',y-2);
+   l.txt.textContent='X '+pos.x.toFixed(2)+'  Y '+y.toFixed(2)+' mm';
+  }
+ }
+ function pointer(ev,i){
+  if(!cursorToggle.checked)return;
+  const svg=layers[i].svg,m=svg.getScreenCTM();if(!m)return;
+  const pt=svg.createSVGPoint();pt.x=ev.clientX;pt.y=ev.clientY;
+  const local=pt.matrixTransform(m.inverse());
+  pos={x:physical(local.x,activeSide(i)),y:local.y};
+  update();
+ }
+ a.addEventListener('pointermove',e=>pointer(e,0));
+ b.addEventListener('pointermove',e=>pointer(e,1));
+ a.addEventListener('pointerleave',()=>{pos=null;update()});
+ b.addEventListener('pointerleave',()=>{pos=null;update()});
+ cursorToggle.addEventListener('change',update);
+ function renderVias(){
+  for(let i=0;i<2;i++){
+   const l=layers[i];l.via.replaceChildren();
+   if(!viasToggle.checked||!data||(i===1&&!secondaryActive()))continue;
+   const active=activeSide(i);
+   const net=selected?.net;
+   for(const v of vias){
+    const name=data.netIds[String(v.netId)]||'';
+    const chosen=net&&name===net;
+    const x=physical(v.x,active);
+    make('circle',{cx:x,cy:v.y,r:Math.max(.18,v.size/2),fill:chosen?'#00e4f7':'#637d8a',stroke:chosen?'#00495b':'#243b46','stroke-width':chosen?1.2:.7,opacity:chosen?1:.82},l.via);
+    make('circle',{cx:x,cy:v.y,r:Math.max(.08,v.drill/2),fill:'#aebac3',stroke:'#152a33','stroke-width':.4},l.via);
+   }
+  }
+ }
+ viasToggle.addEventListener('change',renderVias);
+ // The original draw function owns the PCB geometry. Overlay layers are siblings of
+ // world and survive redraws, with updated coordinates and selection highlights.
+ const oldDraw=draw;
+ draw=function(){oldDraw();renderVias();update()};
+ fetch('vias_kicad.json').then(r=>r.json()).then(v=>{vias=v;renderVias()}).catch(()=>{});
+ document.getElementById('xeDualToggle')?.addEventListener('click',()=>setTimeout(()=>{renderVias();update()},0));
+ document.getElementById('front')?.addEventListener('click',()=>setTimeout(()=>{renderVias();update()},0));
+ document.getElementById('back')?.addEventListener('click',()=>setTimeout(()=>{renderVias();update()},0));
+ window.addEventListener('resize',update);
+})();
+</script>
+
+<style id="xeV34LabelStyle">
+/* Todas las referencias fijas: negro uniforme, sin cambiar con el estado. */
+#svg text:not(.xeCursorCrosshair text),
+#xeDualSvg text:not(.xeCursorCrosshair text){fill:#000}
+#svg .xeTopLabels text,#xeDualSvg .xeTopLabels text{
+ fill:#000!important;stroke:#fff!important;stroke-width:2.2px!important;
+ stroke-linejoin:round;paint-order:stroke fill;
+ font-weight:600;pointer-events:none;
+}
+#svg .xeTopLabels,#xeDualSvg .xeTopLabels{pointer-events:none}
+#svg .xeCursorCrosshair text,#xeDualSvg .xeCursorCrosshair text{
+ fill:#000!important;stroke:#fff!important;paint-order:stroke fill;
+}
+</style>
+<script id="xeV35LabelScript">
+(function(){
+ const NS='http://www.w3.org/2000/svg';
+ const views=['svg','xeDualSvg'].map(id=>document.getElementById(id)).filter(Boolean);
+ const queue=new WeakMap();
+ function topLayer(svg){
+  let layer=svg.querySelector(':scope > .xeTopLabels');
+  if(!layer){layer=document.createElementNS(NS,'g');layer.setAttribute('class','xeTopLabels');svg.append(layer)}
+  svg.append(layer);return layer;
+ }
+ function overlap(a,b,gap){return a.left<b.right+gap&&a.right+gap>b.left&&a.top<b.bottom+gap&&a.bottom+gap>b.top}
+ function place(svg){
+  const layer=topLayer(svg),labels=[...layer.querySelectorAll('text')];
+  const bounds=svg.getBoundingClientRect();if(!bounds.width||!bounds.height)return;
+  const placed=[],margin=3;
+  // Screen-pixel offsets are converted to SVG user coordinates to maintain
+  // consistent spacing regardless of zoom. Original positions stay unchanged.
+  const ctm=svg.getScreenCTM();if(!ctm)return;
+  const inv=ctm.inverse();
+  const candidates=[[0,0],[0,-15],[0,15],[17,0],[-17,0],[17,-15],[-17,-15],[17,15],[-17,15],[0,-30],[0,30],[34,0],[-34,0],[34,-18],[-34,-18],[34,18],[-34,18],[0,-45],[0,45]];
+  for(const label of labels){
+   label.removeAttribute('transform');
+   const base=label.getBoundingClientRect();
+   if(base.width===0||base.height===0)continue;
+   let best=null,score=Infinity;
+   for(const [dx,dy] of candidates){
+    const rect={left:base.left+dx,right:base.right+dx,top:base.top+dy,bottom:base.bottom+dy};
+    let conflicts=0;for(const prev of placed)if(overlap(rect,prev,margin))conflicts++;
+    const overflow=Math.max(0,bounds.left+margin-rect.left)+Math.max(0,rect.right-bounds.right+margin)+Math.max(0,bounds.top+margin-rect.top)+Math.max(0,rect.bottom-bounds.bottom+margin);
+    const cost=conflicts*100000+overflow*1000+Math.hypot(dx,dy);
+    if(cost<score){score=cost;best={dx,dy,rect,conflicts}}
+    if(cost===0)break;
+   }
+   if(best){
+    // delta of a screen vector under inverse CTM (handles rotations and scaling)
+    const ux=inv.a*best.dx+inv.c*best.dy,uy=inv.b*best.dx+inv.d*best.dy;
+    if(ux||uy)label.setAttribute('transform','translate('+ux+' '+uy+')');
+    placed.push(best.rect);
+   }
+  }
+ }
+ function schedule(svg){
+  if(queue.get(svg))return;
+  queue.set(svg,true);
+  requestAnimationFrame(()=>{queue.set(svg,false);place(svg)});
+ }
+ function refresh(){
+  for(const svg of views){
+   const layer=topLayer(svg);layer.replaceChildren();
+   const world=svg.querySelector('#world,#xeDualWorld');if(!world)continue;
+   for(const label of world.querySelectorAll('text')){
+    const selectedName=label.matches('.padLabel,.xeSelectedComponentLabel')||label.getAttribute('font-weight')==='bold';
+    if(!selectedName)continue;
+    const clone=label.cloneNode(true);clone.removeAttribute('id');clone.removeAttribute('visibility');
+    layer.append(clone);label.setAttribute('visibility','hidden');
+   }
+   schedule(svg);
+  }
+ }
+ const previousDraw=draw;
+ draw=function(){previousDraw();refresh()};
+ for(const svg of views){
+  topLayer(svg);
+  svg.addEventListener('wheel',()=>schedule(svg),{passive:true});
+  svg.addEventListener('pointerup',()=>schedule(svg));
+ }
+ window.addEventListener('resize',()=>views.forEach(schedule));
+ document.getElementById('xeDualToggle')?.addEventListener('click',()=>requestAnimationFrame(refresh));
+ if(typeof data!=='undefined'&&data)refresh();
+})();
+</script>
+
+<style id="xeDocsStyle">
+#xeDocs{margin:12px 0;padding:12px;background:linear-gradient(135deg,#e2eaf0,#bccbd4);color:#132c39;border:1px solid #7895a4;border-radius:12px;font-size:12px}
+#xeDocs h3{font-size:15px;margin:0 0 7px;color:#173744}
+#xeDocs input,#xeDocs select{width:100%;box-sizing:border-box;background:#f8fbfd;color:#102632;border:1px solid #7893a1;margin:5px 0;padding:8px}
+#xeDocs button{width:auto;padding:6px 10px;background:#234d61;color:white;margin:4px 4px 4px 0}
+#xeDocs .xeDocList{max-height:210px;overflow:auto;border-top:1px solid #829eac}
+#xeDocs .xeDocItem{padding:6px 3px;border-bottom:1px solid #9caeb9;cursor:pointer}
+#xeDocs .xeDocItem:hover{background:#d5e9f0}
+#xeDocs .xeDocDetail{margin-top:10px;padding-top:8px;border-top:1px solid #849ba7;line-height:1.55;overflow-wrap:anywhere}
+#xeDocs .xeDocRow{margin:5px 0}
+#xeDocs .xeDocEvidence{padding:7px;margin:6px 0;background:#f5f8fa;border-left:3px solid #3196a9}
+#xeDocs .xeDocMissing{color:#844522}
+#xeDocs .xeDocSmall{font-size:11px;color:#49616d}
+</style>
+<script id="xeDocsScript">
+(function(){
+ const host=document.createElement('section');host.id='xeDocs';
+ host.innerHTML='<h3>DOCUMENTACIÓN TÉCNICA · MCU 1914</h3><div class="xeDocSmall">Índice cruzado de esquema, pads, TP y anotaciones de imágenes. Los datos son documentales, no mediciones físicas.</div><input id="xeDocsSearch" placeholder="Buscar R8, TP63, GND, 1.8 V, Ω…"><select id="xeDocsFilter"><option value="all">Todos los registros</option><option value="annotated">Con anotaciones o TP</option><option value="missing">Con datos pendientes</option><option value="schematic">Con ficha del esquema</option></select><div class="xeDocSmall" id="xeDocsCount">Cargando índice…</div><div class="xeDocList" id="xeDocsList"></div><div id="xeDocsDetail" class="xeDocDetail">Selecciona una referencia para consultar su ficha.</div><button id="xeDocsExport" type="button">Exportar documentación JSON</button>';
+ document.querySelector('aside.right').prepend(host);
+ const get=id=>document.getElementById(id);
+ let docs=[],active=null;
+ const make=(tag,text,parent,cls)=>{const e=document.createElement(tag);e.textContent=String(text??'');if(cls)e.className=cls;parent.append(e);return e};
+ const row=(name,value,parent)=>{const d=make('div',name+': '+(value??'No documentado'),parent,'xeDocRow');return d};
+ const additions=ref=>typeof kbEntries!=='undefined'?kbEntries.filter(x=>x.ref===ref):[];
+ function detail(d){
+  active=d;
+  const root=get('xeDocsDetail');root.replaceChildren();
+  make('h3',d.ref+' · '+d.type,root);
+  row('Cara',d.side==='F'?'Superior':d.side==='B'?'Inferior':d.side||'Sin especificar',root);
+  row('Valor del esquema',d.schematic?(d.schematic.status==='valor no especificado'?'NO ESPECIFICADO ('+d.schematic.raw+')':d.schematic.value):'Sin ficha del esquema',root);
+  row('Estado de fuente',d.schematic?.status||'Sin esquema',root);
+  row('Redes',d.nets.join(' · ')||'Sin red documentada',root);
+  row('Pines',d.pins.map(x=>x.pin+' → '+(x.net||'Sin red')+' ['+x.side+']').join(' | ')||'Sin pads',root);
+  if(d.testPoint){make('strong','Punto de prueba',root);row('Descripción',d.testPoint.description,root);row('Fuente',d.testPoint.source,root);row('Verificación',d.testPoint.verification,root)}
+  if(d.annotations.length){make('strong','Anotaciones documentadas ('+d.annotations.length+')',root);
+   for(const a of d.annotations){const item=make('div','',root,'xeDocEvidence');make('strong',a.title,item);make('div',a.detail,item);make('div','Fuente: '+a.source+' · '+a.status,item,'xeDocSmall')}
+  }
+  const own=additions(d.ref);
+  if(own.length){make('strong','Aportes locales ('+own.length+')',root);for(const x of own){const item=make('div','',root,'xeDocEvidence');make('strong',(x.type||'Nota')+' · '+(x.value||'Sin valor'),item);make('div',x.note||'',item);make('div','Autor: '+(x.author||'No indicado')+' · SIN VERIFICAR',item,'xeDocSmall')}}
+  if(d.missing.length){make('strong','Información pendiente',root);for(const flag of d.missing)make('div','• '+flag,root,'xeDocMissing')}
+  if(window.xeDiagnosisRender)window.xeDiagnosisRender(d,root);
+  if(window.xeGuidedRender)window.xeGuidedRender(d,root);
+  const jump=make('button','Localizar en placa',root);
+  jump.onclick=()=>{const p=data?.pads?.find(p=>p.ref===d.ref);if(p&&typeof focus==='function'){if(p.side!==side&&p.side!=='Both')get(p.side==='B'?'back':'front')?.click();focus(p)}else get('xeCompSearch')&&(get('xeCompSearch').value=d.ref,get('xeCompSearch').dispatchEvent(new Event('input')))};
+ }
+ function render(){
+  const q=get('xeDocsSearch').value.trim().toLocaleLowerCase(),f=get('xeDocsFilter').value;
+  const filtered=docs.filter(d=>{
+   if(f==='annotated'&&!d.annotations.length&&!d.testPoint)return false;
+   if(f==='missing'&&!d.missing.length)return false;
+   if(f==='schematic'&&!d.schematic)return false;
+   if(!q)return true;
+   return [d.ref,d.type,d.schematic?.value,d.schematic?.raw,...d.nets,d.testPoint?.description,...d.annotations.flatMap(a=>[a.title,a.detail])].join(' ').toLocaleLowerCase().includes(q);
+  });
+  get('xeDocsCount').textContent=filtered.length+' de '+docs.length+' referencias · '+docs.filter(d=>d.missing.length).length+' con información pendiente';
+  const list=get('xeDocsList');list.replaceChildren();
+  for(const d of filtered.slice(0,150)){
+   const item=make('div',d.ref+' · '+d.type+' · '+(d.schematic?.status==='valor no especificado'?'valor pendiente':d.schematic?.value||d.testPoint?.description||'sin valor')+(d.annotations.length?' · '+d.annotations.length+' nota(s)':''),list,'xeDocItem');
+   item.onclick=()=>detail(d);
+  }
+  if(filtered.length>150)make('div','Mostrando los primeros 150; escribe una búsqueda para precisar.',list,'xeDocSmall');
+  if(!filtered.length)make('div','Sin coincidencias.',list);
+ }
+ get('xeDocsSearch').addEventListener('input',render);
+ get('xeDocsFilter').addEventListener('change',render);
+ get('xeDocsExport').onclick=()=>{
+  const content={schema:'xe-technical-docs-export-v1',board:'MCU_Board(2)',exported:new Date().toISOString(),records:docs,localContributions:typeof kbEntries!=='undefined'?kbEntries:[],notice:'Datos de referencia pendiente de aportacioness físicamente'};
+  const blob=new Blob([JSON.stringify(content,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='XE-documentacion-tecnica-MCU1914.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ };
+ window.xeDocsOpen=function(ref){const d=docs.find(x=>x.ref===ref);if(d){get('xeDocsSearch').value=ref;render();detail(d);host.scrollIntoView({block:'nearest',behavior:'smooth'})}};
+ fetch('documentacion_tecnica.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(j=>{docs=j.records||[];render()}).catch(err=>get('xeDocsCount').textContent='No se pudo cargar documentación: '+err.message);
+})();
+</script>
+
+<style id="xeV37NeonText">
+/* Sin globos: el antiguo trazo de 2.2px cubría por completo letras SVG diminutas. */
+@keyframes xeNeonPulse {
+  0%,100% { stroke:#00eaff; stroke-opacity:.95; filter:drop-shadow(0 0 .10px #00eaff); }
+  50% { stroke:#0059ff; stroke-opacity:1; filter:drop-shadow(0 0 .45px #00eaff); }
+}
+#svg .xeTopLabels text,#xeDualSvg .xeTopLabels text,
+#svg text.xeSelectedComponentLabel,#xeDualSvg text.xeSelectedComponentLabel,
+#svg text.padLabel,#xeDualSvg text.padLabel {
+  fill:#000!important;
+  stroke:#00eaff!important;
+  stroke-width:.075!important;
+  stroke-linejoin:round!important;
+  paint-order:stroke fill!important;
+  animation:xeNeonPulse 1.5s ease-in-out infinite;
+  pointer-events:none!important;
+}
+#svg .xeTopLabels,#xeDualSvg .xeTopLabels { pointer-events:none!important; }
+#svg #world text:not(.xeSelectedComponentLabel):not(.padLabel),
+#xeDualSvg #xeDualWorld text:not(.xeSelectedComponentLabel):not(.padLabel){
+  fill:#000!important;
+  stroke:none!important;
+}
+/* Las crucetas mantienen texto negro legible sin fondo blanco. */
+#svg .xeCursorCrosshair text,#xeDualSvg .xeCursorCrosshair text {
+ fill:#000!important;stroke:#00d9f2!important;stroke-width:.06!important;
+}
+@media (prefers-reduced-motion: reduce){
+ #svg .xeTopLabels text,#xeDualSvg .xeTopLabels text,
+ #svg text.xeSelectedComponentLabel,#xeDualSvg text.xeSelectedComponentLabel,
+ #svg text.padLabel,#xeDualSvg text.padLabel { animation:none!important; }
+}
+</style>
+
+<style id="xeDiagStyle">
+.xeDiag{margin:12px 0;padding:10px;border:1px solid #7297a7;border-radius:8px;background:#f3f7f9;color:#122f3a}
+.xeDiag h4{margin:5px 0 8px;font-size:14px}
+.xeDiagTable{width:100%;border-collapse:collapse;font-size:11px}
+.xeDiagTable td,.xeDiagTable th{border-bottom:1px solid #c2d3dc;padding:5px 3px;text-align:left;vertical-align:top}
+.xeDiagWarning{border-left:3px solid #bb793a;background:#fff6e8;padding:7px;margin:6px 0}
+.xeDiagRoute{border-left:3px solid #159eb2;padding:7px;margin:6px 0;background:#e6f3f5}
+.xeDiagFine{font-size:11px;color:#4d6771;margin:6px 0}
+</style>
+<script id="xeDiagScript">
+(function(){
+ let records=new Map();
+ const add=(parent,tag,value,cls)=>{const e=document.createElement(tag);if(cls)e.className=cls;e.textContent=value;parent.append(e);return e};
+ window.xeDiagnosisRender=function(d,root){
+  const entry=records.get(d.ref),box=add(root,'section','','xeDiag');
+  add(box,'h4','DIAGNÓSTICO POR COMPONENTE');
+  if(!entry){add(box,'div','Cargando datos de pines y rutas documentadas…','xeDiagFine');return}
+  add(box,'div','Pines y funciones deducidas únicamente de la red XE:','xeDiagFine');
+  const table=document.createElement('table');table.className='xeDiagTable';box.append(table);
+  const tr=document.createElement('tr');table.append(tr);
+  for(const h of ['Pin','Red','Función documental'])add(tr,'th',h);
+  for(const pin of entry.pins){
+   const r=document.createElement('tr');table.append(r);
+   add(r,'td',pin.pin);add(r,'td',pin.net||'Sin red');add(r,'td',pin.classification);
+  }
+  if(!entry.pins.length)add(box,'div','No hay pinout asociado a esta referencia en el BoardView.','xeDiagFine');
+  add(box,'div','Fuente: '+entry.source+'.','xeDiagFine');
+  if(entry.warnings.length){
+   add(box,'h4','Advertencias y discrepancias');
+   for(const w of entry.warnings){const el=add(box,'div',w.text,'xeDiagWarning');add(el,'div','Fuente: '+w.source+' · '+w.status,'xeDiagFine')}
+  }
+  add(box,'h4','Posibles fallas y rutas de comprobación');
+  if(entry.diagnosticRoutes.length){
+   for(const route of entry.diagnosticRoutes){
+    const el=add(box,'div',route.issue,'xeDiagRoute');
+    add(el,'div','Sustento: '+route.basis,'xeDiagFine');
+    add(el,'div','Fuente: '+route.source+' · '+route.level,'xeDiagFine');
+   }
+  }else add(box,'div','Aún no hay fallas registradas para este componente. Puedes agregar una.','xeDiagFine');
+  add(box,'div','Importante: las etiquetas de función son una interpretación del nombre de red, no un pinout confirmado. Las rutas son hipótesis de comprobación; ninguna avería ha sido medida o confirmada.','xeDiagFine');
+ };
+ fetch('diagnostico_componentes.json').then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(data=>{
+  records=new Map((data.records||[]).map(r=>[r.ref,r]));
+  const search=document.getElementById('xeDocsSearch');
+  if(search?.value)search.dispatchEvent(new Event('input'));
+ }).catch(err=>console.warn('Diagnóstico no disponible:',err));
+})();
+</script>
+<style id="xeGuidedStyle">
+.xeGuide{margin:14px 0;padding:12px;border:1px solid #6594a8;border-radius:10px;background:#eaf2f5;color:#102c39}
+.xeGuide h4{font-size:15px;margin:4px 0 9px}.xeGuide p{margin:6px 0;line-height:1.5}
+.xeGuide label{display:block;margin:8px 0 3px;font-size:12px;font-weight:600}
+.xeGuide input,.xeGuide select,.xeGuide textarea{display:block;width:100%;box-sizing:border-box;margin:3px 0;padding:7px;border:1px solid #92aab8;border-radius:5px;background:#fff;color:#132e3c;font-size:12px}
+.xeGuide button{padding:7px 10px;margin:5px 5px 5px 0;background:#164f65;color:#fff;border-radius:5px;width:auto}
+.xeGuide .xeGuideItem{border-left:3px solid #1597af;background:#f9fcfe;padding:8px;margin:8px 0;line-height:1.5}
+.xeGuide .xeGuideMuted{color:#506b77;font-size:11px;line-height:1.5}
+.xeGuide .xeGuideWarn{color:#824620;font-size:11px}
+.xeGuide .xeGuideHistory{max-height:270px;overflow:auto}
+.xeGuide .xeGuideRow{padding:7px 0;border-bottom:1px solid #b9ccd5}
+.xeGuide .xeGuideImages{display:flex;flex-wrap:wrap;gap:6px}
+.xeGuide .xeGuideImages a{font-size:12px;padding:5px 8px;background:#d2e8ee;color:#004e6a;border-radius:5px}
+</style>
+<script id="xeGuidedScript">
+(function(){
+ 'use strict';
+ const KEY='XE_NAVIGATOR_MEASUREMENTS_V39_MCU1914', SCHEMA='xe-real-measurements-v1', BOARD='MCU_Board(2)';
+ const el=(tag,text,parent,cls)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=String(text);if(parent)parent.append(e);return e};
+ let history=[];try{const h=JSON.parse(localStorage.getItem(KEY)||'[]');if(Array.isArray(h))history=h.filter(x=>x&&x.board===BOARD&&typeof x.id==='string').slice(-3000)}catch(_){}
+ const persist=()=>{try{localStorage.setItem(KEY,JSON.stringify(history));return true}catch(e){alert('No se pudo guardar el historial local: '+e.message);return false}};
+ function exportHistory(){const blob=new Blob([JSON.stringify({schema:SCHEMA,board:BOARD,exported:new Date().toISOString(),records:history},null,2)],{type:'application/json'});const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='XE-Mediciones-Reales-MCU1914.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1500)}
+ function measurement(v,unit){const n=Number(String(v).trim().replace(',','.'));if(!Number.isFinite(n)||String(v).trim()==='')return null;const factors={'V':1,'mV':.001,'Ω':1,'kΩ':1000,'MΩ':1000000};return {base:n*factors[unit],kind:unit==='V'||unit==='mV'?'voltage':'resistance',unit};}
+ function nominalOhms(d){if(!/^R\d+$/i.test(d.ref)||!d.schematic||d.schematic.status==='valor no especificado')return null;
+ const v=String(d.schematic.value||'').trim();let n=null;
+ if(/^\d+(?:[.,]\d+)?$/.test(v))n=Number(v.replace(',','.'));
+ else if(/^\d+(?:[.,]\d+)?\s*[kKmM]$/.test(v))n=parseFloat(v.replace(',','.'))*(/[mM]$/.test(v)?1e6:1e3);
+ else if(/^\d+[rR]\d+$/.test(v))n=Number(v.replace(/[rR]/,'.'));
+ return Number.isFinite(n)?n:null;
+ }
+ function evidence(d){
+ const items=[];
+ const n=nominalOhms(d);
+ if(n!==null)items.push({kind:'resistance',value:n,label:'Resistencia nominal del componente (esquema XE)',source:'MCU_Board(2).kicad_sch',comparable:false,reason:'Un valor nominal no equivale a una resistencia medida en circuito.'});
+ for(const a of d.annotations||[])items.push({kind:'annotation',label:a.title,detail:a.detail,source:a.source,status:a.status,comparable:false,reason:'Texto descriptivo sin valor medido inequívocamente en el pin seleccionado.'});
+ if(d.testPoint)items.push({kind:'testpoint',label:d.testPoint.description,source:d.testPoint.source,status:d.testPoint.verification,comparable:false,reason:'Descripción del punto sin intervalo de aceptación documentado.'});
+ return items;
+ }
+ function imageLinks(d,container){
+ const images=el('div',undefined,container,'xeGuideImages');
+ const sides=new Set();for(const a of d.annotations||[]){const x=String(a.side||'').toLowerCase();if(x.includes('inferior')||x==='b')sides.add('inferior');if(x.includes('superior')||x==='f')sides.add('superior');}
+ if(d.side==='B')sides.add('inferior');if(d.side==='F')sides.add('superior');
+ if(!sides.size){sides.add('superior');sides.add('inferior')}
+ for(const side of sides){const a=el('a','Abrir imagen '+side+' ↗',images);a.href='referencia_'+side+'.png';a.target='_blank';a.rel='noopener'}
+ const a=el('a','Imagen MCU original ↗',images);a.href='referencia_mcu.png';a.target='_blank';a.rel='noopener';
+ el('p','Las imágenes se abren completas y sin alteraciones. La vinculación por cara o anotación no garantiza una posición calibrada.',container,'xeGuideMuted');
+ }
+ function allHistory(){const panel=document.getElementById('xeGuidedHistoryGlobal');if(!panel)return;panel.replaceChildren();el('strong','Historial completo · '+history.length+' registros',panel);for(const h of history.slice().reverse().slice(0,100)){el('div',h.created+' · '+h.ref+' / '+h.pin+' · '+h.value+' '+h.unit+' · '+h.outcome,panel,'xeGuideRow')}if(history.length>100)el('p','Se muestran los 100 registros más recientes. Exporta JSON para consultar todos.',panel,'xeGuideMuted')}
+ const aside=document.querySelector('aside.right');
+ if(aside){const panel=el('section',undefined,aside,'xeGuide');panel.id='xeGuidedGlobal';el('h4','MEDICIONES REALES · HISTORIAL',panel);el('p','Guardado local en este navegador, separado de los aportes técnicos y de los datos originales.',panel,'xeGuideMuted');const buttons=el('div',undefined,panel);const exportBtn=el('button','Exportar historial JSON',buttons);exportBtn.onclick=exportHistory;
+ const label=el('label','Importar historial JSON (sin sobrescribir registros existentes)',panel);const file=el('input',undefined,label);file.type='file';file.accept='.json,application/json';file.onchange=async()=>{const f=file.files?.[0];if(!f)return;try{if(f.size>3000000)throw Error('Archivo demasiado grande');const j=JSON.parse(await f.text());if(j.schema!==SCHEMA||j.board!==BOARD||!Array.isArray(j.records))throw Error('Formato o placa incompatible');const ids=new Set(history.map(x=>x.id));let count=0;for(const x of j.records.slice(0,3000)){if(!x||typeof x.id!=='string'||typeof x.ref!=='string'||!['V','mV','Ω','kΩ','MΩ'].includes(x.unit)||!measurement(x.value,x.unit)||ids.has(x.id))continue;history.push({...x,board:BOARD});ids.add(x.id);count++}if(history.length>3000)history=history.slice(-3000);persist();allHistory();alert('Registros importados: '+count)}catch(e){alert('Importación rechazada: '+e.message)}finally{file.value=''}};
+ const historyPanel=el('div',undefined,panel,'xeGuideHistory');historyPanel.id='xeGuidedHistoryGlobal';allHistory();}
+ window.xeGuidedRender=function(d,root){
+ const panel=el('section',undefined,root,'xeGuide');el('h4','DIAGNÓSTICO GUIADO · '+d.ref,panel);
+ el('p','Guía basada en pines/redes XE y notas existentes. Puedes complementar los pines y sus funciones con nuevos aportes.',panel,'xeGuideMuted');
+ const pins=d.pins||[];const steps=el('div',undefined,panel);
+ el('strong','1 · Identificar y preparar la prueba',steps);
+ if(!pins.length)el('p','Sin pads asociados. Localiza la referencia y verifica el esquema antes de medir.',steps,'xeGuideWarn');
+ else for(const pin of pins){const label=pin.net==='GND'?'Tierra (red GND)':/^\+\d|VBUS|VCC|VDD|VBAT/i.test(pin.net||'')?'Posible alimentación según nombre de red':'Señal o función no confirmada';el('div','Pin '+pin.pin+' · '+(pin.net||'sin red')+' · '+label+' · cara '+pin.side,steps,'xeGuideItem')}
+ el('p','2 · Verifica si la placa debe estar encendida, apagada o conectada por USB según el procedimiento aplicable. No se establecen condiciones que las fuentes no documenten.',panel,'xeGuideMuted');
+ const ev=evidence(d);el('strong','3 · Revisar referencias documentales',panel);
+ for(const x of ev){const b=el('div',undefined,panel,'xeGuideItem');el('strong',x.label,b);if(x.value!==undefined)el('div',String(x.value)+' Ω (valor nominal; NO medición en circuito)',b);if(x.detail)el('div',x.detail,b);el('div','Fuente: '+x.source+(x.status?' · '+x.status:''),b,'xeGuideMuted');el('div',x.reason,b,'xeGuideWarn')}
+ if(!ev.length)el('p','Todavía no hay valores registrados para esta referencia. Puedes agregar información.',panel,'xeGuideMuted');
+ el('strong','4 · Registrar medición real',panel);
+ const form=el('form',undefined,panel);form.noValidate=true;
+ function field(title,tag,opts){const label=el('label',title,form),input=el(tag,undefined,label);if(opts)for(const [k,v] of Object.entries(opts))input[k]=v;return input}
+ const pin=field('Pin o punto medido','select');if(pins.length){for(const x of pins){const opt=el('option',x.pin+' · '+(x.net||'sin red')+' · '+x.side,pin);opt.value=x.pin+'|'+x.side}}else{const opt=el('option','Componente / referencia completa',pin);opt.value='sin pin'}
+ const value=field('Lectura real (número)','input',{type:'text',placeholder:'Ej. 1.79 o 10,5',maxLength:30,required:true});
+ const unit=field('Unidad de medición','select');for(const x of ['V','mV','Ω','kΩ','MΩ']){const opt=el('option',x,unit);opt.value=x}
+ const condition=field('Condiciones (encendido, apagado, USB, modo, punta negra, etc.)','textarea',{rows:2,maxLength:500,placeholder:'Documenta cómo se obtuvo la lectura'});
+ const note=field('Observaciones','textarea',{rows:2,maxLength:700});
+ const author=field('Técnico','input',{maxLength:80,placeholder:'Nombre o alias'});
+ const status=el('p','',form,'xeGuideMuted');
+ const save=el('button','Guardar medición',form);save.type='submit';
+ const current=el('div',undefined,panel,'xeGuideHistory');
+ function show(){current.replaceChildren();el('strong','Historial de '+d.ref,current);const items=history.filter(x=>x.ref===d.ref).reverse();if(!items.length)el('p','Todavía no hay mediciones reales registradas.',current,'xeGuideMuted');for(const h of items.slice(0,50)){const row=el('div',undefined,current,'xeGuideRow');el('strong',h.value+' '+h.unit+' · '+h.outcome,row);el('div','Pin: '+h.pin+' · '+h.created+' · '+(h.author||'Sin autor'),row,'xeGuideMuted');if(h.conditions)el('div','Condiciones: '+h.conditions,row);if(h.note)el('div',h.note,row);if(h.comparisonPrevious)el('div',h.comparisonPrevious,row,'xeGuideMuted');const del=el('button','Eliminar registro',row);del.type='button';del.onclick=()=>{if(!confirm('¿Eliminar esta medición del historial local?'))return;history=history.filter(x=>x.id!==h.id);if(persist()){show();allHistory()}}}if(items.length>50)el('p','Se muestran los últimos 50; exporta el historial completo.',current,'xeGuideMuted')}
+ form.addEventListener('submit',e=>{e.preventDefault();const parsed=measurement(value.value,unit.value);if(!parsed){status.textContent='Introduce una lectura numérica válida.';return}
+ // A nominal resistor is not a board-level acceptance interval; descriptive annotations are not exact pin references.
+ const outcome='Sin intervalo de comparación registrado';
+ const prior=history.slice().reverse().find(x=>x.ref===d.ref&&x.pin===pin.value&&x.kind===parsed.kind&&Number.isFinite(Number(x.normalized)));
+ const delta=prior?parsed.base-Number(prior.normalized):null;
+ const deltaText=delta===null?'Sin medición anterior del mismo pin y magnitud':('Cambio frente a medición anterior: '+(delta>0?'+':'')+Number(delta.toPrecision(5))+' '+(parsed.kind==='voltage'?'V':'Ω')+' (solo tendencia, NO aprobación)');
+ const item={schema:SCHEMA,board:BOARD,id:'xe-'+Date.now()+'-'+Math.random().toString(36).slice(2,10),ref:d.ref,pin:pin.value,value:String(value.value).trim(),unit:unit.value,normalized:parsed.base,kind:parsed.kind,conditions:condition.value.trim(),note:note.value.trim(),author:author.value.trim(),outcome,comparisonPrevious:deltaText,reference:null,created:new Date().toISOString()};
+ history.push(item);if(history.length>3000)history=history.slice(-3000);if(!persist())return;status.textContent='Medición guardada. '+deltaText+'. Comparación documental: '+outcome+'. Sin tolerancias documentadas.';value.value='';show();allHistory();});
+ show();el('strong','5 · Consultar las imágenes originales',panel);imageLinks(d,panel);
+ el('p','Agrega un intervalo de referencia y las condiciones de prueba para habilitar una comparación.',panel,'xeGuideWarn');
+ };
+})();
+</script>
+</body></html>

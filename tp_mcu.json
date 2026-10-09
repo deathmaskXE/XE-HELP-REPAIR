@@ -1,0 +1,242 @@
+{
+  "FT1": {
+    "description": "GND",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "FT2": {
+    "description": "GND",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP5": {
+    "description": "VBUS",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP7": {
+    "description": "3.6v (Rumble V+)",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP9": {
+    "description": "3.3v",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP21": {
+    "description": "GND",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP22": {
+    "description": "GND",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP24": {
+    "description": "GND",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP26": {
+    "description": "GND",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP27": {
+    "description": "LT MOTOR+",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP28": {
+    "description": "HEAVY MOTOR+",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP29": {
+    "description": "RT MOTOR+",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP30": {
+    "description": "MOTOR+ LIGERO",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP31": {
+    "description": "SDA2",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP32": {
+    "description": "SCL2",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP33": {
+    "description": "SDA",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP34": {
+    "description": "SCL",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP35": {
+    "description": "~RESTABLECER",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP36": {
+    "description": "AN+ Habilitar",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP41": {
+    "description": "B (a través de R29, 100ohm)",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP42": {
+    "description": "LSC (a través de R16, 33ohm)",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP43": {
+    "description": "RSC (a través de R21, 33ohm)",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP49": {
+    "description": "TRG+ 3.2v, 125Hz, 17% Duty (Hall Sensor VCC)",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP50": {
+    "description": "TRG+",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP54": {
+    "description": "MICRÓFONO",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP63": {
+    "description": "LSY",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP64": {
+    "description": "LSX",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP65": {
+    "description": "RSY",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP67": {
+    "description": "RT",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP68": {
+    "description": "LT",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP103": {
+    "description": "AN+",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP104": {
+    "description": "MOTOR PESADO Y CONTROL DE MOTOR LT",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP105": {
+    "description": "MOTOR PESADO Y CONTROL DE MOTOR LT",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP106": {
+    "description": "MOTOR PESADO Y CONTROL DE MOTOR LT",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP107": {
+    "description": "MOTOR PESADO Y CONTROL DE MOTOR LT",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP108": {
+    "description": "CONTROL DE MOTOR LIGERO Y MOTOR RT",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP109": {
+    "description": "CONTROL DE MOTOR LIGERO Y MOTOR RT",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP110": {
+    "description": "CONTROL DE MOTOR LIGERO Y MOTOR RT",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP111": {
+    "description": "CONTROL DE MOTOR LIGERO Y MOTOR RT",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  },
+  "TP112": {
+    "description": "RSX",
+    "source": "Hoja de TP proporcionada: sección Junta de MCU",
+    "pcb_present": true,
+    "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+  }
+}

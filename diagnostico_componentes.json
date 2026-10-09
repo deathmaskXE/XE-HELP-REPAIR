@@ -1,0 +1,4427 @@
+{
+  "schema": "xe-component-diagnostics-v1",
+  "records": [
+    {
+      "ref": "C1",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C10",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/27",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C11",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(J8-Pin_9)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C12",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(EG3-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C13",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(EG2-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C14",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/31",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C15",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "Heavy_Motor",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C16",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "Light_Motor",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C18",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.6V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C19",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.6V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C2",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C20",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+1V8",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C21",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+1V8",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C22",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/55",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C23",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/13",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C24",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/57",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C240",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(D221-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C25",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/15",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C26",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/58",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C27",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/69",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C29",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C3",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(U9-EN)",
+          "side": "F",
+          "classification": "Señal / control (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C30",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+1V8",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C301",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C302",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C307",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C31",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+1V8",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C32",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "TRG+",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C322",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/55",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C33",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "TRG+",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C34",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C35",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "TRG+",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C354",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C36",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/67",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C37",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "TRG+",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C38",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/54",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C4",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C401",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C402",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C407",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C454",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C5",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "LT_Motor",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C54",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C6",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "RT_Motor",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C7",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C73",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/30",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C79",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(Q1-G)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "C8",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "CR1",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Heavy_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "CR2",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Light_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "CR3",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "LT_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "CR4",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "RT_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "D15",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(D15-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "D221",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(D221-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "EG2",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(EG2-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "EG3",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(EG3-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "FB1",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/32",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(EG3-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "FB2",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/16",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(EG2-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "FB3",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(FB3-Pad1)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(D221-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "FT1",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "FT2",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "J1",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "3",
+          "net": "/64",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "4",
+          "net": "/63",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "5",
+          "net": "/65",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "6",
+          "net": "/60",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "7",
+          "net": "/66",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "8",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "J2",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "J3",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "J5",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.6V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "/12",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "3",
+          "net": "3V_B+",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "4",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "5",
+          "net": "/7",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "6",
+          "net": "/14",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "7",
+          "net": "/6",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "8",
+          "net": "/2",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "9",
+          "net": "/4",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "10",
+          "net": "/3",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "11",
+          "net": "/1",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "12",
+          "net": "VBUS",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "13",
+          "net": "/10",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "14",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "J7",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/1",
+          "side": "Both",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J7-Pin_2)",
+          "side": "Both",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "3",
+          "net": "SDA2",
+          "side": "Both",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "4",
+          "net": "VBUS",
+          "side": "Both",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "J8",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "SDA2",
+          "side": "F",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "3",
+          "net": "SCL2",
+          "side": "F",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "4",
+          "net": "Net-(J8-Pin_4)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "5",
+          "net": "Net-(J8-Pin_5)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "6",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "7",
+          "net": "/19",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "8",
+          "net": "Net-(J8-Pin_8)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "9",
+          "net": "Net-(J8-Pin_9)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "10",
+          "net": "/25",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "11",
+          "net": "/20",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "12",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "JP1",
+      "pins": [
+        {
+          "pin": "PK1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "PK2",
+          "net": "Net-(EG3-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "PK3",
+          "net": "/38",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "PK4",
+          "net": "Net-(EG2-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "PK6",
+          "net": "Net-(D221-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "P1",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/1",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "/2",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "3",
+          "net": "/3",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "4",
+          "net": "/4",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "5",
+          "net": "/5",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "6",
+          "net": "/6",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "7",
+          "net": "/7",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "8",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "P10",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/60",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "/61",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "3",
+          "net": "/62",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "4",
+          "net": "/63",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "5",
+          "net": "/64",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "6",
+          "net": "/65",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "7",
+          "net": "/66",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "8",
+          "net": "/67",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "9",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "10",
+          "net": "/69",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "P2",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/9",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "/10",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "P3",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/12",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "P4",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/13",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "/14",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "3",
+          "net": "/15",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "P5",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/16",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "/17",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "3",
+          "net": "/18",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "4",
+          "net": "/19",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "5",
+          "net": "/20",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "6",
+          "net": "/21",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "7",
+          "net": "/22",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "8",
+          "net": "SDA2",
+          "side": "B",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "9",
+          "net": "SCL2",
+          "side": "B",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "10",
+          "net": "/25",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "11",
+          "net": "/17",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "P6",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/27",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "P7",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/28",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "3",
+          "net": "/30",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "4",
+          "net": "/31",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "P8",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/32",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "3",
+          "net": "+3.3V",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "4",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "5",
+          "net": "/36",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "6",
+          "net": "/37",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "7",
+          "net": "/38",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "8",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "9",
+          "net": "+3.3V",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "10",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "11",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "12",
+          "net": "/43",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "13",
+          "net": "/44",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "P9",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/46",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "3",
+          "net": "/47",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "4",
+          "net": "/48",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "5",
+          "net": "/49",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "6",
+          "net": "/50",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "7",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "8",
+          "net": "+3.3V",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "9",
+          "net": "+1V8",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "10",
+          "net": "/54",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "11",
+          "net": "/55",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "12",
+          "net": "3V_B+",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "13",
+          "net": "/57",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "14",
+          "net": "/58",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "15",
+          "net": "/59",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "Q1",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(Q1-G)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "3",
+          "net": "/28",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R1",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/9",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J8-Pin_5)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R12",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "/36",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R14",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(R14-Pad1)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J8-Pin_9)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R15",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "SCL2",
+          "side": "F",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J7-Pin_2)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R16",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(R16-Pad1)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "/58",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R2",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/22",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J8-Pin_8)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R21",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/69",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(R21-Pad2)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R22",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(FB3-Pad1)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "/31",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R23",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "/28",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R24",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/5",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(D15-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R29",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/21",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(R29-Pad2)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R3",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/17",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J8-Pin_4)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R32",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/38",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(Q1-G)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R36",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/46",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R38",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(U9-EN)",
+          "side": "F",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "/37",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R39",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(U10-VOUT)",
+          "side": "F",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "/67",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R40",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(U9-EN)",
+          "side": "F",
+          "classification": "Señal / control (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R42",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(U11-VOUT)",
+          "side": "F",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "/54",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R6",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.3V",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "/44",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R7",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "VBUS",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(D15-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R79",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(EG2-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "/30",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "R8",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(D15-K)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SQ1",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "LT_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SQ2",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SQ3",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Heavy_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SQ4",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SQ5",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "RT_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SQ6",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SQ7",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Light_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SQ8",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SW1",
+      "pins": [
+        {
+          "pin": "B1A",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "B1B",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "B2A",
+          "net": "Net-(R16-Pad1)",
+          "side": "Both",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "B2B",
+          "net": "Net-(R16-Pad1)",
+          "side": "Both",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "H1",
+          "net": "+1V8",
+          "side": "Both",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "H2",
+          "net": "/55",
+          "side": "Both",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "H3",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "S1",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "S2",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "S3",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "S4",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "V1",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "V2",
+          "net": "/57",
+          "side": "Both",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "V3",
+          "net": "+1V8",
+          "side": "Both",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SW2",
+      "pins": [
+        {
+          "pin": "B1A",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "B1B",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "B2A",
+          "net": "Net-(R21-Pad2)",
+          "side": "Both",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "B2B",
+          "net": "Net-(R21-Pad2)",
+          "side": "Both",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "H1",
+          "net": "+1V8",
+          "side": "Both",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "H2",
+          "net": "/13",
+          "side": "Both",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "H3",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "S1",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "S2",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "S3",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "S4",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "V1",
+          "net": "GND",
+          "side": "Both",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "V2",
+          "net": "/15",
+          "side": "Both",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "V3",
+          "net": "+1V8",
+          "side": "Both",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SW3",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(R29-Pad2)",
+          "side": "F",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "SW4",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "2",
+          "net": "/44",
+          "side": "B",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "3",
+          "net": "unconnected-(SW4-A-Pad3)",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP103",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+1V8",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP104",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/49",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP105",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/47",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP106",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/50",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP107",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/48",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP108",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/59",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP109",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/62",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP11",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "3V_B+",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP110",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/61",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP111",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/18",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP112",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/15",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [
+        {
+          "text": "TP112 figura como RSX en la hoja MCU. No se ha asociado un voltaje individual a este TP a partir de la imagen.",
+          "source": "Hoja TP MCU",
+          "status": "referencia documental"
+        }
+      ],
+      "diagnosticRoutes": [
+        {
+          "issue": "Si la señal de este circuito es anómala, revisar la ruta indicada y comprobar el valor bajo las condiciones de prueba correctas.",
+          "basis": "RSX — eje X derecho — TP112 figura como RSX en la hoja MCU. No se ha asociado un voltaje individual a este TP a partir de la imagen.",
+          "source": "Hoja TP MCU",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP113",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(U9-EN)",
+          "side": "B",
+          "classification": "Señal / control (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP114",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/17",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP115",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/19",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP116",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/22",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP117",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/25",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP118",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/20",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP119",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/10",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP14",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/1",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP16",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/12",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP21",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP22",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP24",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP26",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP27",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "LT_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP28",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Heavy_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP29",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "RT_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP3",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/43",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP30",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Light_Motor",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP31",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "SDA2",
+          "side": "B",
+          "classification": "Señal / control (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP32",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "SCL2",
+          "side": "B",
+          "classification": "Señal / control (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP33",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/6",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP34",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/7",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP35",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/4",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP36",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/46",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [
+        {
+          "text": "La imagen identifica TP36 como punto de prueba para la habilitación del regulador U8 de 3.3 V de los potenciómetros. La hoja MCU identifica TP36 como AN+ habilitar. Hay que consultar la función exacta y las condiciones con el esquema.",
+          "source": "Imagen anotada MCU + hoja TP MCU",
+          "status": "dato por consultar"
+        },
+        {
+          "text": "La imagen INFERIOR señala TP36 para probar habilitación del regulador; la hoja TP lo llama AN+ Enable. Verificar relación exacta con U8 y tensiones en esquema.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "status": "anotación documental; pendiente de consultar"
+        }
+      ],
+      "diagnosticRoutes": [
+        {
+          "issue": "Si falla la habilitación de esta etapa, consultar la señal EN documentada y sus condiciones de alimentación.",
+          "basis": "Habilitación de regulador de joystick — La imagen identifica TP36 como punto de prueba para la habilitación del regulador U8 de 3.3 V de los potenciómetros. La hoja MCU identifica TP36 como AN+ habilitar. Hay que consultar la función exacta y las condiciones con el esquema.",
+          "source": "Imagen anotada MCU + hoja TP MCU",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        },
+        {
+          "issue": "Si falla la habilitación de esta etapa, consultar la señal EN documentada y sus condiciones de alimentación.",
+          "basis": "TP36 habilitación del regulador — La imagen INFERIOR señala TP36 para probar habilitación del regulador; la hoja TP lo llama AN+ Enable. Verificar relación exacta con U8 y tensiones en esquema.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP4",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/36",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP41",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/21",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP42",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/58",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP43",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/69",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP49",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "TRG+",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [
+        {
+          "text": "La hoja MCU documenta TRG+ como señal 3.2 V, 125 Hz, 17 % duty. Es una señal PWM y no debe mostrarse como 3.2 V DC constante.",
+          "source": "Hoja TP MCU",
+          "status": "referencia documental, señal variable"
+        }
+      ],
+      "diagnosticRoutes": [
+        {
+          "issue": "Si la etapa no recibe alimentación, contrastar los puntos identificados con el esquema y las condiciones de encendido.",
+          "basis": "Alimentación de sensores Hall de gatillo — La hoja MCU documenta TRG+ como señal 3.2 V, 125 Hz, 17 % duty. Es una señal PWM y no debe mostrarse como 3.2 V DC constante.",
+          "source": "Hoja TP MCU",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP5",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "VBUS",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP50",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "TRG+",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP54",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(D221-K)",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP63",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/55",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [
+        {
+          "issue": "Si la señal de este circuito es anómala, revisar la ruta indicada y comprobar el valor bajo las condiciones de prueba correctas.",
+          "basis": "LSY — eje Y izquierdo — La hoja MCU identifica TP63 como LSY. La imagen marca señales de potenciómetro de 0.9 V cerca de la posición central y alimentación de 1.8 V en circuitos del joystick; no identifica una medición individual en TP63.",
+          "source": "Hoja TP MCU + imagen anotada MCU",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP64",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/57",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [
+        {
+          "issue": "Si la señal de este circuito es anómala, revisar la ruta indicada y comprobar el valor bajo las condiciones de prueba correctas.",
+          "basis": "LSX — eje X izquierdo — La hoja MCU identifica TP64 como LSX. Los 0.9 V indicados en la imagen corresponden a puntos de señal señalados gráficamente, no a un valor certificado en TP64.",
+          "source": "Hoja TP MCU + imagen anotada MCU",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP65",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/13",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [
+        {
+          "issue": "Si la señal de este circuito es anómala, revisar la ruta indicada y comprobar el valor bajo las condiciones de prueba correctas.",
+          "basis": "RSY — eje Y derecho — TP65 figura como RSY en la hoja MCU; la imagen diferencia alimentación de 1.8 V y señal alrededor de 0.9 V en la zona de joysticks.",
+          "source": "Hoja TP MCU + imagen anotada MCU",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP67",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/67",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [
+        {
+          "text": "La imagen señala TP67 como punto para probar gatillo derecho y anota 100 Ω en la ruta de señal; la hoja MCU identifica TP67 como RT. La anotación de 100 Ω no equivale a un voltaje de TP67. ADVERTENCIA: la imagen inferior lo describe como gatillo izquierdo; existe conflicto entre fuentes.",
+          "source": "Imagen anotada MCU + hoja TP MCU",
+          "status": "conflicto entre fuentes, pendiente de aportaciones"
+        },
+        {
+          "text": "La imagen INFERIOR (REMASTERED) señala TP67 como punto de prueba del gatillo izquierdo y anota 100 Ω en señal. ATENCIÓN: la hoja TP identifica TP67 como RT; hay discrepancia documental y no debe asignarse lado definitivo sin validar.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "status": "anotación documental; pendiente de consultar"
+        }
+      ],
+      "diagnosticRoutes": [
+        {
+          "issue": "Identificación contradictoria: confirmar la función del punto antes de medir.",
+          "basis": "Gatillo derecho — señal — La imagen señala TP67 como punto para probar gatillo derecho y anota 100 Ω en la ruta de señal; la hoja MCU identifica TP67 como RT. La anotación de 100 Ω no equivale a un voltaje de TP67. ADVERTENCIA: la imagen inferior lo describe como gatillo izquierdo; existe conflicto entre fuentes.",
+          "source": "Imagen anotada MCU + hoja TP MCU",
+          "level": "Conflicto documental, no diagnóstico"
+        },
+        {
+          "issue": "Si la señal de este circuito es anómala, revisar la ruta indicada y comprobar el valor bajo las condiciones de prueba correctas.",
+          "basis": "TP67 gatillo izquierdo — anotación de imagen — La imagen INFERIOR (REMASTERED) señala TP67 como punto de prueba del gatillo izquierdo y anota 100 Ω en señal. ATENCIÓN: la hoja TP identifica TP67 como RT; hay discrepancia documental y no debe asignarse lado definitivo sin validar.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP68",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/54",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [
+        {
+          "text": "La imagen señala TP68 como punto para probar gatillo izquierdo y anota 100 Ω en la ruta de señal; la hoja MCU identifica TP68 como LT. ADVERTENCIA: la imagen inferior lo describe como gatillo derecho; existe conflicto entre fuentes.",
+          "source": "Imagen anotada MCU + hoja TP MCU",
+          "status": "conflicto entre fuentes, pendiente de aportaciones"
+        },
+        {
+          "text": "La imagen INFERIOR (REMASTERED) señala TP68 como punto de prueba del gatillo derecho y anota 100 Ω en señal. ATENCIÓN: la hoja TP identifica TP68 como LT; hay discrepancia documental y no debe asignarse lado definitivo sin validar.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "status": "anotación documental; pendiente de consultar"
+        }
+      ],
+      "diagnosticRoutes": [
+        {
+          "issue": "Identificación contradictoria: confirmar la función del punto antes de medir.",
+          "basis": "Gatillo izquierdo — señal — La imagen señala TP68 como punto para probar gatillo izquierdo y anota 100 Ω en la ruta de señal; la hoja MCU identifica TP68 como LT. ADVERTENCIA: la imagen inferior lo describe como gatillo derecho; existe conflicto entre fuentes.",
+          "source": "Imagen anotada MCU + hoja TP MCU",
+          "level": "Conflicto documental, no diagnóstico"
+        },
+        {
+          "issue": "Si la señal de este circuito es anómala, revisar la ruta indicada y comprobar el valor bajo las condiciones de prueba correctas.",
+          "basis": "TP68 gatillo derecho — anotación de imagen — La imagen INFERIOR (REMASTERED) señala TP68 como punto de prueba del gatillo derecho y anota 100 Ω en señal. ATENCIÓN: la hoja TP identifica TP68 como LT; hay discrepancia documental y no debe asignarse lado definitivo sin validar.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP69",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/44",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP7",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.6V",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [
+        {
+          "issue": "Si la etapa no recibe alimentación, contrastar los puntos identificados con el esquema y las condiciones de encendido.",
+          "basis": "Alimentación de vibración — La hoja MCU identifica TP7 como 3.6 V (Rumble V+). La disponibilidad depende del estado de alimentación del control.",
+          "source": "Hoja TP MCU",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP71",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/60",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP72",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/66",
+          "side": "B",
+          "classification": "Función no verificada"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "TP9",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.3V",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [
+        {
+          "issue": "Si la etapa no recibe alimentación, contrastar los puntos identificados con el esquema y las condiciones de encendido.",
+          "basis": "Alimentación 3.3 V — La hoja MCU identifica TP9 como 3.3 V. Se ofrece referencia nominal en la simulación; no es una medición real.",
+          "source": "Hoja TP MCU",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "U10",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "TRG+",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(U10-VOUT)",
+          "side": "B",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "3",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [
+        {
+          "text": "La imagen anota alimentación de 1.8 V y señales cercanas a 0.9 V en los sensores Hall de gatillo U10/U11; no deben asignarse automáticamente a todos los pines del encapsulado.",
+          "source": "Imagen anotada MCU",
+          "status": "referencia gráfica, consultar pinout"
+        }
+      ],
+      "diagnosticRoutes": [
+        {
+          "issue": "Si la señal de este circuito es anómala, revisar la ruta indicada y comprobar el valor bajo las condiciones de prueba correctas.",
+          "basis": "Sensores Hall de gatillos — La imagen INFERIOR marca 1.8 V como alimentación y 0.9 V en algunos puntos de señal próximos a U10/U11; no es válido extrapolar estos valores a todos sus pines.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "U11",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "TRG+",
+          "side": "B",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(U11-VOUT)",
+          "side": "B",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "3",
+          "net": "GND",
+          "side": "B",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [
+        {
+          "text": "La imagen anota alimentación de 1.8 V y señales cercanas a 0.9 V en los sensores Hall de gatillo U10/U11; no deben asignarse automáticamente a todos los pines del encapsulado.",
+          "source": "Imagen anotada MCU",
+          "status": "referencia gráfica, consultar pinout"
+        }
+      ],
+      "diagnosticRoutes": [
+        {
+          "issue": "Si la señal de este circuito es anómala, revisar la ruta indicada y comprobar el valor bajo las condiciones de prueba correctas.",
+          "basis": "Sensores Hall de gatillos — La imagen INFERIOR marca 1.8 V como alimentación y 0.9 V en algunos puntos de señal próximos a U10/U11; no es válido extrapolar estos valores a todos sus pines.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "U2",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/17",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "/27",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "3",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "4",
+          "net": "Net-(R14-Pad1)",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "5",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "U4",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/49",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "/50",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "3",
+          "net": "/48",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "4",
+          "net": "/47",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "5",
+          "net": "Heavy_Motor",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "6",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "7",
+          "net": "+3.6V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "8",
+          "net": "LT_Motor",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "9",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "U5",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/59",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "2",
+          "net": "/61",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "3",
+          "net": "/18",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "4",
+          "net": "/62",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "5",
+          "net": "Light_Motor",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "6",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "7",
+          "net": "+3.6V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "8",
+          "net": "RT_Motor",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "9",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "U8",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+1V8",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "3",
+          "net": "/46",
+          "side": "F",
+          "classification": "Función no verificada"
+        },
+        {
+          "pin": "4",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "5",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [
+        {
+          "text": "La imagen SUPERIOR señala nodos de 1.8 V y 3.3 V cerca de los reguladores. No atribuir estos valores a cada pin sin consultar el esquema.",
+          "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+          "status": "anotación documental; pendiente de consultar"
+        }
+      ],
+      "diagnosticRoutes": [
+        {
+          "issue": "Si la señal de este circuito es anómala, revisar la ruta indicada y comprobar el valor bajo las condiciones de prueba correctas.",
+          "basis": "Alimentaciones del área de joysticks — La imagen SUPERIOR señala nodos de 1.8 V y 3.3 V cerca de los reguladores. No atribuir estos valores a cada pin sin consultar el esquema.",
+          "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+          "level": "Ruta de comprobación propuesta, no falla confirmada"
+        }
+      ],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    },
+    {
+      "ref": "U9",
+      "pins": [
+        {
+          "pin": "1",
+          "net": "TRG+",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        },
+        {
+          "pin": "3",
+          "net": "Net-(U9-EN)",
+          "side": "F",
+          "classification": "Señal / control (según nombre de red)"
+        },
+        {
+          "pin": "4",
+          "net": "+3.3V",
+          "side": "F",
+          "classification": "Alimentación / potencia (según nombre de red)"
+        },
+        {
+          "pin": "5",
+          "net": "GND",
+          "side": "F",
+          "classification": "Tierra"
+        }
+      ],
+      "source": "XE · diseño de placa — asociación pin/red",
+      "warnings": [],
+      "diagnosticRoutes": [],
+      "hasVerifiedFault": false,
+      "note": "La clasificación se basa en el nombre de red. No confirma dirección del pin, pinout del IC, tensión real ni una avería."
+    }
+  ]
+}

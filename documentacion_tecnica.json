@@ -1,0 +1,6402 @@
+{
+  "schema": "xe-technical-docs-v1",
+  "board": "MCU_Board(2)",
+  "sources": [
+    "XE · esquema de referencia",
+    "XE · diseño de placa",
+    "tp_mcu.json",
+    "imagen_mcu_datos.json"
+  ],
+  "records": [
+    {
+      "ref": "C1",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C10",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/27",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/27",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C11",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(J8-Pin_9)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(J8-Pin_9)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C12",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(EG3-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(EG3-K)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C13",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(EG2-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(EG2-K)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C14",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "DNI",
+        "raw": "DNI",
+        "status": "DNI · no instalar (según esquema)",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/31",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/31",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C15",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "DNI",
+        "raw": "DNI",
+        "status": "DNI · no instalar (según esquema)",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Heavy_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Heavy_Motor",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C16",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "DNI",
+        "raw": "DNI",
+        "status": "DNI · no instalar (según esquema)",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Light_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Light_Motor",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C18",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.6V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.6V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C19",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.6V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.6V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C2",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C20",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+1V8",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+1V8",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C21",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+1V8",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+1V8",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C22",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/55",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/55",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C23",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/13",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/13",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C24",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/57",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/57",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C240",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(D221-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(D221-K)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C25",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/15",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/15",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C26",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/58",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/58",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C27",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/69",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/69",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C29",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C3",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(U9-EN)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(U9-EN)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C30",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+1V8",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+1V8",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C301",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C302",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C307",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C31",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+1V8",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+1V8",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C32",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "TRG+"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "TRG+",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C322",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/55",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/55",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C33",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND",
+        "TRG+"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "TRG+",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C34",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C35",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "TRG+"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "TRG+",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C354",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C36",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/67",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/67",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C37",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND",
+        "TRG+"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "TRG+",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C38",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/54",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/54",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C4",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C401",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C402",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C407",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C454",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C5",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "DNI",
+        "raw": "DNI",
+        "status": "DNI · no instalar (según esquema)",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "LT_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "LT_Motor",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C54",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C6",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "DNI",
+        "raw": "DNI",
+        "status": "DNI · no instalar (según esquema)",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "RT_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "RT_Motor",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C7",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C73",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/30",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/30",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C79",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(Q1-G)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(Q1-G)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "C8",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "C",
+        "raw": "C",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "CR1",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "D",
+        "raw": "D",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND",
+        "Heavy_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Heavy_Motor",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "CR2",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "D",
+        "raw": "D",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND",
+        "Light_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Light_Motor",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "CR3",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "D",
+        "raw": "D",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND",
+        "LT_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "LT_Motor",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "CR4",
+      "type": "Capacitor",
+      "schematic": {
+        "value": "D",
+        "raw": "D",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND",
+        "RT_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "RT_Motor",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "D15",
+      "type": "Otro",
+      "schematic": {
+        "value": "D",
+        "raw": "D",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(D15-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(D15-K)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "D221",
+      "type": "Otro",
+      "schematic": {
+        "value": "D",
+        "raw": "D",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(D221-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(D221-K)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "EG2",
+      "type": "Otro",
+      "schematic": {
+        "value": "D",
+        "raw": "D",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(EG2-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(EG2-K)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "EG3",
+      "type": "Otro",
+      "schematic": {
+        "value": "D",
+        "raw": "D",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(EG3-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(EG3-K)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "FB1",
+      "type": "Otro",
+      "schematic": {
+        "value": "FerriteBead",
+        "raw": "FerriteBead",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/32",
+        "Net-(EG3-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/32",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(EG3-K)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "FB2",
+      "type": "Otro",
+      "schematic": {
+        "value": "FerriteBead",
+        "raw": "FerriteBead",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/16",
+        "Net-(EG2-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/16",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(EG2-K)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "FB3",
+      "type": "Otro",
+      "schematic": {
+        "value": "FerriteBead",
+        "raw": "FerriteBead",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "Net-(D221-K)",
+        "Net-(FB3-Pad1)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(FB3-Pad1)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(D221-K)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "FT1",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "GND",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "FT2",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "GND",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "J1",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x08",
+        "raw": "Conn_01x08",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "/60",
+        "/63",
+        "/64",
+        "/65",
+        "/66",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "3",
+          "net": "/64",
+          "side": "F"
+        },
+        {
+          "pin": "4",
+          "net": "/63",
+          "side": "F"
+        },
+        {
+          "pin": "5",
+          "net": "/65",
+          "side": "F"
+        },
+        {
+          "pin": "6",
+          "net": "/60",
+          "side": "F"
+        },
+        {
+          "pin": "7",
+          "net": "/66",
+          "side": "F"
+        },
+        {
+          "pin": "8",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "J2",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x01",
+        "raw": "Conn_01x01",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "J3",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x01",
+        "raw": "Conn_01x01",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "J5",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_02x07",
+        "raw": "Conn_02x07",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "+3.6V",
+        "/1",
+        "/10",
+        "/12",
+        "/14",
+        "/2",
+        "/3",
+        "/4",
+        "/6",
+        "/7",
+        "3V_B+",
+        "GND",
+        "VBUS"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.6V",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/12",
+          "side": "F"
+        },
+        {
+          "pin": "3",
+          "net": "3V_B+",
+          "side": "F"
+        },
+        {
+          "pin": "4",
+          "net": "+3.3V",
+          "side": "F"
+        },
+        {
+          "pin": "5",
+          "net": "/7",
+          "side": "F"
+        },
+        {
+          "pin": "6",
+          "net": "/14",
+          "side": "F"
+        },
+        {
+          "pin": "7",
+          "net": "/6",
+          "side": "F"
+        },
+        {
+          "pin": "8",
+          "net": "/2",
+          "side": "F"
+        },
+        {
+          "pin": "9",
+          "net": "/4",
+          "side": "F"
+        },
+        {
+          "pin": "10",
+          "net": "/3",
+          "side": "F"
+        },
+        {
+          "pin": "11",
+          "net": "/1",
+          "side": "F"
+        },
+        {
+          "pin": "12",
+          "net": "VBUS",
+          "side": "F"
+        },
+        {
+          "pin": "13",
+          "net": "/10",
+          "side": "F"
+        },
+        {
+          "pin": "14",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "J7",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x04",
+        "raw": "Conn_01x04",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/1",
+        "Net-(J7-Pin_2)",
+        "SDA2",
+        "VBUS"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/1",
+          "side": "Both"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J7-Pin_2)",
+          "side": "Both"
+        },
+        {
+          "pin": "3",
+          "net": "SDA2",
+          "side": "Both"
+        },
+        {
+          "pin": "4",
+          "net": "VBUS",
+          "side": "Both"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "J8",
+      "type": "Otro",
+      "schematic": {
+        "value": "External Connector",
+        "raw": "External Connector",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "/19",
+        "/20",
+        "/25",
+        "GND",
+        "Net-(J8-Pin_4)",
+        "Net-(J8-Pin_5)",
+        "Net-(J8-Pin_8)",
+        "Net-(J8-Pin_9)",
+        "SCL2",
+        "SDA2"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "2",
+          "net": "SDA2",
+          "side": "F"
+        },
+        {
+          "pin": "3",
+          "net": "SCL2",
+          "side": "F"
+        },
+        {
+          "pin": "4",
+          "net": "Net-(J8-Pin_4)",
+          "side": "F"
+        },
+        {
+          "pin": "5",
+          "net": "Net-(J8-Pin_5)",
+          "side": "F"
+        },
+        {
+          "pin": "6",
+          "net": "+3.3V",
+          "side": "F"
+        },
+        {
+          "pin": "7",
+          "net": "/19",
+          "side": "F"
+        },
+        {
+          "pin": "8",
+          "net": "Net-(J8-Pin_8)",
+          "side": "F"
+        },
+        {
+          "pin": "9",
+          "net": "Net-(J8-Pin_9)",
+          "side": "F"
+        },
+        {
+          "pin": "10",
+          "net": "/25",
+          "side": "F"
+        },
+        {
+          "pin": "11",
+          "net": "/20",
+          "side": "F"
+        },
+        {
+          "pin": "12",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "JP1",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x05",
+        "raw": "Conn_01x05",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/38",
+        "GND",
+        "Net-(D221-K)",
+        "Net-(EG2-K)",
+        "Net-(EG3-K)"
+      ],
+      "pins": [
+        {
+          "pin": "PK1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "PK2",
+          "net": "Net-(EG3-K)",
+          "side": "F"
+        },
+        {
+          "pin": "PK3",
+          "net": "/38",
+          "side": "F"
+        },
+        {
+          "pin": "PK4",
+          "net": "Net-(EG2-K)",
+          "side": "F"
+        },
+        {
+          "pin": "PK6",
+          "net": "Net-(D221-K)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "P1",
+      "type": "Otro",
+      "schematic": {
+        "value": "1-8",
+        "raw": "1-8",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/1",
+        "/2",
+        "/3",
+        "/4",
+        "/5",
+        "/6",
+        "/7",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/1",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "/2",
+          "side": "B"
+        },
+        {
+          "pin": "3",
+          "net": "/3",
+          "side": "B"
+        },
+        {
+          "pin": "4",
+          "net": "/4",
+          "side": "B"
+        },
+        {
+          "pin": "5",
+          "net": "/5",
+          "side": "B"
+        },
+        {
+          "pin": "6",
+          "net": "/6",
+          "side": "B"
+        },
+        {
+          "pin": "7",
+          "net": "/7",
+          "side": "B"
+        },
+        {
+          "pin": "8",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "P10",
+      "type": "Otro",
+      "schematic": {
+        "value": "69-60",
+        "raw": "69-60",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/60",
+        "/61",
+        "/62",
+        "/63",
+        "/64",
+        "/65",
+        "/66",
+        "/67",
+        "/69",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/60",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "/61",
+          "side": "B"
+        },
+        {
+          "pin": "3",
+          "net": "/62",
+          "side": "B"
+        },
+        {
+          "pin": "4",
+          "net": "/63",
+          "side": "B"
+        },
+        {
+          "pin": "5",
+          "net": "/64",
+          "side": "B"
+        },
+        {
+          "pin": "6",
+          "net": "/65",
+          "side": "B"
+        },
+        {
+          "pin": "7",
+          "net": "/66",
+          "side": "B"
+        },
+        {
+          "pin": "8",
+          "net": "/67",
+          "side": "B"
+        },
+        {
+          "pin": "9",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "10",
+          "net": "/69",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "P2",
+      "type": "Otro",
+      "schematic": {
+        "value": "9-10",
+        "raw": "9-10",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/10",
+        "/9"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/9",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "/10",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "P3",
+      "type": "Otro",
+      "schematic": {
+        "value": "11-12",
+        "raw": "11-12",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/12",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "/12",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "P4",
+      "type": "Otro",
+      "schematic": {
+        "value": "13-15",
+        "raw": "13-15",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/13",
+        "/14",
+        "/15"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/13",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "/14",
+          "side": "B"
+        },
+        {
+          "pin": "3",
+          "net": "/15",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "P5",
+      "type": "Otro",
+      "schematic": {
+        "value": "16-26",
+        "raw": "16-26",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/16",
+        "/17",
+        "/18",
+        "/19",
+        "/20",
+        "/21",
+        "/22",
+        "/25",
+        "SCL2",
+        "SDA2"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/16",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "/17",
+          "side": "B"
+        },
+        {
+          "pin": "3",
+          "net": "/18",
+          "side": "B"
+        },
+        {
+          "pin": "4",
+          "net": "/19",
+          "side": "B"
+        },
+        {
+          "pin": "5",
+          "net": "/20",
+          "side": "B"
+        },
+        {
+          "pin": "6",
+          "net": "/21",
+          "side": "B"
+        },
+        {
+          "pin": "7",
+          "net": "/22",
+          "side": "B"
+        },
+        {
+          "pin": "8",
+          "net": "SDA2",
+          "side": "B"
+        },
+        {
+          "pin": "9",
+          "net": "SCL2",
+          "side": "B"
+        },
+        {
+          "pin": "10",
+          "net": "/25",
+          "side": "B"
+        },
+        {
+          "pin": "11",
+          "net": "/17",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "P6",
+      "type": "Otro",
+      "schematic": {
+        "value": "27",
+        "raw": "27",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/27"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/27",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "P7",
+      "type": "Otro",
+      "schematic": {
+        "value": "28-31",
+        "raw": "28-31",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/28",
+        "/30",
+        "/31",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/28",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "3",
+          "net": "/30",
+          "side": "B"
+        },
+        {
+          "pin": "4",
+          "net": "/31",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "P8",
+      "type": "Otro",
+      "schematic": {
+        "value": "32_44",
+        "raw": "32_44",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "/32",
+        "/36",
+        "/37",
+        "/38",
+        "/43",
+        "/44",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/32",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "3",
+          "net": "+3.3V",
+          "side": "B"
+        },
+        {
+          "pin": "4",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "5",
+          "net": "/36",
+          "side": "B"
+        },
+        {
+          "pin": "6",
+          "net": "/37",
+          "side": "B"
+        },
+        {
+          "pin": "7",
+          "net": "/38",
+          "side": "B"
+        },
+        {
+          "pin": "8",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "9",
+          "net": "+3.3V",
+          "side": "B"
+        },
+        {
+          "pin": "10",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "11",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "12",
+          "net": "/43",
+          "side": "B"
+        },
+        {
+          "pin": "13",
+          "net": "/44",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "P9",
+      "type": "Otro",
+      "schematic": {
+        "value": "59-45",
+        "raw": "59-45",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+1V8",
+        "+3.3V",
+        "/46",
+        "/47",
+        "/48",
+        "/49",
+        "/50",
+        "/54",
+        "/55",
+        "/57",
+        "/58",
+        "/59",
+        "3V_B+",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "/46",
+          "side": "B"
+        },
+        {
+          "pin": "3",
+          "net": "/47",
+          "side": "B"
+        },
+        {
+          "pin": "4",
+          "net": "/48",
+          "side": "B"
+        },
+        {
+          "pin": "5",
+          "net": "/49",
+          "side": "B"
+        },
+        {
+          "pin": "6",
+          "net": "/50",
+          "side": "B"
+        },
+        {
+          "pin": "7",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "8",
+          "net": "+3.3V",
+          "side": "B"
+        },
+        {
+          "pin": "9",
+          "net": "+1V8",
+          "side": "B"
+        },
+        {
+          "pin": "10",
+          "net": "/54",
+          "side": "B"
+        },
+        {
+          "pin": "11",
+          "net": "/55",
+          "side": "B"
+        },
+        {
+          "pin": "12",
+          "net": "3V_B+",
+          "side": "B"
+        },
+        {
+          "pin": "13",
+          "net": "/57",
+          "side": "B"
+        },
+        {
+          "pin": "14",
+          "net": "/58",
+          "side": "B"
+        },
+        {
+          "pin": "15",
+          "net": "/59",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "Q1",
+      "type": "Otro",
+      "schematic": {
+        "value": "BSS138",
+        "raw": "BSS138",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/28",
+        "GND",
+        "Net-(Q1-G)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(Q1-G)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "3",
+          "net": "/28",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R1",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "33 Ω",
+        "raw": "33",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/9",
+        "Net-(J8-Pin_5)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/9",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J8-Pin_5)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R12",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "DNI",
+        "raw": "DNI",
+        "status": "DNI · no instalar (según esquema)",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "/36"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.3V",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/36",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R14",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "0 Ω",
+        "raw": "0",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "Net-(J8-Pin_9)",
+        "Net-(R14-Pad1)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(R14-Pad1)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J8-Pin_9)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R15",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "0 Ω",
+        "raw": "0",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "Net-(J7-Pin_2)",
+        "SCL2"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "SCL2",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J7-Pin_2)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R16",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "33 Ω",
+        "raw": "33",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/58",
+        "Net-(R16-Pad1)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(R16-Pad1)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/58",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [
+        {
+          "title": "Resistencias serie de 33 Ω",
+          "detail": "La imagen advierte que resistencias de 33 Ω desoldadas o abiertas pueden ocasionar fallas en botones conectados a líneas del microcontrolador. La hoja MCU identifica TP42 vía R16 y TP43 vía R21.",
+          "source": "Imagen anotada MCU + hoja TP MCU",
+          "status": "referencia documental",
+          "side": "inferior"
+        },
+        {
+          "title": "Resistencias serie de 33 Ω",
+          "detail": "La imagen INFERIOR advierte que resistencias de 33 Ω abiertas o desoldadas pueden causar fallas de botones conectados al microcontrolador. Correlacionar con R16/R21 y la hoja MCU.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "status": "anotación documental; pendiente de consultar",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "R2",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "33 Ω",
+        "raw": "33",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/22",
+        "Net-(J8-Pin_8)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/22",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J8-Pin_8)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R21",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "33 Ω",
+        "raw": "33",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/69",
+        "Net-(R21-Pad2)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/69",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(R21-Pad2)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [
+        {
+          "title": "Resistencias serie de 33 Ω",
+          "detail": "La imagen advierte que resistencias de 33 Ω desoldadas o abiertas pueden ocasionar fallas en botones conectados a líneas del microcontrolador. La hoja MCU identifica TP42 vía R16 y TP43 vía R21.",
+          "source": "Imagen anotada MCU + hoja TP MCU",
+          "status": "referencia documental",
+          "side": "inferior"
+        },
+        {
+          "title": "Resistencias serie de 33 Ω",
+          "detail": "La imagen INFERIOR advierte que resistencias de 33 Ω abiertas o desoldadas pueden causar fallas de botones conectados al microcontrolador. Correlacionar con R16/R21 y la hoja MCU.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "status": "anotación documental; pendiente de consultar",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "R22",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "0 Ω",
+        "raw": "0",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/31",
+        "Net-(FB3-Pad1)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(FB3-Pad1)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/31",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R23",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "10k",
+        "raw": "10k",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "/28"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.3V",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/28",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R24",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "1.5k",
+        "raw": "1.5k",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/5",
+        "Net-(D15-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/5",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(D15-K)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R29",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "100 Ω",
+        "raw": "100",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/21",
+        "Net-(R29-Pad2)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/21",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(R29-Pad2)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R3",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "33 Ω",
+        "raw": "33",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/17",
+        "Net-(J8-Pin_4)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/17",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(J8-Pin_4)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R32",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "0 Ω",
+        "raw": "0",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/38",
+        "Net-(Q1-G)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/38",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(Q1-G)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R36",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "100k",
+        "raw": "100k",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/46",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/46",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R38",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "0 Ω",
+        "raw": "0",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/37",
+        "Net-(U9-EN)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(U9-EN)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/37",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R39",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "100 Ω",
+        "raw": "100",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/67",
+        "Net-(U10-VOUT)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(U10-VOUT)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/67",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R40",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "100k",
+        "raw": "100k",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(U9-EN)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(U9-EN)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R42",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "100 Ω",
+        "raw": "100",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/54",
+        "Net-(U11-VOUT)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(U11-VOUT)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/54",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R6",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "10k",
+        "raw": "10k",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "+3.3V",
+        "/44"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.3V",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "/44",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R7",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "100k",
+        "raw": "100k",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "Net-(D15-K)",
+        "VBUS"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "VBUS",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(D15-K)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R79",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "1k",
+        "raw": "1k",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "/30",
+        "Net-(EG2-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(EG2-K)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/30",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "R8",
+      "type": "Resistencia",
+      "schematic": {
+        "value": "100k",
+        "raw": "100k",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(D15-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(D15-K)",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SQ1",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x01",
+        "raw": "Conn_01x01",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "LT_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "LT_Motor",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SQ2",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x01",
+        "raw": "Conn_01x01",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SQ3",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x01",
+        "raw": "Conn_01x01",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "Heavy_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Heavy_Motor",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SQ4",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x01",
+        "raw": "Conn_01x01",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SQ5",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x01",
+        "raw": "Conn_01x01",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "RT_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "RT_Motor",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SQ6",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x01",
+        "raw": "Conn_01x01",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SQ7",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x01",
+        "raw": "Conn_01x01",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "Light_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Light_Motor",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SQ8",
+      "type": "Otro",
+      "schematic": {
+        "value": "Conn_01x01",
+        "raw": "Conn_01x01",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SW1",
+      "type": "Otro",
+      "schematic": {
+        "value": "Joystick",
+        "raw": "Joystick",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+1V8",
+        "/55",
+        "/57",
+        "GND",
+        "Net-(R16-Pad1)"
+      ],
+      "pins": [
+        {
+          "pin": "B1A",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "B1B",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "B2A",
+          "net": "Net-(R16-Pad1)",
+          "side": "Both"
+        },
+        {
+          "pin": "B2B",
+          "net": "Net-(R16-Pad1)",
+          "side": "Both"
+        },
+        {
+          "pin": "H1",
+          "net": "+1V8",
+          "side": "Both"
+        },
+        {
+          "pin": "H2",
+          "net": "/55",
+          "side": "Both"
+        },
+        {
+          "pin": "H3",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "S1",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "S2",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "S3",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "S4",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "V1",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "V2",
+          "net": "/57",
+          "side": "Both"
+        },
+        {
+          "pin": "V3",
+          "net": "+1V8",
+          "side": "Both"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SW2",
+      "type": "Otro",
+      "schematic": {
+        "value": "Joystick",
+        "raw": "Joystick",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+1V8",
+        "/13",
+        "/15",
+        "GND",
+        "Net-(R21-Pad2)"
+      ],
+      "pins": [
+        {
+          "pin": "B1A",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "B1B",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "B2A",
+          "net": "Net-(R21-Pad2)",
+          "side": "Both"
+        },
+        {
+          "pin": "B2B",
+          "net": "Net-(R21-Pad2)",
+          "side": "Both"
+        },
+        {
+          "pin": "H1",
+          "net": "+1V8",
+          "side": "Both"
+        },
+        {
+          "pin": "H2",
+          "net": "/13",
+          "side": "Both"
+        },
+        {
+          "pin": "H3",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "S1",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "S2",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "S3",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "S4",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "V1",
+          "net": "GND",
+          "side": "Both"
+        },
+        {
+          "pin": "V2",
+          "net": "/15",
+          "side": "Both"
+        },
+        {
+          "pin": "V3",
+          "net": "+1V8",
+          "side": "Both"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SW3",
+      "type": "Otro",
+      "schematic": {
+        "value": "SW_Push",
+        "raw": "SW_Push",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "GND",
+        "Net-(R29-Pad2)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(R29-Pad2)",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "SW4",
+      "type": "Otro",
+      "schematic": {
+        "value": "DNI",
+        "raw": "DNI",
+        "status": "DNI · no instalar (según esquema)",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/44",
+        "GND",
+        "unconnected-(SW4-A-Pad3)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "/44",
+          "side": "B"
+        },
+        {
+          "pin": "3",
+          "net": "unconnected-(SW4-A-Pad3)",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP103",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "+1V8"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+1V8",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "AN+",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP104",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/49"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/49",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "MOTOR PESADO Y CONTROL DE MOTOR LT",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP105",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/47"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/47",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "MOTOR PESADO Y CONTROL DE MOTOR LT",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP106",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/50"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/50",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "MOTOR PESADO Y CONTROL DE MOTOR LT",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP107",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/48"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/48",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "MOTOR PESADO Y CONTROL DE MOTOR LT",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP108",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/59"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/59",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "CONTROL DE MOTOR LIGERO Y MOTOR RT",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP109",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/62"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/62",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "CONTROL DE MOTOR LIGERO Y MOTOR RT",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP11",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "3V_B+"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "3V_B+",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP110",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/61"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/61",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "CONTROL DE MOTOR LIGERO Y MOTOR RT",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP111",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/18"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/18",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "CONTROL DE MOTOR LIGERO Y MOTOR RT",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP112",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/15"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/15",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "RSX",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "RSX — eje X derecho",
+          "detail": "TP112 figura como RSX en la hoja MCU. No se ha asociado un voltaje individual a este TP a partir de la imagen.",
+          "source": "Hoja TP MCU",
+          "status": "referencia documental",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "TP113",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "Net-(U9-EN)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(U9-EN)",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP114",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/17"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/17",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP115",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/19"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/19",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP116",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/22"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/22",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP117",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/25"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/25",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP118",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/20"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/20",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP119",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/10"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/10",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP14",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/1"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/1",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP16",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/12"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/12",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP21",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "GND",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP22",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "GND",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP24",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "GND",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP26",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "GND",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP27",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "LT_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "LT_Motor",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "LT MOTOR+",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP28",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "Heavy_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Heavy_Motor",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "HEAVY MOTOR+",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP29",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "RT_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "RT_Motor",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "RT MOTOR+",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP3",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/43"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/43",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP30",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "Light_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Light_Motor",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "MOTOR+ LIGERO",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP31",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "SDA2"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "SDA2",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "SDA2",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP32",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "SCL2"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "SCL2",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "SCL2",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP33",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/6"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/6",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "SDA",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP34",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/7"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/7",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "SCL",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP35",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/4"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/4",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "~RESTABLECER",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP36",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/46"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/46",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "AN+ Habilitar",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "Habilitación de regulador de joystick",
+          "detail": "La imagen identifica TP36 como punto de prueba para la habilitación del regulador U8 de 3.3 V de los potenciómetros. La hoja MCU identifica TP36 como AN+ habilitar. Hay que consultar la función exacta y las condiciones con el esquema.",
+          "source": "Imagen anotada MCU + hoja TP MCU",
+          "status": "dato por consultar",
+          "side": "inferior"
+        },
+        {
+          "title": "TP36 habilitación del regulador",
+          "detail": "La imagen INFERIOR señala TP36 para probar habilitación del regulador; la hoja TP lo llama AN+ Enable. Verificar relación exacta con U8 y tensiones en esquema.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "status": "anotación documental; pendiente de consultar",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "TP4",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/36"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/36",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP41",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/21"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/21",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "B (a través de R29, 100ohm)",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP42",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/58"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/58",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "LSC (a través de R16, 33ohm)",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP43",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/69"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/69",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "RSC (a través de R21, 33ohm)",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP49",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "TRG+"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "TRG+",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "TRG+ 3.2v, 125Hz, 17% Duty (Hall Sensor VCC)",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "Alimentación de sensores Hall de gatillo",
+          "detail": "La hoja MCU documenta TRG+ como señal 3.2 V, 125 Hz, 17 % duty. Es una señal PWM y no debe mostrarse como 3.2 V DC constante.",
+          "source": "Hoja TP MCU",
+          "status": "referencia documental, señal variable",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "TP5",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "VBUS"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "VBUS",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "VBUS",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "VBUS USB",
+          "detail": "La hoja MCU identifica TP5 como VBUS. En el multímetro simulado se usa 5.0 V nominal solamente con la opción «USB conectado» activada.",
+          "source": "Hoja TP MCU",
+          "status": "valor nominal simulado",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "TP50",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "TRG+"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "TRG+",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "TRG+",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [],
+      "missing": []
+    },
+    {
+      "ref": "TP54",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "Net-(D221-K)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "Net-(D221-K)",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "MICRÓFONO",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "Prueba de micrófono",
+          "detail": "La hoja MCU identifica TP54 como MICRÓFONO y la imagen señala una zona de prueba del micrófono. No se proporciona tensión nominal.",
+          "source": "Hoja TP MCU + imagen anotada MCU",
+          "status": "referencia documental",
+          "side": "inferior"
+        },
+        {
+          "title": "TP54 micrófono",
+          "detail": "La imagen INFERIOR marca un punto de prueba de micrófono, compatible con la identificación documental TP54 de la hoja MCU.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "status": "anotación documental; pendiente de consultar",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "TP63",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/55"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/55",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "LSY",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "LSY — eje Y izquierdo",
+          "detail": "La hoja MCU identifica TP63 como LSY. La imagen marca señales de potenciómetro de 0.9 V cerca de la posición central y alimentación de 1.8 V en circuitos del joystick; no identifica una medición individual en TP63.",
+          "source": "Hoja TP MCU + imagen anotada MCU",
+          "status": "referencia documental, sin validación física",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "TP64",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/57"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/57",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "LSX",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "LSX — eje X izquierdo",
+          "detail": "La hoja MCU identifica TP64 como LSX. Los 0.9 V indicados en la imagen corresponden a puntos de señal señalados gráficamente, no a un valor certificado en TP64.",
+          "source": "Hoja TP MCU + imagen anotada MCU",
+          "status": "referencia documental",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "TP65",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/13"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/13",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "RSY",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "RSY — eje Y derecho",
+          "detail": "TP65 figura como RSY en la hoja MCU; la imagen diferencia alimentación de 1.8 V y señal alrededor de 0.9 V en la zona de joysticks.",
+          "source": "Hoja TP MCU + imagen anotada MCU",
+          "status": "referencia documental",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "TP67",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/67"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/67",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "RT",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "Gatillo derecho — señal",
+          "detail": "La imagen señala TP67 como punto para probar gatillo derecho y anota 100 Ω en la ruta de señal; la hoja MCU identifica TP67 como RT. La anotación de 100 Ω no equivale a un voltaje de TP67. ADVERTENCIA: la imagen inferior lo describe como gatillo izquierdo; existe conflicto entre fuentes.",
+          "source": "Imagen anotada MCU + hoja TP MCU",
+          "status": "conflicto entre fuentes, pendiente de aportaciones",
+          "side": "inferior"
+        },
+        {
+          "title": "TP67 gatillo izquierdo — anotación de imagen",
+          "detail": "La imagen INFERIOR (REMASTERED) señala TP67 como punto de prueba del gatillo izquierdo y anota 100 Ω en señal. ATENCIÓN: la hoja TP identifica TP67 como RT; hay discrepancia documental y no debe asignarse lado definitivo sin validar.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "status": "anotación documental; pendiente de consultar",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "TP68",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/54"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/54",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "LT",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "Gatillo izquierdo — señal",
+          "detail": "La imagen señala TP68 como punto para probar gatillo izquierdo y anota 100 Ω en la ruta de señal; la hoja MCU identifica TP68 como LT. ADVERTENCIA: la imagen inferior lo describe como gatillo derecho; existe conflicto entre fuentes.",
+          "source": "Imagen anotada MCU + hoja TP MCU",
+          "status": "conflicto entre fuentes, pendiente de aportaciones",
+          "side": "inferior"
+        },
+        {
+          "title": "TP68 gatillo derecho — anotación de imagen",
+          "detail": "La imagen INFERIOR (REMASTERED) señala TP68 como punto de prueba del gatillo derecho y anota 100 Ω en señal. ATENCIÓN: la hoja TP identifica TP68 como LT; hay discrepancia documental y no debe asignarse lado definitivo sin validar.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "status": "anotación documental; pendiente de consultar",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "TP69",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/44"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/44",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP7",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "+3.6V"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.6V",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "3.6v (Rumble V+)",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "Alimentación de vibración",
+          "detail": "La hoja MCU identifica TP7 como 3.6 V (Rumble V+). La disponibilidad depende del estado de alimentación del control.",
+          "source": "Hoja TP MCU",
+          "status": "valor nominal condicionado",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "TP71",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/60"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/60",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP72",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "/66"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/66",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "TP9",
+      "type": "Otro",
+      "schematic": {
+        "value": "TestPoint",
+        "raw": "TestPoint",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "+3.3V"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+3.3V",
+          "side": "B"
+        }
+      ],
+      "testPoint": {
+        "description": "3.3v",
+        "source": "Hoja de TP proporcionada: sección Junta de MCU",
+        "pcb_present": true,
+        "verification": "Referencia documental; pendiente de contrastar con la revisión física y el esquemático"
+      },
+      "annotations": [
+        {
+          "title": "Alimentación 3.3 V",
+          "detail": "La hoja MCU identifica TP9 como 3.3 V. Se ofrece referencia nominal en la simulación; no es una medición real.",
+          "source": "Hoja TP MCU",
+          "status": "valor nominal simulado",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "U10",
+      "type": "Otro",
+      "schematic": {
+        "value": "A1304",
+        "raw": "A1304",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND",
+        "Net-(U10-VOUT)",
+        "TRG+"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "TRG+",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(U10-VOUT)",
+          "side": "B"
+        },
+        {
+          "pin": "3",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [
+        {
+          "title": "Sensores Hall U10/U11",
+          "detail": "La imagen anota alimentación de 1.8 V y señales cercanas a 0.9 V en los sensores Hall de gatillo U10/U11; no deben asignarse automáticamente a todos los pines del encapsulado.",
+          "source": "Imagen anotada MCU",
+          "status": "referencia gráfica, consultar pinout",
+          "side": "inferior"
+        },
+        {
+          "title": "Sensores Hall de gatillos",
+          "detail": "La imagen INFERIOR marca 1.8 V como alimentación y 0.9 V en algunos puntos de señal próximos a U10/U11; no es válido extrapolar estos valores a todos sus pines.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "status": "anotación documental; pendiente de consultar",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "U11",
+      "type": "Otro",
+      "schematic": {
+        "value": "A1304",
+        "raw": "A1304",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "B",
+      "nets": [
+        "GND",
+        "Net-(U11-VOUT)",
+        "TRG+"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "TRG+",
+          "side": "B"
+        },
+        {
+          "pin": "2",
+          "net": "Net-(U11-VOUT)",
+          "side": "B"
+        },
+        {
+          "pin": "3",
+          "net": "GND",
+          "side": "B"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [
+        {
+          "title": "Sensores Hall U10/U11",
+          "detail": "La imagen anota alimentación de 1.8 V y señales cercanas a 0.9 V en los sensores Hall de gatillo U10/U11; no deben asignarse automáticamente a todos los pines del encapsulado.",
+          "source": "Imagen anotada MCU",
+          "status": "referencia gráfica, consultar pinout",
+          "side": "inferior"
+        },
+        {
+          "title": "Sensores Hall de gatillos",
+          "detail": "La imagen INFERIOR marca 1.8 V como alimentación y 0.9 V en algunos puntos de señal próximos a U10/U11; no es válido extrapolar estos valores a todos sus pines.",
+          "source": "Imagen INFERIOR — Overlay REMASTERED",
+          "status": "anotación documental; pendiente de consultar",
+          "side": "inferior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "U2",
+      "type": "Otro",
+      "schematic": {
+        "value": "SN74LVC1G125DCK",
+        "raw": "SN74LVC1G125DCK",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "/17",
+        "/27",
+        "GND",
+        "Net-(R14-Pad1)"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/17",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/27",
+          "side": "F"
+        },
+        {
+          "pin": "3",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "4",
+          "net": "Net-(R14-Pad1)",
+          "side": "F"
+        },
+        {
+          "pin": "5",
+          "net": "+3.3V",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "U4",
+      "type": "Otro",
+      "schematic": {
+        "value": "~",
+        "raw": "~",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.6V",
+        "/47",
+        "/48",
+        "/49",
+        "/50",
+        "GND",
+        "Heavy_Motor",
+        "LT_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/49",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/50",
+          "side": "F"
+        },
+        {
+          "pin": "3",
+          "net": "/48",
+          "side": "F"
+        },
+        {
+          "pin": "4",
+          "net": "/47",
+          "side": "F"
+        },
+        {
+          "pin": "5",
+          "net": "Heavy_Motor",
+          "side": "F"
+        },
+        {
+          "pin": "6",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "7",
+          "net": "+3.6V",
+          "side": "F"
+        },
+        {
+          "pin": "8",
+          "net": "LT_Motor",
+          "side": "F"
+        },
+        {
+          "pin": "9",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "U5",
+      "type": "Otro",
+      "schematic": {
+        "value": "~",
+        "raw": "~",
+        "status": "valor no especificado",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.6V",
+        "/18",
+        "/59",
+        "/61",
+        "/62",
+        "GND",
+        "Light_Motor",
+        "RT_Motor"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "/59",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "/61",
+          "side": "F"
+        },
+        {
+          "pin": "3",
+          "net": "/18",
+          "side": "F"
+        },
+        {
+          "pin": "4",
+          "net": "/62",
+          "side": "F"
+        },
+        {
+          "pin": "5",
+          "net": "Light_Motor",
+          "side": "F"
+        },
+        {
+          "pin": "6",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "7",
+          "net": "+3.6V",
+          "side": "F"
+        },
+        {
+          "pin": "8",
+          "net": "RT_Motor",
+          "side": "F"
+        },
+        {
+          "pin": "9",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Valor no especificado en esquema",
+        "Sin anotación técnica específica"
+      ]
+    },
+    {
+      "ref": "U8",
+      "type": "Otro",
+      "schematic": {
+        "value": "TLV70718",
+        "raw": "TLV70718",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+1V8",
+        "+3.3V",
+        "/46",
+        "GND"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "+1V8",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "3",
+          "net": "/46",
+          "side": "F"
+        },
+        {
+          "pin": "4",
+          "net": "+3.3V",
+          "side": "F"
+        },
+        {
+          "pin": "5",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [
+        {
+          "title": "Alimentaciones del área de joysticks",
+          "detail": "La imagen SUPERIOR señala nodos de 1.8 V y 3.3 V cerca de los reguladores. No atribuir estos valores a cada pin sin consultar el esquema.",
+          "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+          "status": "anotación documental; pendiente de consultar",
+          "side": "superior"
+        }
+      ],
+      "missing": []
+    },
+    {
+      "ref": "U9",
+      "type": "Otro",
+      "schematic": {
+        "value": "TLV70732",
+        "raw": "TLV70732",
+        "status": "esquema",
+        "source": "XE · esquema de referencia"
+      },
+      "side": "F",
+      "nets": [
+        "+3.3V",
+        "GND",
+        "Net-(U9-EN)",
+        "TRG+"
+      ],
+      "pins": [
+        {
+          "pin": "1",
+          "net": "TRG+",
+          "side": "F"
+        },
+        {
+          "pin": "2",
+          "net": "GND",
+          "side": "F"
+        },
+        {
+          "pin": "3",
+          "net": "Net-(U9-EN)",
+          "side": "F"
+        },
+        {
+          "pin": "4",
+          "net": "+3.3V",
+          "side": "F"
+        },
+        {
+          "pin": "5",
+          "net": "GND",
+          "side": "F"
+        }
+      ],
+      "testPoint": null,
+      "annotations": [],
+      "missing": [
+        "Sin anotación técnica específica"
+      ]
+    }
+  ],
+  "unlinkedAnnotations": [
+    {
+      "refs": [],
+      "nets": [],
+      "title": "Regulador de gatillos",
+      "detail": "La imagen SUPERIOR identifica un regulador de los gatillos en la región izquierda de la placa; su salida y pinout requieren validación con el esquema.",
+      "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+      "status": "anotación documental; pendiente de consultar",
+      "side": "superior"
+    },
+    {
+      "refs": [],
+      "nets": [],
+      "title": "Controladores de vibradores",
+      "detail": "La imagen SUPERIOR identifica controladores de vibración en los extremos de la placa y anota 3.5 V en dos zonas. El valor es una anotación gráfica, no una lectura universal.",
+      "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+      "status": "anotación documental; pendiente de consultar",
+      "side": "superior"
+    },
+    {
+      "refs": [],
+      "nets": [],
+      "title": "Resistencia de 100 Ω",
+      "detail": "La imagen SUPERIOR señala una resistencia de 100 Ω en la región superior derecha, próxima a SW3; comprobar el componente y su red antes de medir.",
+      "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+      "status": "anotación documental; pendiente de consultar",
+      "side": "superior"
+    },
+    {
+      "refs": [],
+      "nets": [],
+      "title": "Audio: resistencia R32",
+      "detail": "La imagen SUPERIOR advierte que si R32 se daña puede no reconocerse el audio; la anotación indica revisar la entrada de audífonos y alimentación de 3.3 V. No se verificó la causalidad con un diagnóstico real.",
+      "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+      "status": "anotación documental; pendiente de consultar",
+      "side": "superior"
+    },
+    {
+      "refs": [],
+      "nets": [],
+      "title": "Audio: 1.5 kΩ SoC y 100 kΩ",
+      "detail": "La imagen SUPERIOR anota «1.5k SoC», «100k» y «VBUS 5v» en la zona del conector. Son referencias visuales, no valores asociados automáticamente a un pad.",
+      "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+      "status": "anotación documental; pendiente de consultar",
+      "side": "superior"
+    },
+    {
+      "refs": [],
+      "nets": [],
+      "title": "Audio: continuidad PK2/PK3",
+      "detail": "La imagen SUPERIOR indica comprobar continuidad de PK2 y PK3 cuando no hay audífonos conectados. Comprobar que corresponda a esta revisión de placa.",
+      "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+      "status": "anotación documental; pendiente de consultar",
+      "side": "superior"
+    },
+    {
+      "refs": [],
+      "nets": [],
+      "title": "Puerto USB: VBUS 5 V",
+      "detail": "La imagen SUPERIOR marca VBUS 5 V cerca del conector USB. Es una referencia nominal condicionada a alimentación USB.",
+      "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+      "status": "anotación documental; pendiente de consultar",
+      "side": "superior"
+    },
+    {
+      "refs": [],
+      "nets": [],
+      "title": "Filtro y transformador de radiofrecuencia",
+      "detail": "La imagen INFERIOR advierte revisar filtro/transformador RF si el control se apaga al conectar antenas o se sobrecalienta. Es una pista diagnóstica documental, no una conclusión automática.",
+      "source": "Imagen INFERIOR — Overlay REMASTERED",
+      "status": "anotación documental; pendiente de consultar",
+      "side": "inferior"
+    },
+    {
+      "refs": [],
+      "nets": [],
+      "title": "Señales del joystick: 1.8 V / 0.9 V",
+      "detail": "La imagen INFERIOR muestra 1.8 V en alimentación y aproximadamente 0.9 V en señales del potenciómetro, en los puntos dibujados. No equivale a 0.9 V fijo durante todo el recorrido.",
+      "source": "Imagen INFERIOR — Overlay REMASTERED",
+      "status": "anotación documental; pendiente de consultar",
+      "side": "inferior"
+    },
+    {
+      "refs": [],
+      "nets": [],
+      "title": "Botón B: resistencia de 100 Ω",
+      "detail": "La imagen INFERIOR marca resistencia de botón B de 100 Ω en una ruta concreta. Confirmar el componente antes de usarla como referencia de reparación.",
+      "source": "Imagen INFERIOR — Overlay REMASTERED",
+      "status": "anotación documental; pendiente de consultar",
+      "side": "inferior"
+    }
+  ]
+}

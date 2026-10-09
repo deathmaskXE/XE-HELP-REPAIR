@@ -1,0 +1,1735 @@
+{
+  "source": "MCU_Board(2).kicad_sch (KiCad 8)",
+  "components": [
+    {
+      "ref": "P7",
+      "type": "Otro",
+      "value": "28-31",
+      "status": "esquema",
+      "side": "F",
+      "x": 119.175,
+      "y": 125.475,
+      "raw": "28-31"
+    },
+    {
+      "ref": "C27",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 153.225,
+      "y": 112.6,
+      "raw": "C"
+    },
+    {
+      "ref": "P3",
+      "type": "Otro",
+      "value": "11-12",
+      "status": "esquema",
+      "side": "F",
+      "x": 146.05,
+      "y": 125.125,
+      "raw": "11-12"
+    },
+    {
+      "ref": "C13",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 139.93,
+      "y": 126.47,
+      "raw": "C"
+    },
+    {
+      "ref": "R3",
+      "type": "Resistencia",
+      "value": "33 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 157.48,
+      "y": 124.1,
+      "raw": "33"
+    },
+    {
+      "ref": "C7",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 119.445,
+      "y": 115.36,
+      "raw": "C"
+    },
+    {
+      "ref": "Q1",
+      "type": "Otro",
+      "value": "BSS138",
+      "status": "esquema",
+      "side": "F",
+      "x": 119.7225,
+      "y": 123.1,
+      "raw": "BSS138"
+    },
+    {
+      "ref": "D221",
+      "type": "Otro",
+      "value": "D",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 121.92,
+      "y": 119.3146,
+      "raw": "D"
+    },
+    {
+      "ref": "C26",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 109.4154,
+      "y": 105.0052,
+      "raw": "C"
+    },
+    {
+      "ref": "EG3",
+      "type": "Otro",
+      "value": "D",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 123.6,
+      "y": 124.8575,
+      "raw": "D"
+    },
+    {
+      "ref": "C401",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 120.9202,
+      "y": 113.8346,
+      "raw": "C"
+    },
+    {
+      "ref": "R29",
+      "type": "Resistencia",
+      "value": "100 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 190.3298,
+      "y": 95.125,
+      "raw": "100"
+    },
+    {
+      "ref": "R24",
+      "type": "Resistencia",
+      "value": "1.5k",
+      "status": "esquema",
+      "side": "F",
+      "x": 158.56,
+      "y": 117.88,
+      "raw": "1.5k"
+    },
+    {
+      "ref": "C34",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 107.2,
+      "y": 114.93,
+      "raw": "C"
+    },
+    {
+      "ref": "C4",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 143.98,
+      "y": 121.92,
+      "raw": "C"
+    },
+    {
+      "ref": "J3",
+      "type": "Otro",
+      "value": "Conn_01x01",
+      "status": "esquema",
+      "side": "F",
+      "x": 187.425,
+      "y": 99.575,
+      "raw": "Conn_01x01"
+    },
+    {
+      "ref": "R8",
+      "type": "Resistencia",
+      "value": "100k",
+      "status": "esquema",
+      "side": "F",
+      "x": 158.5846,
+      "y": 119.3248,
+      "raw": "100k"
+    },
+    {
+      "ref": "C1",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 111.6236,
+      "y": 123.18,
+      "raw": "C"
+    },
+    {
+      "ref": "P4",
+      "type": "Otro",
+      "value": "13-15",
+      "status": "esquema",
+      "side": "F",
+      "x": 143.4,
+      "y": 127.9,
+      "raw": "13-15"
+    },
+    {
+      "ref": "FB1",
+      "type": "Otro",
+      "value": "FerriteBead",
+      "status": "esquema",
+      "side": "F",
+      "x": 119.11,
+      "y": 125.6,
+      "raw": "FerriteBead"
+    },
+    {
+      "ref": "C31",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 121.8648,
+      "y": 111.7454,
+      "raw": "C"
+    },
+    {
+      "ref": "C18",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 102.0,
+      "y": 108.73,
+      "raw": "C"
+    },
+    {
+      "ref": "C25",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 170.6952,
+      "y": 128.2096,
+      "raw": "C"
+    },
+    {
+      "ref": "P1",
+      "type": "Otro",
+      "value": "1-8",
+      "status": "esquema",
+      "side": "F",
+      "x": 150.9,
+      "y": 115.4025,
+      "raw": "1-8"
+    },
+    {
+      "ref": "SW1",
+      "type": "Otro",
+      "value": "Joystick",
+      "status": "esquema",
+      "side": "F",
+      "x": 110.051846,
+      "y": 92.647846,
+      "raw": "Joystick"
+    },
+    {
+      "ref": "C73",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 143.13,
+      "y": 125.62,
+      "raw": "C"
+    },
+    {
+      "ref": "C21",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 173.175,
+      "y": 128.2,
+      "raw": "C"
+    },
+    {
+      "ref": "C16",
+      "type": "Capacitor",
+      "value": "DNI",
+      "status": "DNI · no instalar (según esquema)",
+      "side": "F",
+      "x": 201.125,
+      "y": 107.925,
+      "raw": "DNI"
+    },
+    {
+      "ref": "C407",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 108.39,
+      "y": 114.92,
+      "raw": "C"
+    },
+    {
+      "ref": "J8",
+      "type": "Otro",
+      "value": "External Connector",
+      "status": "esquema",
+      "side": "F",
+      "x": 151.05,
+      "y": 129.65,
+      "raw": "External Connector"
+    },
+    {
+      "ref": "C29",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 121.8152,
+      "y": 113.7246,
+      "raw": "C"
+    },
+    {
+      "ref": "R7",
+      "type": "Resistencia",
+      "value": "100k",
+      "status": "esquema",
+      "side": "F",
+      "x": 158.5654,
+      "y": 118.5852,
+      "raw": "100k"
+    },
+    {
+      "ref": "R79",
+      "type": "Resistencia",
+      "value": "1k",
+      "status": "esquema",
+      "side": "F",
+      "x": 141.37,
+      "y": 125.66,
+      "raw": "1k"
+    },
+    {
+      "ref": "C12",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 122.9,
+      "y": 124.875,
+      "raw": "C"
+    },
+    {
+      "ref": "FB3",
+      "type": "Otro",
+      "value": "FerriteBead",
+      "status": "esquema",
+      "side": "F",
+      "x": 116.14,
+      "y": 121.4,
+      "raw": "FerriteBead"
+    },
+    {
+      "ref": "P2",
+      "type": "Otro",
+      "value": "9-10",
+      "status": "esquema",
+      "side": "F",
+      "x": 147.75,
+      "y": 122.665,
+      "raw": "9-10"
+    },
+    {
+      "ref": "C8",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 148.01,
+      "y": 122.82,
+      "raw": "C"
+    },
+    {
+      "ref": "C23",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 181.525,
+      "y": 115.8,
+      "raw": "C"
+    },
+    {
+      "ref": "R21",
+      "type": "Resistencia",
+      "value": "33 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 154.875,
+      "y": 113.09,
+      "raw": "33"
+    },
+    {
+      "ref": "J1",
+      "type": "Otro",
+      "value": "Conn_01x08",
+      "status": "esquema",
+      "side": "F",
+      "x": 145.28,
+      "y": 110.3,
+      "raw": "Conn_01x08"
+    },
+    {
+      "ref": "C24",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 111.32,
+      "y": 105.0,
+      "raw": "C"
+    },
+    {
+      "ref": "R2",
+      "type": "Resistencia",
+      "value": "33 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 151.47,
+      "y": 124.6,
+      "raw": "33"
+    },
+    {
+      "ref": "FB2",
+      "type": "Otro",
+      "value": "FerriteBead",
+      "status": "esquema",
+      "side": "F",
+      "x": 141.38,
+      "y": 126.72,
+      "raw": "FerriteBead"
+    },
+    {
+      "ref": "R14",
+      "type": "Resistencia",
+      "value": "0 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 145.1446,
+      "y": 123.8348,
+      "raw": "0"
+    },
+    {
+      "ref": "D15",
+      "type": "Otro",
+      "value": "D",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 157.9446,
+      "y": 115.2746,
+      "raw": "D"
+    },
+    {
+      "ref": "U2",
+      "type": "Otro",
+      "value": "SN74LVC1G125DCK",
+      "status": "esquema",
+      "side": "F",
+      "x": 141.625,
+      "y": 122.4125,
+      "raw": "SN74LVC1G125DCK"
+    },
+    {
+      "ref": "U5",
+      "type": "Otro",
+      "value": "~",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 199.6825,
+      "y": 111.0825,
+      "raw": "~"
+    },
+    {
+      "ref": "C302",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 121.82,
+      "y": 116.11,
+      "raw": "C"
+    },
+    {
+      "ref": "R23",
+      "type": "Resistencia",
+      "value": "10k",
+      "status": "esquema",
+      "side": "F",
+      "x": 122.1654,
+      "y": 121.9702,
+      "raw": "10k"
+    },
+    {
+      "ref": "R38",
+      "type": "Resistencia",
+      "value": "0 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 109.83,
+      "y": 118.53,
+      "raw": "0"
+    },
+    {
+      "ref": "SW3",
+      "type": "Otro",
+      "value": "SW_Push",
+      "status": "esquema",
+      "side": "F",
+      "x": 199.375,
+      "y": 92.775,
+      "raw": "SW_Push"
+    },
+    {
+      "ref": "R36",
+      "type": "Resistencia",
+      "value": "100k",
+      "status": "esquema",
+      "side": "F",
+      "x": 117.61,
+      "y": 110.36,
+      "raw": "100k"
+    },
+    {
+      "ref": "R40",
+      "type": "Resistencia",
+      "value": "100k",
+      "status": "esquema",
+      "side": "F",
+      "x": 108.79,
+      "y": 118.54,
+      "raw": "100k"
+    },
+    {
+      "ref": "C3",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 107.73,
+      "y": 118.95,
+      "raw": "C"
+    },
+    {
+      "ref": "C240",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 121.19,
+      "y": 119.33,
+      "raw": "C"
+    },
+    {
+      "ref": "C6",
+      "type": "Capacitor",
+      "value": "DNI",
+      "status": "DNI · no instalar (según esquema)",
+      "side": "F",
+      "x": 196.7,
+      "y": 108.875,
+      "raw": "DNI"
+    },
+    {
+      "ref": "J2",
+      "type": "Otro",
+      "value": "Conn_01x01",
+      "status": "esquema",
+      "side": "F",
+      "x": 184.25,
+      "y": 98.1738,
+      "raw": "Conn_01x01"
+    },
+    {
+      "ref": "JP1",
+      "type": "Otro",
+      "value": "Conn_01x05",
+      "status": "esquema",
+      "side": "F",
+      "x": 131.03,
+      "y": 129.5185,
+      "raw": "Conn_01x05"
+    },
+    {
+      "ref": "C10",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 140.525,
+      "y": 118.725,
+      "raw": "C"
+    },
+    {
+      "ref": "R32",
+      "type": "Resistencia",
+      "value": "0 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 118.975,
+      "y": 120.87,
+      "raw": "0"
+    },
+    {
+      "ref": "J7",
+      "type": "Otro",
+      "value": "Conn_01x04",
+      "status": "esquema",
+      "side": "F",
+      "x": 182.1416,
+      "y": 88.7248,
+      "raw": "Conn_01x04"
+    },
+    {
+      "ref": "C20",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 114.48,
+      "y": 105.0,
+      "raw": "C"
+    },
+    {
+      "ref": "C354",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 151.0,
+      "y": 109.05,
+      "raw": "C"
+    },
+    {
+      "ref": "U8",
+      "type": "Otro",
+      "value": "TLV70718",
+      "status": "esquema",
+      "side": "F",
+      "x": 119.4,
+      "y": 112.372679,
+      "raw": "TLV70718"
+    },
+    {
+      "ref": "C19",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 199.5,
+      "y": 107.925,
+      "raw": "C"
+    },
+    {
+      "ref": "C307",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 109.925,
+      "y": 115.14,
+      "raw": "C"
+    },
+    {
+      "ref": "C22",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 117.2766,
+      "y": 105.76,
+      "raw": "C"
+    },
+    {
+      "ref": "C35",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 104.7252,
+      "y": 116.1646,
+      "raw": "C"
+    },
+    {
+      "ref": "C5",
+      "type": "Capacitor",
+      "value": "DNI",
+      "status": "DNI · no instalar (según esquema)",
+      "side": "F",
+      "x": 103.16,
+      "y": 112.5,
+      "raw": "DNI"
+    },
+    {
+      "ref": "C11",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 142.1146,
+      "y": 119.6748,
+      "raw": "C"
+    },
+    {
+      "ref": "U4",
+      "type": "Otro",
+      "value": "~",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 105.6125,
+      "y": 109.375,
+      "raw": "~"
+    },
+    {
+      "ref": "P9",
+      "type": "Otro",
+      "value": "59-45",
+      "status": "esquema",
+      "side": "F",
+      "x": 125.225,
+      "y": 109.3,
+      "raw": "59-45"
+    },
+    {
+      "ref": "C15",
+      "type": "Capacitor",
+      "value": "DNI",
+      "status": "DNI · no instalar (según esquema)",
+      "side": "F",
+      "x": 103.09,
+      "y": 106.3,
+      "raw": "DNI"
+    },
+    {
+      "ref": "C32",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 105.5064,
+      "y": 116.1666,
+      "raw": "C"
+    },
+    {
+      "ref": "C38",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 106.1746,
+      "y": 113.3248,
+      "raw": "C"
+    },
+    {
+      "ref": "EG2",
+      "type": "Otro",
+      "value": "D",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 139.15,
+      "y": 126.4925,
+      "raw": "D"
+    },
+    {
+      "ref": "P6",
+      "type": "Otro",
+      "value": "27",
+      "status": "esquema",
+      "side": "F",
+      "x": 124.675,
+      "y": 129.725,
+      "raw": "27"
+    },
+    {
+      "ref": "J5",
+      "type": "Otro",
+      "value": "Conn_02x07",
+      "status": "esquema",
+      "side": "F",
+      "x": 150.89,
+      "y": 117.975,
+      "raw": "Conn_02x07"
+    },
+    {
+      "ref": "P8",
+      "type": "Otro",
+      "value": "32_44",
+      "status": "esquema",
+      "side": "F",
+      "x": 114.325,
+      "y": 117.69,
+      "raw": "32_44"
+    },
+    {
+      "ref": "SW2",
+      "type": "Otro",
+      "value": "Joystick",
+      "status": "esquema",
+      "side": "F",
+      "x": 169.421846,
+      "y": 116.337846,
+      "raw": "Joystick"
+    },
+    {
+      "ref": "C402",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 144.72,
+      "y": 121.92,
+      "raw": "C"
+    },
+    {
+      "ref": "C30",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 120.9248,
+      "y": 111.7154,
+      "raw": "C"
+    },
+    {
+      "ref": "C54",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 144.23,
+      "y": 115.24,
+      "raw": "C"
+    },
+    {
+      "ref": "R12",
+      "type": "Resistencia",
+      "value": "DNI",
+      "status": "DNI · no instalar (según esquema)",
+      "side": "F",
+      "x": 111.65,
+      "y": 120.56,
+      "raw": "DNI"
+    },
+    {
+      "ref": "R15",
+      "type": "Resistencia",
+      "value": "0 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 188.0548,
+      "y": 90.0454,
+      "raw": "0"
+    },
+    {
+      "ref": "C79",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 117.12,
+      "y": 121.96,
+      "raw": "C"
+    },
+    {
+      "ref": "C322",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 117.2766,
+      "y": 105.0,
+      "raw": "C"
+    },
+    {
+      "ref": "C2",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 111.58,
+      "y": 114.63,
+      "raw": "C"
+    },
+    {
+      "ref": "R42",
+      "type": "Resistencia",
+      "value": "100 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 108.665,
+      "y": 113.17,
+      "raw": "100"
+    },
+    {
+      "ref": "R22",
+      "type": "Resistencia",
+      "value": "0 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 116.1352,
+      "y": 123.053,
+      "raw": "0"
+    },
+    {
+      "ref": "C36",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "F",
+      "x": 141.4798,
+      "y": 116.4404,
+      "raw": "C"
+    },
+    {
+      "ref": "R1",
+      "type": "Resistencia",
+      "value": "33 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 149.3,
+      "y": 125.12,
+      "raw": "33"
+    },
+    {
+      "ref": "C14",
+      "type": "Capacitor",
+      "value": "DNI",
+      "status": "DNI · no instalar (según esquema)",
+      "side": "F",
+      "x": 116.98,
+      "y": 123.8,
+      "raw": "DNI"
+    },
+    {
+      "ref": "P5",
+      "type": "Otro",
+      "value": "16-26",
+      "status": "esquema",
+      "side": "F",
+      "x": 134.925,
+      "y": 129.725,
+      "raw": "16-26"
+    },
+    {
+      "ref": "R16",
+      "type": "Resistencia",
+      "value": "33 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 107.655,
+      "y": 105.02,
+      "raw": "33"
+    },
+    {
+      "ref": "R39",
+      "type": "Resistencia",
+      "value": "100 Ω",
+      "status": "esquema",
+      "side": "F",
+      "x": 140.96,
+      "y": 115.2,
+      "raw": "100"
+    },
+    {
+      "ref": "P10",
+      "type": "Otro",
+      "value": "69-60",
+      "status": "esquema",
+      "side": "F",
+      "x": 143.375,
+      "y": 109.3,
+      "raw": "69-60"
+    },
+    {
+      "ref": "U9",
+      "type": "Otro",
+      "value": "TLV70732",
+      "status": "esquema",
+      "side": "F",
+      "x": 106.152679,
+      "y": 117.93,
+      "raw": "TLV70732"
+    },
+    {
+      "ref": "C301",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "B",
+      "x": 110.625,
+      "y": 115.2714,
+      "raw": "C"
+    },
+    {
+      "ref": "TP32",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 187.525,
+      "y": 91.25,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "CR4",
+      "type": "Capacitor",
+      "value": "D",
+      "status": "valor no especificado",
+      "side": "B",
+      "x": 204.121,
+      "y": 102.8146,
+      "raw": "D"
+    },
+    {
+      "ref": "TP104",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 105.975,
+      "y": 112.7,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP22",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 187.75,
+      "y": 117.175,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP109",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 201.3,
+      "y": 112.375,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP33",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 152.775,
+      "y": 117.8,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP112",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 161.775,
+      "y": 128.375,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP26",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 164.25,
+      "y": 130.225,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "FT2",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 103.15,
+      "y": 108.825,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP68",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 108.225,
+      "y": 114.25,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP119",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 153.825,
+      "y": 124.5,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP28",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 100.775,
+      "y": 106.5,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP118",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 136.15,
+      "y": 132.0,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP71",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 154.375,
+      "y": 110.125,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "CR3",
+      "type": "Capacitor",
+      "value": "D",
+      "status": "valor no especificado",
+      "side": "B",
+      "x": 96.7996,
+      "y": 102.5996,
+      "raw": "D"
+    },
+    {
+      "ref": "TP50",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 105.325,
+      "y": 117.0,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP16",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 154.0,
+      "y": 122.3,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP63",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 118.175,
+      "y": 103.6,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP9",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 110.05,
+      "y": 123.0,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP41",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 190.525,
+      "y": 97.775,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP34",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 154.675,
+      "y": 119.775,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP117",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 130.65,
+      "y": 132.05,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "CR2",
+      "type": "Capacitor",
+      "value": "D",
+      "status": "valor no especificado",
+      "side": "B",
+      "x": 204.1,
+      "y": 104.475,
+      "raw": "D"
+    },
+    {
+      "ref": "TP31",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 187.175,
+      "y": 88.6,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP64",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 109.2,
+      "y": 105.325,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP4",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 109.325,
+      "y": 120.175,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "C37",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "B",
+      "x": 109.525,
+      "y": 91.8,
+      "raw": "C"
+    },
+    {
+      "ref": "TP110",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 197.9,
+      "y": 113.375,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "SQ7",
+      "type": "Otro",
+      "value": "Conn_01x01",
+      "status": "esquema",
+      "side": "B",
+      "x": 204.55,
+      "y": 108.2,
+      "raw": "Conn_01x01"
+    },
+    {
+      "ref": "TP54",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 128.325,
+      "y": 133.4,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP111",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 200.0,
+      "y": 114.85,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "SQ1",
+      "type": "Otro",
+      "value": "Conn_01x01",
+      "status": "esquema",
+      "side": "B",
+      "x": 96.025,
+      "y": 93.825,
+      "raw": "Conn_01x01"
+    },
+    {
+      "ref": "TP7",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 103.25,
+      "y": 111.7,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "SQ5",
+      "type": "Otro",
+      "value": "Conn_01x01",
+      "status": "esquema",
+      "side": "B",
+      "x": 204.525,
+      "y": 93.95,
+      "raw": "Conn_01x01"
+    },
+    {
+      "ref": "TP108",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 195.2,
+      "y": 114.425,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP105",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 105.675,
+      "y": 108.075,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP27",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 99.95,
+      "y": 112.475,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP21",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 162.0,
+      "y": 124.9,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP69",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 103.225,
+      "y": 105.525,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP107",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 109.025,
+      "y": 108.35,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "C33",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "B",
+      "x": 193.9654,
+      "y": 89.4798,
+      "raw": "C"
+    },
+    {
+      "ref": "TP116",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 133.7,
+      "y": 132.7,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP30",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 202.225,
+      "y": 109.675,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP5",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 184.125,
+      "y": 123.025,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP11",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 119.825,
+      "y": 105.9,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP115",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 138.825,
+      "y": 132.0,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP3",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 109.925,
+      "y": 111.2,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "U11",
+      "type": "Otro",
+      "value": "A1304",
+      "status": "esquema",
+      "side": "B",
+      "x": 110.975,
+      "y": 89.3325,
+      "raw": "A1304"
+    },
+    {
+      "ref": "TP35",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 153.9,
+      "y": 115.65,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "CR1",
+      "type": "Capacitor",
+      "value": "D",
+      "status": "valor no especificado",
+      "side": "B",
+      "x": 96.804,
+      "y": 104.4104,
+      "raw": "D"
+    },
+    {
+      "ref": "TP72",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 155.825,
+      "y": 108.0,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "FT1",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 102.225,
+      "y": 114.675,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP14",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 185.45,
+      "y": 95.35,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP29",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 196.7,
+      "y": 105.325,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP113",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 110.725,
+      "y": 116.7,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP103",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 186.325,
+      "y": 119.9,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP42",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 106.475,
+      "y": 105.55,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP43",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 161.25,
+      "y": 111.5,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP106",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 107.075,
+      "y": 110.25,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "SQ6",
+      "type": "Otro",
+      "value": "Conn_01x01",
+      "status": "esquema",
+      "side": "B",
+      "x": 204.475,
+      "y": 99.05,
+      "raw": "Conn_01x01"
+    },
+    {
+      "ref": "TP67",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 152.575,
+      "y": 108.225,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP24",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 162.7,
+      "y": 119.45,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "U10",
+      "type": "Otro",
+      "value": "A1304",
+      "status": "esquema",
+      "side": "B",
+      "x": 190.4,
+      "y": 89.425,
+      "raw": "A1304"
+    },
+    {
+      "ref": "TP114",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 126.175,
+      "y": 131.85,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "TP49",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 101.25,
+      "y": 102.1,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "SQ3",
+      "type": "Otro",
+      "value": "Conn_01x01",
+      "status": "esquema",
+      "side": "B",
+      "x": 96.0,
+      "y": 108.125,
+      "raw": "Conn_01x01"
+    },
+    {
+      "ref": "TP65",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 184.675,
+      "y": 116.825,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "SW4",
+      "type": "Otro",
+      "value": "DNI",
+      "status": "DNI · no instalar (según esquema)",
+      "side": "B",
+      "x": 198.445,
+      "y": 99.65,
+      "raw": "DNI"
+    },
+    {
+      "ref": "SQ8",
+      "type": "Otro",
+      "value": "Conn_01x01",
+      "status": "esquema",
+      "side": "B",
+      "x": 204.55,
+      "y": 113.125,
+      "raw": "Conn_01x01"
+    },
+    {
+      "ref": "R6",
+      "type": "Resistencia",
+      "value": "10k",
+      "status": "esquema",
+      "side": "B",
+      "x": 193.3702,
+      "y": 104.9154,
+      "raw": "10k"
+    },
+    {
+      "ref": "SQ4",
+      "type": "Otro",
+      "value": "Conn_01x01",
+      "status": "esquema",
+      "side": "B",
+      "x": 96.025,
+      "y": 113.275,
+      "raw": "Conn_01x01"
+    },
+    {
+      "ref": "TP36",
+      "type": "Otro",
+      "value": "TestPoint",
+      "status": "esquema",
+      "side": "B",
+      "x": 111.775,
+      "y": 108.325,
+      "raw": "TestPoint"
+    },
+    {
+      "ref": "SQ2",
+      "type": "Otro",
+      "value": "Conn_01x01",
+      "status": "esquema",
+      "side": "B",
+      "x": 96.0,
+      "y": 98.925,
+      "raw": "Conn_01x01"
+    },
+    {
+      "ref": "C454",
+      "type": "Capacitor",
+      "value": "C",
+      "status": "valor no especificado",
+      "side": "B",
+      "x": 111.675,
+      "y": 123.85,
+      "raw": "C"
+    }
+  ]
+}

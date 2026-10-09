@@ -1,0 +1,327 @@
+[
+  {
+    "refs": [
+      "TP63"
+    ],
+    "nets": [],
+    "title": "LSY — eje Y izquierdo",
+    "detail": "La hoja MCU identifica TP63 como LSY. La imagen marca señales de potenciómetro de 0.9 V cerca de la posición central y alimentación de 1.8 V en circuitos del joystick; no identifica una medición individual en TP63.",
+    "source": "Hoja TP MCU + imagen anotada MCU",
+    "status": "referencia documental, sin validación física",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP64"
+    ],
+    "nets": [],
+    "title": "LSX — eje X izquierdo",
+    "detail": "La hoja MCU identifica TP64 como LSX. Los 0.9 V indicados en la imagen corresponden a puntos de señal señalados gráficamente, no a un valor certificado en TP64.",
+    "source": "Hoja TP MCU + imagen anotada MCU",
+    "status": "referencia documental",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP65"
+    ],
+    "nets": [],
+    "title": "RSY — eje Y derecho",
+    "detail": "TP65 figura como RSY en la hoja MCU; la imagen diferencia alimentación de 1.8 V y señal alrededor de 0.9 V en la zona de joysticks.",
+    "source": "Hoja TP MCU + imagen anotada MCU",
+    "status": "referencia documental",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP112"
+    ],
+    "nets": [],
+    "title": "RSX — eje X derecho",
+    "detail": "TP112 figura como RSX en la hoja MCU. No se ha asociado un voltaje individual a este TP a partir de la imagen.",
+    "source": "Hoja TP MCU",
+    "status": "referencia documental",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP67"
+    ],
+    "nets": [],
+    "title": "Gatillo derecho — señal",
+    "detail": "La imagen señala TP67 como punto para probar gatillo derecho y anota 100 Ω en la ruta de señal; la hoja MCU identifica TP67 como RT. La anotación de 100 Ω no equivale a un voltaje de TP67. ADVERTENCIA: la imagen inferior lo describe como gatillo izquierdo; existe conflicto entre fuentes.",
+    "source": "Imagen anotada MCU + hoja TP MCU",
+    "status": "conflicto entre fuentes, no verificado",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP68"
+    ],
+    "nets": [],
+    "title": "Gatillo izquierdo — señal",
+    "detail": "La imagen señala TP68 como punto para probar gatillo izquierdo y anota 100 Ω en la ruta de señal; la hoja MCU identifica TP68 como LT. ADVERTENCIA: la imagen inferior lo describe como gatillo derecho; existe conflicto entre fuentes.",
+    "source": "Imagen anotada MCU + hoja TP MCU",
+    "status": "conflicto entre fuentes, no verificado",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP36"
+    ],
+    "nets": [],
+    "title": "Habilitación de regulador de joystick",
+    "detail": "La imagen identifica TP36 como punto de prueba para la habilitación del regulador U8 de 3.3 V de los potenciómetros. La hoja MCU identifica TP36 como AN+ habilitar. Hay que verificar la función exacta y las condiciones con el esquema.",
+    "source": "Imagen anotada MCU + hoja TP MCU",
+    "status": "dato por verificar",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP49"
+    ],
+    "nets": [],
+    "title": "Alimentación de sensores Hall de gatillo",
+    "detail": "La hoja MCU documenta TRG+ como señal 3.2 V, 125 Hz, 17 % duty. Es una señal PWM y no debe mostrarse como 3.2 V DC constante.",
+    "source": "Hoja TP MCU",
+    "status": "referencia documental, señal variable",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP5"
+    ],
+    "nets": [],
+    "title": "VBUS USB",
+    "detail": "La hoja MCU identifica TP5 como VBUS. En el multímetro simulado se usa 5.0 V nominal solamente con la opción «USB conectado» activada.",
+    "source": "Hoja TP MCU",
+    "status": "valor nominal simulado",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP9"
+    ],
+    "nets": [],
+    "title": "Alimentación 3.3 V",
+    "detail": "La hoja MCU identifica TP9 como 3.3 V. Se ofrece referencia nominal en la simulación; no es una medición real.",
+    "source": "Hoja TP MCU",
+    "status": "valor nominal simulado",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP7"
+    ],
+    "nets": [],
+    "title": "Alimentación de vibración",
+    "detail": "La hoja MCU identifica TP7 como 3.6 V (Rumble V+). La disponibilidad depende del estado de alimentación del control.",
+    "source": "Hoja TP MCU",
+    "status": "valor nominal condicionado",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "U10",
+      "U11"
+    ],
+    "nets": [],
+    "title": "Sensores Hall U10/U11",
+    "detail": "La imagen anota alimentación de 1.8 V y señales cercanas a 0.9 V en los sensores Hall de gatillo U10/U11; no deben asignarse automáticamente a todos los pines del encapsulado.",
+    "source": "Imagen anotada MCU",
+    "status": "referencia gráfica, verificar pinout",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "R16",
+      "R21"
+    ],
+    "nets": [],
+    "title": "Resistencias serie de 33 Ω",
+    "detail": "La imagen advierte que resistencias de 33 Ω desoldadas o abiertas pueden ocasionar fallas en botones conectados a líneas del microcontrolador. La hoja MCU identifica TP42 vía R16 y TP43 vía R21.",
+    "source": "Imagen anotada MCU + hoja TP MCU",
+    "status": "referencia documental",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP54"
+    ],
+    "nets": [],
+    "title": "Prueba de micrófono",
+    "detail": "La hoja MCU identifica TP54 como MICRÓFONO y la imagen señala una zona de prueba del micrófono. No se proporciona tensión nominal.",
+    "source": "Hoja TP MCU + imagen anotada MCU",
+    "status": "referencia documental",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "U8"
+    ],
+    "nets": [],
+    "title": "Alimentaciones del área de joysticks",
+    "detail": "La imagen SUPERIOR señala nodos de 1.8 V y 3.3 V cerca de los reguladores. No atribuir estos valores a cada pin sin consultar el esquema.",
+    "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "superior"
+  },
+  {
+    "refs": [],
+    "nets": [],
+    "title": "Regulador de gatillos",
+    "detail": "La imagen SUPERIOR identifica un regulador de los gatillos en la región izquierda de la placa; su salida y pinout requieren validación con el esquema.",
+    "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "superior"
+  },
+  {
+    "refs": [],
+    "nets": [],
+    "title": "Controladores de vibradores",
+    "detail": "La imagen SUPERIOR identifica controladores de vibración en los extremos de la placa y anota 3.5 V en dos zonas. El valor es una anotación gráfica, no una lectura universal.",
+    "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "superior"
+  },
+  {
+    "refs": [],
+    "nets": [],
+    "title": "Resistencia de 100 Ω",
+    "detail": "La imagen SUPERIOR señala una resistencia de 100 Ω en la región superior derecha, próxima a SW3; comprobar el componente y su red antes de medir.",
+    "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "superior"
+  },
+  {
+    "refs": [],
+    "nets": [],
+    "title": "Audio: resistencia R32",
+    "detail": "La imagen SUPERIOR advierte que si R32 se daña puede no reconocerse el audio; la anotación indica revisar la entrada de audífonos y alimentación de 3.3 V. No se verificó la causalidad con un diagnóstico real.",
+    "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "superior"
+  },
+  {
+    "refs": [],
+    "nets": [],
+    "title": "Audio: 1.5 kΩ SoC y 100 kΩ",
+    "detail": "La imagen SUPERIOR anota «1.5k SoC», «100k» y «VBUS 5v» en la zona del conector. Son referencias visuales, no valores asociados automáticamente a un pad.",
+    "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "superior"
+  },
+  {
+    "refs": [],
+    "nets": [],
+    "title": "Audio: continuidad PK2/PK3",
+    "detail": "La imagen SUPERIOR indica comprobar continuidad de PK2 y PK3 cuando no hay audífonos conectados. Comprobar que corresponda a esta revisión de placa.",
+    "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "superior"
+  },
+  {
+    "refs": [],
+    "nets": [],
+    "title": "Puerto USB: VBUS 5 V",
+    "detail": "La imagen SUPERIOR marca VBUS 5 V cerca del conector USB. Es una referencia nominal condicionada a alimentación USB.",
+    "source": "Imagen SUPERIOR — Control xbox series1914 datos de diagnostico 4",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "superior"
+  },
+  {
+    "refs": [
+      "TP67"
+    ],
+    "nets": [],
+    "title": "TP67 gatillo izquierdo — anotación de imagen",
+    "detail": "La imagen INFERIOR (REMASTERED) señala TP67 como punto de prueba del gatillo izquierdo y anota 100 Ω en señal. ATENCIÓN: la hoja TP identifica TP67 como RT; hay discrepancia documental y no debe asignarse lado definitivo sin validar.",
+    "source": "Imagen INFERIOR — Overlay REMASTERED",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP68"
+    ],
+    "nets": [],
+    "title": "TP68 gatillo derecho — anotación de imagen",
+    "detail": "La imagen INFERIOR (REMASTERED) señala TP68 como punto de prueba del gatillo derecho y anota 100 Ω en señal. ATENCIÓN: la hoja TP identifica TP68 como LT; hay discrepancia documental y no debe asignarse lado definitivo sin validar.",
+    "source": "Imagen INFERIOR — Overlay REMASTERED",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP36"
+    ],
+    "nets": [],
+    "title": "TP36 habilitación del regulador",
+    "detail": "La imagen INFERIOR señala TP36 para probar habilitación del regulador; la hoja TP lo llama AN+ Enable. Verificar relación exacta con U8 y tensiones en esquema.",
+    "source": "Imagen INFERIOR — Overlay REMASTERED",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "TP54"
+    ],
+    "nets": [],
+    "title": "TP54 micrófono",
+    "detail": "La imagen INFERIOR marca un punto de prueba de micrófono, compatible con la identificación documental TP54 de la hoja MCU.",
+    "source": "Imagen INFERIOR — Overlay REMASTERED",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "U10",
+      "U11"
+    ],
+    "nets": [],
+    "title": "Sensores Hall de gatillos",
+    "detail": "La imagen INFERIOR marca 1.8 V como alimentación y 0.9 V en algunos puntos de señal próximos a U10/U11; no es válido extrapolar estos valores a todos sus pines.",
+    "source": "Imagen INFERIOR — Overlay REMASTERED",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "inferior"
+  },
+  {
+    "refs": [
+      "R16",
+      "R21"
+    ],
+    "nets": [],
+    "title": "Resistencias serie de 33 Ω",
+    "detail": "La imagen INFERIOR advierte que resistencias de 33 Ω abiertas o desoldadas pueden causar fallas de botones conectados al microcontrolador. Correlacionar con R16/R21 y la hoja MCU.",
+    "source": "Imagen INFERIOR — Overlay REMASTERED",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "inferior"
+  },
+  {
+    "refs": [],
+    "nets": [],
+    "title": "Filtro y transformador de radiofrecuencia",
+    "detail": "La imagen INFERIOR advierte revisar filtro/transformador RF si el control se apaga al conectar antenas o se sobrecalienta. Es una pista diagnóstica documental, no una conclusión automática.",
+    "source": "Imagen INFERIOR — Overlay REMASTERED",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "inferior"
+  },
+  {
+    "refs": [],
+    "nets": [],
+    "title": "Señales del joystick: 1.8 V / 0.9 V",
+    "detail": "La imagen INFERIOR muestra 1.8 V en alimentación y aproximadamente 0.9 V en señales del potenciómetro, en los puntos dibujados. No equivale a 0.9 V fijo durante todo el recorrido.",
+    "source": "Imagen INFERIOR — Overlay REMASTERED",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "inferior"
+  },
+  {
+    "refs": [],
+    "nets": [],
+    "title": "Botón B: resistencia de 100 Ω",
+    "detail": "La imagen INFERIOR marca resistencia de botón B de 100 Ω en una ruta concreta. Confirmar el componente antes de usarla como referencia de reparación.",
+    "source": "Imagen INFERIOR — Overlay REMASTERED",
+    "status": "anotación documental; pendiente de verificar",
+    "side": "inferior"
+  }
+]
