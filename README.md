@@ -107,3 +107,6 @@ V4.5 — Arrastre libre desde toda la superficie del BoardView: los rectángulos
 V4.6 — Colaboración moderada: botón ENVIAR MODIFICACIÓN AL ADMINISTRADOR en el panel de aportaciones. El técnico lee una explicación, introduce nota y alias, descarga JSON compatible con la importación existente y prepara un correo. Debe adjuntar manualmente el archivo y enviarlo; GitHub Pages no permite enviar archivos por sí solo. El correo del administrador se configura localmente (no se publica ningún correo inventado). Se oculta la interfaz opcional de Supabase; no se elimina la implementación. Los aportes no se publican automáticamente.
 
 V4.7: correo de recepción fijo deathmask1403@gmail.com; el técnico ya no tiene que configurarlo. Sigue siendo necesario adjuntar el JSON manualmente al correo preparado.
+
+
+V4.8 — Referencias: los registros con descripción técnica equivalente se muestran una sola vez en la ficha del punto, en datos de imagen y en el índice. Los registros repetidos se agrupan en un desplegable contraído con sus títulos/fuentes originales; se mantienen los archivos y datos completos sin borrar aportaciones. La agrupación es por texto normalizado, por lo que descripciones distintas permanecen independientes.
