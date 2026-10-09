@@ -143,3 +143,6 @@ V5.3 — MAIN POWER: ficha interactiva del conector USB-C J1, mostrando VBUS/A4,
 
 
 V5.5: Panel de capas por familia de componentes (R/C/D/Q/U/J/L/SW/Otros) y nomenclatura pequeña sobre siluetas. Usa los contornos KiCad disponibles y aproximaciones donde no hay geometría. Ambos visores.
+
+
+V5.6: Los datos agregados por usuarios NO se pintan permanentemente. Aparecen junto al punto solo cuando ese pad o componente está seleccionado. Las referencias originales y siluetas permanecen visibles según sus controles.
