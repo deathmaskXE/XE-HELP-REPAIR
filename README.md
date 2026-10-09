@@ -131,3 +131,6 @@ V5.0 — Tabla documental de resistencias extraída del esquema y pads del PCB. 
 Ejecutar en la carpeta extraída: `py -m http.server 8041`; abrir `http://localhost:8041/`.
 
 V5.2: imagen frontal overlay de MAIN POWER añadida al panel de referencias, abierta por defecto. Se conserva la imagen de diagnóstico anterior.
+
+
+V5.3 — MAIN POWER: ficha interactiva del conector USB-C J1, mostrando VBUS/A4, D+/A6, D-/A7, CC/A5, VCONN/B5 y GND/A1/S1. Clic enfoca pads del BoardView y resalta su red original. Se preservan nombres de red KiCad y datos anteriores.
