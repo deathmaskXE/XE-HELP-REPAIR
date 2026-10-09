@@ -222,7 +222,7 @@ main.layout>aside>details.panelgroup>.panelcontent{background:#17181b!important;
 /* Oculta exclusivamente los encabezados H2 que por compatibilidad quedaran fuera del grupo. */
 main.layout>aside>h2{display:none!important}
 @media(prefers-reduced-motion:reduce){main.layout>aside>details.panelgroup{animation:none!important;border-color:#bda373!important}}
-</style></head><body><header><div><div class="xeBrandEyebrow">XE SERVICIO ELECTRÓNICO · LABORATORIO DIGITAL</div><h1>XE HELP REPAIR <small>V4.2</small></h1><div class="xeBrandSub">CONTROL SERIES 1914 · DIAGNÓSTICO ELECTRÓNICO</div></div><div class="xeHeaderSignature">PRECISIÓN <span>◆</span> TECNOLOGÍA <span>◆</span> EXPERIENCIA</div></header><main class="layout"><aside><h2>PLACA</h2><div class="info">CONTROL XBOX SERIES 1914<br><span class="muted">Placa MCU · documentación y diagnóstico colaborativo</span></div><h2>CAPA VISIBLE</h2><div class="row"><button id="front" class="active">Superior</button><button id="back">Inferior</button><button id="xeDualToggle" type="button">Dos caras</button></div><label class="muted"><input id="xeCrosshairToggle" type="checkbox" checked style="width:auto"> Cursor de referencia sincronizado entre caras</label><label class="muted"><input id="xeViasToggle" type="checkbox" checked style="width:auto"> Mostrar vías originales XE</label><label class="muted"><input id="xeSyncViews" type="checkbox" checked style="width:auto"> Zoom y desplazamiento sincronizados (espejo)</label><h2>BUSCAR COMPONENTE O RED</h2><input id="search" placeholder="Ej. U1, R23, GND, VBUS"/><div id="results"></div><h2>VISTA</h2><label class="muted"><input type="checkbox" id="labels" style="width:auto"> Mostrar referencias de componentes</label><label class="muted"><input type="checkbox" id="adaptive" checked style="width:auto"> Etiquetas inteligentes (se reducen con zoom)</label><div class="row"><button id="zin">Zoom +</button><button id="zout">Zoom −</button><button id="reset">Centrar</button></div><label class="muted"><input type="checkbox" id="traces" checked style="width:auto"> Mostrar pistas de cobre</label><label class="muted"><input type="checkbox" id="overlayToggle" checked style="width:auto"> Datos técnicos sobre BoardView</label><label class="muted"><input type="checkbox" id="autoReference" style="width:auto"> Abrir ficha de referencia automáticamente</label><button id="openReference" type="button">Ver referencia del punto seleccionado</button><label class="muted"><input type="checkbox" id="netshow" checked style="width:auto"> Resaltar pads y pistas de la misma red</label><label class="muted">Tamaño de marcadores <span id="markersizeval">35%</span><input type="range" id="markersize" min="15" max="100" value="35" step="5"></label><section id="restoreSystem" class="restoreSystem"><h3>RESTAURADOR · BOARDVIEW</h3><p>Protege los datos agregados por técnicos. La geometría original XE es de solo lectura.</p><div class="restoreButtons"><button id="restoreSnapshot">Crear punto de restauración</button><button id="restoreDownload">Descargar respaldo JSON</button><label class="restoreUpload">Importar respaldo JSON<input id="restoreUpload" type="file" accept=".json,application/json" hidden></label></div><label for="restoreHistory">Versiones disponibles</label><select id="restoreHistory"></select><button id="restoreApply" class="danger">Restaurar versión seleccionada</button><button id="restoreFactory" class="danger">Restaurar datos originales (sin aportes)</button><p id="restoreStatus" role="status">Los cambios en los aportes generan copias locales automáticas (máximo 20).</p></section></aside><section class="viewer"><div id="knowledgePanel" hidden><button class="close" id="knowledgeClose" type="button">× Cerrar</button><h3>+ Datos del BoardView</h3><div id="knowledgeTarget" class="minor"></div><div id="knowledgeEntries"></div><details id="knowledgeForm"><summary>+ Agregar dato a este punto</summary><label>Tipo de dato<select id="knowledgeType"><option>Medición</option><option>Falla</option><option>Solución</option><option>Componente</option><option>Nota técnica</option></select></label><label>Valor y unidad (opcional)<input id="knowledgeValue" placeholder="Ej. 1.79 V, 33 Ω" maxlength="100"></label><label>Condiciones de medición<input id="knowledgeConditions" placeholder="USB conectado, placa encendida..." maxlength="220"></label><label>Descripción<textarea id="knowledgeNote" placeholder="Describe el hallazgo y su fuente" maxlength="2500"></textarea></label><label>Autor o alias<input id="knowledgeAuthor" placeholder="Técnico" maxlength="80"></label><button id="knowledgeSave" class="full" type="button">Guardar en este BoardView</button><div id="knowledgeError" class="minor"></div></details></div><div id="xeImageClickNotes" hidden aria-live="polite"></div><div id="boardInfoCard" hidden aria-live="polite"></div><div id="floatingMeter"><div class="meterbar" id="meterDrag"><span>XE MULTÍMETRO · DC V</span><button type="button" id="meterCollapse" aria-label="Minimizar multímetro">−</button></div><div class="metercontents" id="meterContents"></div></div><svg id="svg" xmlns="http://www.w3.org/2000/svg"><g id="world"></g></svg><div id="xeDualViewer" hidden><div class="xeDualTitle">CARA INFERIOR · ESPEJO <span>Selecciona un pad o pista</span></div><svg id="xeDualSvg" xmlns="http://www.w3.org/2000/svg"><g id="xeDualWorld"></g></svg></div><div class="legend">Contorno XE · Inferior en espejo · Pads · 🔴 Selección · 🔵 Red · Puntas R/N · punta dibujada y pad cubierto<br>Rueda: zoom · Arrastrar: mover · Clic en pad: seleccionar · Etiquetas adaptativas</div></section><aside class="right"><h2>DATOS APORTADOS AL BOARDVIEW</h2><div class="info"><button id="knowledgeOpen" type="button">+ Agregar / ver datos del punto</button><button id="knowledgeExport" type="button">Exportar datos JSON</button><label class="muted">Importar copia de datos JSON<input id="knowledgeImport" type="file" accept=".json,application/json"></label><div class="muted">Los datos se guardan en este navegador. No se comparten con otros técnicos hasta conectar una base de datos en línea. Cada aporte queda vinculado al pad y a la revisión del PCB.</div></div><h2>INSPECTOR ELÉCTRICO</h2><div id="inspector" class="info">Selecciona un componente o pad para ver sus datos.</div><h2>DATOS DOCUMENTADOS · MCU / JOYSTICKS</h2><div id="tpinfo" class="info muted">Selecciona un TP para consultar la hoja de datos de la placa MCU.</div><div class="refimages"><details><summary>Referencia SUPERIOR · Diagnóstico</summary><a href="referencia_superior.png" target="_blank" rel="noopener"><img src="referencia_superior.png" alt="Anotaciones de la cara superior MCU" loading="lazy"></a></details><details><summary>Referencia INFERIOR · REMASTERED</summary><a href="referencia_inferior.png" target="_blank" rel="noopener"><img src="referencia_inferior.png" alt="Anotaciones de la cara inferior MCU" loading="lazy"></a></details></div><p class="muted">Imágenes documentales; no son una superposición calibrada. Las anotaciones también se muestran como fichas de datos.</p><h2>DATOS EXTRAÍDOS DE LA IMAGEN MCU</h2><div id="imagefacts" class="info muted">Selecciona un TP o un componente para consultar anotaciones técnicas.</div><h2>ÍNDICE DE DATOS DE LAS IMÁGENES</h2><div id="factsIndex" class="info muted">Cargando referencias documentales…</div><h2>SEGUIMIENTO DE PISTAS Y REDES</h2><div class="info"><label class="muted"><input type="checkbox" id="xeBothSides" checked style="width:auto"> Mostrar conexiones de ambas caras en la lista</label><div id="xeNetSummary" class="muted">Toca una pista o un pad para seguir su red.</div><button id="xeNetNext" type="button">Ir al siguiente punto conectado</button><button id="xeNetClear" type="button">Limpiar selección de red</button></div><h2>CONEXIONES DE RED</h2><div id="xeLayerSummary" class="info muted">Selecciona una red para consultar su distribución por caras.</div><div id="netinfo" class="info muted">Selecciona un pad para consultar otros pads de su misma red.</div><h2>MULTÍMETRO DIGITAL · SIMULADOR</h2><div class="meter"><div class="meterhead"><span>XE · DMM</span><span>SIMULACIÓN / DC V</span></div><div class="meterdisplay"><span id="meterValue">---- </span><span class="meterunit" id="xeMeterUnit">V</span></div><label class="modebox">Asignación de puntas <select id="meterMode"><option value="auto">Automático (2 clics roja, 3 clics negra)</option><option value="manual">Manual (botones roja / negra)</option></select></label><label class="modebox">Fuente de lectura <select id="meterSource"><option value="auto">Automática: aporte guardado / referencia</option><option value="saved">Solo mediciones guardadas</option><option value="nominal">Solo referencia nominal</option></select></label><div id="meterEvidence" class="meterstatus"></div><div id="meterStatus" class="meterstatus">Selecciona una punta roja y una negra. Solo se simulan referencias documentadas.</div></div><label class="modebox"><input type="checkbox" id="usbPower" checked style="width:auto"> Simular USB conectado (VBUS)</label><p class="muted">No lee voltajes reales ni detecta fallas. El signo corresponde a V(roja) − V(negra). Valores nominales documentales.</p><h2>PUNTAS DEL MULTÍMETRO</h2><div class="row"><button id="red">Marcar roja</button><button id="black">Marcar negra</button></div><button id="clear">Borrar marcadores</button><div id="probes" class="info muted">Selecciona un pad y pulsa el color de la punta.</div><h2>DIAGNÓSTICO POR SÍNTOMAS · PROTOTIPO</h2><select id="symptom"><option value="general">Inspección general</option><option value="power">No enciende</option><option value="charge">No carga por USB</option><option value="sync">No sincroniza</option><option value="stick">Falla de joystick</option></select><div class="row"><button id="prevstep">Anterior</button><button id="nextstep">Siguiente</button></div><div class="info" id="stepinfo"></div><h2>INSPECCIÓN DEL PAD · ETAPA 1</h2><div class="info" id="diag">Selecciona un pad para iniciar la revisión de su red.</div><div class="info">Los nombres de red provienen del PCB KiCad. <strong>No equivalen a mediciones reales ni garantizan voltajes en funcionamiento.</strong></div><h2>ADVERTENCIA</h2><p class="muted">Este visor es un sistema colaborativo de exploración. No coloques puntas sobre la placa basándote únicamente en las posiciones mostradas sin cotejarlas con la revisión física.</p></aside></main><script>
+</style></head><body><header><div><div class="xeBrandEyebrow">XE SERVICIO ELECTRÓNICO · LABORATORIO DIGITAL</div><h1>XE HELP REPAIR <small>V4.4</small></h1><div class="xeBrandSub">CONTROL SERIES 1914 · DIAGNÓSTICO ELECTRÓNICO</div></div><div class="xeHeaderSignature">PRECISIÓN <span>◆</span> TECNOLOGÍA <span>◆</span> EXPERIENCIA</div></header><main class="layout"><aside><h2>PLACA</h2><div class="info">CONTROL XBOX SERIES 1914<br><span class="muted">Placa MCU · documentación y diagnóstico colaborativo</span></div><h2>CAPA VISIBLE</h2><div class="row"><button id="front" class="active">Superior</button><button id="back">Inferior</button><button id="xeDualToggle" type="button">Dos caras</button></div><label class="muted"><input id="xeCrosshairToggle" type="checkbox" checked style="width:auto"> Cursor de referencia sincronizado entre caras</label><label class="muted"><input id="xeViasToggle" type="checkbox" checked style="width:auto"> Mostrar vías originales XE</label><label class="muted"><input id="xeSyncViews" type="checkbox" checked style="width:auto"> Zoom y desplazamiento sincronizados (espejo)</label><h2>BUSCAR COMPONENTE O RED</h2><input id="search" placeholder="Ej. U1, R23, GND, VBUS"/><div id="results"></div><h2>VISTA</h2><label class="muted"><input type="checkbox" id="labels" style="width:auto"> Mostrar referencias de componentes</label><label class="muted"><input type="checkbox" id="adaptive" checked style="width:auto"> Etiquetas inteligentes (se reducen con zoom)</label><div class="row"><button id="zin">Zoom +</button><button id="zout">Zoom −</button><button id="reset">Centrar</button></div><label class="muted"><input type="checkbox" id="traces" checked style="width:auto"> Mostrar pistas de cobre</label><label class="muted"><input type="checkbox" id="overlayToggle" checked style="width:auto"> Datos técnicos sobre BoardView</label><label class="muted"><input type="checkbox" id="autoReference" style="width:auto"> Abrir ficha de referencia automáticamente</label><button id="openReference" type="button">Ver referencia del punto seleccionado</button><label class="muted"><input type="checkbox" id="netshow" checked style="width:auto"> Resaltar pads y pistas de la misma red</label><label class="muted">Tamaño de marcadores <span id="markersizeval">35%</span><input type="range" id="markersize" min="15" max="100" value="35" step="5"></label><section id="restoreSystem" class="restoreSystem"><h3>RESTAURADOR · BOARDVIEW</h3><p>Protege los datos agregados por técnicos. La geometría original XE es de solo lectura.</p><div class="restoreButtons"><button id="restoreSnapshot">Crear punto de restauración</button><button id="restoreDownload">Descargar respaldo JSON</button><label class="restoreUpload">Importar respaldo JSON<input id="restoreUpload" type="file" accept=".json,application/json" hidden></label></div><label for="restoreHistory">Versiones disponibles</label><select id="restoreHistory"></select><button id="restoreApply" class="danger">Restaurar versión seleccionada</button><button id="restoreFactory" class="danger">Restaurar datos originales (sin aportes)</button><p id="restoreStatus" role="status">Los cambios en los aportes generan copias locales automáticas (máximo 20).</p></section></aside><section class="viewer"><div id="knowledgePanel" hidden><button class="close" id="knowledgeClose" type="button">× Cerrar</button><h3>+ Datos del BoardView</h3><div id="knowledgeTarget" class="minor"></div><div id="knowledgeEntries"></div><details id="knowledgeForm"><summary>+ Agregar dato a este punto</summary><label>Tipo de dato<select id="knowledgeType"><option>Medición</option><option>Falla</option><option>Solución</option><option>Componente</option><option>Nota técnica</option></select></label><label>Valor y unidad (opcional)<input id="knowledgeValue" placeholder="Ej. 1.79 V, 33 Ω" maxlength="100"></label><label>Condiciones de medición<input id="knowledgeConditions" placeholder="USB conectado, placa encendida..." maxlength="220"></label><label>Descripción<textarea id="knowledgeNote" placeholder="Describe el hallazgo y su fuente" maxlength="2500"></textarea></label><label>Autor o alias<input id="knowledgeAuthor" placeholder="Técnico" maxlength="80"></label><button id="knowledgeSave" class="full" type="button">Guardar en este BoardView</button><div id="knowledgeError" class="minor"></div></details></div><div id="xeImageClickNotes" hidden aria-live="polite"></div><div id="boardInfoCard" hidden aria-live="polite"></div><div id="floatingMeter"><div class="meterbar" id="meterDrag"><span>XE MULTÍMETRO · DC V</span><button type="button" id="meterCollapse" aria-label="Minimizar multímetro">−</button></div><div class="metercontents" id="meterContents"></div></div><svg id="svg" xmlns="http://www.w3.org/2000/svg"><g id="world"></g></svg><div id="xeDualViewer" hidden><div class="xeDualTitle">CARA INFERIOR · ESPEJO <span>Selecciona un pad o pista</span></div><svg id="xeDualSvg" xmlns="http://www.w3.org/2000/svg"><g id="xeDualWorld"></g></svg></div><div class="legend">Contorno XE · Inferior en espejo · Pads · 🔴 Selección · 🔵 Red · Puntas R/N · punta dibujada y pad cubierto<br>Rueda: zoom · Arrastrar: mover · Clic en pad: seleccionar · Etiquetas adaptativas</div></section><aside class="right"><h2>DATOS APORTADOS AL BOARDVIEW</h2><div class="info"><button id="knowledgeOpen" type="button">+ Agregar / ver datos del punto</button><button id="knowledgeExport" type="button">Exportar datos JSON</button><label class="muted">Importar copia de datos JSON<input id="knowledgeImport" type="file" accept=".json,application/json"></label><div class="muted">Los datos se guardan en este navegador. No se comparten con otros técnicos hasta conectar una base de datos en línea. Cada aporte queda vinculado al pad y a la revisión del PCB.</div></div><h2>INSPECTOR ELÉCTRICO</h2><div id="inspector" class="info">Selecciona un componente o pad para ver sus datos.</div><h2>DATOS DOCUMENTADOS · MCU / JOYSTICKS</h2><div id="tpinfo" class="info muted">Selecciona un TP para consultar la hoja de datos de la placa MCU.</div><div class="refimages"><details><summary>Referencia SUPERIOR · Diagnóstico</summary><a href="referencia_superior.png" target="_blank" rel="noopener"><img src="referencia_superior.png" alt="Anotaciones de la cara superior MCU" loading="lazy"></a></details><details><summary>Referencia INFERIOR · REMASTERED</summary><a href="referencia_inferior.png" target="_blank" rel="noopener"><img src="referencia_inferior.png" alt="Anotaciones de la cara inferior MCU" loading="lazy"></a></details></div><p class="muted">Imágenes documentales; no son una superposición calibrada. Las anotaciones también se muestran como fichas de datos.</p><h2>DATOS EXTRAÍDOS DE LA IMAGEN MCU</h2><div id="imagefacts" class="info muted">Selecciona un TP o un componente para consultar anotaciones técnicas.</div><h2>ÍNDICE DE DATOS DE LAS IMÁGENES</h2><div id="factsIndex" class="info muted">Cargando referencias documentales…</div><h2>SEGUIMIENTO DE PISTAS Y REDES</h2><div class="info"><label class="muted"><input type="checkbox" id="xeBothSides" checked style="width:auto"> Mostrar conexiones de ambas caras en la lista</label><div id="xeNetSummary" class="muted">Toca una pista o un pad para seguir su red.</div><button id="xeNetNext" type="button">Ir al siguiente punto conectado</button><button id="xeNetClear" type="button">Limpiar selección de red</button></div><h2>CONEXIONES DE RED</h2><div id="xeLayerSummary" class="info muted">Selecciona una red para consultar su distribución por caras.</div><div id="netinfo" class="info muted">Selecciona un pad para consultar otros pads de su misma red.</div><h2>MULTÍMETRO DIGITAL · SIMULADOR</h2><div class="meter"><div class="meterhead"><span>XE · DMM</span><span>SIMULACIÓN / DC V</span></div><div class="meterdisplay"><span id="meterValue">---- </span><span class="meterunit" id="xeMeterUnit">V</span></div><label class="modebox">Asignación de puntas <select id="meterMode"><option value="auto">Automático (2 clics roja, 3 clics negra)</option><option value="manual">Manual (botones roja / negra)</option></select></label><label class="modebox">Fuente de lectura <select id="meterSource"><option value="auto">Automática: aporte guardado / referencia</option><option value="saved">Solo mediciones guardadas</option><option value="nominal">Solo referencia nominal</option></select></label><div id="meterEvidence" class="meterstatus"></div><div id="meterStatus" class="meterstatus">Selecciona una punta roja y una negra. Solo se simulan referencias documentadas.</div></div><label class="modebox"><input type="checkbox" id="usbPower" checked style="width:auto"> Simular USB conectado (VBUS)</label><p class="muted">No lee voltajes reales ni detecta fallas. El signo corresponde a V(roja) − V(negra). Valores nominales documentales.</p><h2>PUNTAS DEL MULTÍMETRO</h2><div class="row"><button id="red">Marcar roja</button><button id="black">Marcar negra</button></div><button id="clear">Borrar marcadores</button><div id="probes" class="info muted">Selecciona un pad y pulsa el color de la punta.</div><h2>DIAGNÓSTICO POR SÍNTOMAS · PROTOTIPO</h2><select id="symptom"><option value="general">Inspección general</option><option value="power">No enciende</option><option value="charge">No carga por USB</option><option value="sync">No sincroniza</option><option value="stick">Falla de joystick</option></select><div class="row"><button id="prevstep">Anterior</button><button id="nextstep">Siguiente</button></div><div class="info" id="stepinfo"></div><h2>INSPECCIÓN DEL PAD · ETAPA 1</h2><div class="info" id="diag">Selecciona un pad para iniciar la revisión de su red.</div><div class="info">Los nombres de red provienen del PCB KiCad. <strong>No equivalen a mediciones reales ni garantizan voltajes en funcionamiento.</strong></div><h2>ADVERTENCIA</h2><p class="muted">Este visor es un sistema colaborativo de exploración. No coloques puntas sobre la placa basándote únicamente en las posiciones mostradas sin cotejarlas con la revisión física.</p></aside></main><script>
 let tpData={};let imageFacts=[];let stepIndex=0;let hoverPad=null;let mirrorAxis=0;let data,side='F',selected=null,probe={red:null,black:null},view=null,drag=null;const $=x=>document.getElementById(x),svg=$('svg');const ns='http://www.w3.org/2000/svg';function el(t,a,parent){let n=document.createElementNS(ns,t);for(let [k,v] of Object.entries(a||{}))n.setAttribute(k,v);parent.append(n);return n}function mx(x){return side==='B'?2*mirrorAxis-x:x}function init(){let pts=data.pads.concat(data.footprints);let xs=pts.map(p=>p.x),ys=pts.map(p=>p.y);let minX=Math.min(...xs)-7,minY=Math.min(...ys)-7,maxX=Math.max(...xs)+7,maxY=Math.max(...ys)+7;mirrorAxis=(minX+maxX)/2;view=[minX,minY,maxX-minX,maxY-minY];draw()}function labelConfig(){
   // mm de alto en SVG: decrece al acercar el zoom, con límites para evitar letras gigantes.
   const base=0.72, relative=Math.sqrt(Math.max(0.04,view[2]/100));
@@ -1520,6 +1520,174 @@ updateMeter=function(){
  show();el('strong','5 · Consultar las imágenes originales',panel);imageLinks(d,panel);
  el('p','Agrega un intervalo de referencia y las condiciones de prueba para habilitar una comparación.',panel,'xeGuideWarn');
  };
+})();
+</script>
+
+<style id="xeV43MeterStyle">
+#xeMeterControl{margin:10px auto;max-width:700px;padding:12px;border:1px solid #a98c57;border-radius:12px;background:linear-gradient(135deg,#222328,#0c0d10);color:#e8e0d1}
+#xeMeterControl .xeMeterControlRow{display:flex;gap:8px;flex-wrap:wrap}
+#xeMeterControl button{width:auto;flex:1;min-width:155px;border:1px solid #ad925c;background:linear-gradient(#47423b,#201f20);color:#f6e4b7;font-weight:700}
+#xeMeterControl button[aria-pressed="true"]{border-color:#e6cb8e;box-shadow:0 0 9px #cfb07866,inset 0 1px #fff3}
+#xeMeterControl .xeMeterHint{font-size:12px;line-height:1.5;margin:7px 0;color:#c9cbd0}
+</style>
+<script id="xeV43MeterScript">
+(function(){
+ const id=x=>document.getElementById(x);
+ const mode=id('meterMode'),container=id('meterContents');
+ if(!mode||!container)return;
+ // The legacy automatic three-click routine is disabled. This panel owns automatic probing.
+ mode.value='manual';mode.style.display='none';
+ let automatic=true,inverted=false,meterPowered=true;
+ const panel=document.createElement('div');panel.id='xeMeterControl';
+ panel.innerHTML='<div class="xeMeterControlRow"><button id="xeAutoProbe" type="button" aria-pressed="true">● Puntas automáticas: ACTIVAS</button><button id="xeInvertProbe" type="button" aria-pressed="false">⇄ Invertir puntas: NORMAL</button></div><div id="xeMeterHint" class="xeMeterHint"></div>';
+ mode.insertAdjacentElement('afterend',panel);
+ const auto=id('xeAutoProbe'),invert=id('xeInvertProbe'),hint=id('xeMeterHint');
+ const isGround=p=>p&&/^(?:GND|AGND|DGND|PGND|GROUND|GNDA|GNDD)$/i.test(String(p.net||'').trim());
+ function findGround(){
+  if(!data?.pads?.length)return null;
+  return data.pads.find(p=>isGround(p)&&p.side===side)
+      ||data.pads.find(p=>isGround(p))||null;
+ }
+ function status(){
+  auto.setAttribute('aria-pressed',String(automatic));
+  invert.setAttribute('aria-pressed',String(inverted));
+  auto.textContent='● Puntas automáticas: '+(automatic?'ACTIVAS':'DESACTIVADAS');
+  invert.textContent='⇄ Invertir puntas: '+(inverted?'INVERTIDAS':'NORMALES');
+  hint.textContent=automatic
+   ?(inverted?'Punta roja fija en GND; cada clic coloca la negra. Modo útil para consultar conexiones y continuidad por red.'
+               :'Punta negra fija en GND; cada clic coloca la roja y actualiza la referencia.')
+   :'Modo manual: selecciona un pad y utiliza los botones Roja / Negra para asignar las puntas.';
+ }
+ function assign(p){
+  if(!meterPowered||!automatic||!p||p.num===undefined)return;
+  const g=findGround();
+  if(inverted){probe.red=g;probe.black=p}else{probe.black=g;probe.red=p}
+  if(typeof probeText==='function')probeText();
+  if(typeof draw==='function')draw();
+ }
+ function resetGround(){
+  if(!meterPowered||!automatic)return;
+  const g=findGround();
+  if(inverted){probe.red=g;probe.black=null}else{probe.black=g;probe.red=null}
+  if(typeof probeText==='function')probeText();
+  if(typeof draw==='function')draw();
+ }
+ auto.onclick=()=>{if(!meterPowered)return;automatic=!automatic;status();if(automatic){mode.value='manual';resetGround()}};
+ invert.onclick=()=>{if(!meterPowered)return;inverted=!inverted;status();if(automatic){if(selected?.num!==undefined)assign(selected);else resetGround()}else if(probe.red||probe.black){const t=probe.red;probe.red=probe.black;probe.black=t;probeText();draw()}};
+ // select() is called by either SVG view, component search and net navigation.
+ const previousSelect=select;
+ select=function(p){previousSelect(p);assign(p)};
+ // When the board loads asynchronously, establish the fixed ground reference.
+ const originalInit=init;
+ init=function(){originalInit();resetGround()};
+ // Reset keeps the ground terminal assigned when automatic mode is on.
+ id('clear')?.addEventListener('click',()=>queueMicrotask(resetGround));
+ // Continuity mode uses network identity only, not actual measured resistance.
+ window.xeMeterPower=function(on){
+  meterPowered=!!on;
+  if(!meterPowered){
+   probe.red=null;probe.black=null;
+   if(typeof probeText==='function')probeText();
+   if(typeof draw==='function')draw();
+  }else resetGround();
+  status();
+  if(typeof updateMeter==='function')updateMeter();
+ };
+ const priorMeter=updateMeter;
+ updateMeter=function(){
+  if(!meterPowered){
+   const value=id('meterValue'),unit=id('xeMeterUnit'),status=id('meterStatus'),evidence=id('meterEvidence');
+   if(value)value.textContent='OFF';
+   if(unit)unit.textContent='';
+   if(status)status.textContent='Multímetro apagado · usa el botón del panel inferior para encenderlo.';
+   if(evidence)evidence.textContent='';
+   return;
+  }
+  if(inverted&&automatic&&probe.red&&probe.black){
+   const r=id('meterValue'),st=id('meterStatus'),ev=id('meterEvidence');
+   const same=!!probe.red.net&&probe.red.net===probe.black.net;
+   r.textContent=same?'MISMA RED':'----';
+   st.textContent=same?'CONTINUIDAD DE DISEÑO: ambas puntas pertenecen a la misma red XE.':'PUNTAS INVERTIDAS · referencia entre '+(probe.red.net||'?')+' y '+(probe.black.net||'?')+'.';
+   if(ev)ev.textContent='Comparación de conexiones del BoardView; no equivale a una prueba física de continuidad ni a una lectura en Ω.';
+   return;
+  }
+  priorMeter();
+ };
+ status();
+ // The base board may already be initialized.
+ if(typeof data!=='undefined'&&data)resetGround();
+})();
+</script>
+
+<style id="xeV44WorkshopStyle">
+#xeToolDock{
+ background:linear-gradient(145deg,#0a0b0e,#24262a 45%,#0c0d0f)!important;
+ border-top:2px solid #b99b62!important;
+ box-shadow:inset 0 1px #e3c98c22,0 -5px 20px #0008!important;
+}
+#xeDockTabs{display:flex!important;align-items:stretch;gap:9px!important;flex-wrap:wrap;padding:4px 2px 9px}
+#xeDockTabs button{
+ flex:1 1 135px!important;min-height:44px!important;
+ border:1px solid #897650!important;border-radius:8px!important;
+ background:linear-gradient(165deg,#484a4d 0%,#27292d 46%,#0f1114 100%)!important;
+ color:#e7e1d6!important;letter-spacing:.04em;font-weight:800!important;
+ text-shadow:0 1px 1px #000,0 2px 3px #000!important;
+ box-shadow:inset 0 1px #ffffff2b,inset 0 -2px #050608,0 3px 6px #0008!important;
+ transition:border-color .2s,box-shadow .2s,transform .2s;
+}
+#xeDockTabs button:hover{border-color:#e7c886!important;box-shadow:0 0 10px #bba06a55,inset 0 1px #fff3!important;transform:translateY(-1px)}
+#xeDockTabs button[aria-selected="true"]{
+ border-color:#e0c07e!important;
+ background:linear-gradient(155deg,#77623f,#403626 55%,#17181a)!important;
+ color:#fff3d2!important;box-shadow:inset 0 1px #f5dfa566,0 0 10px #bda26d77!important
+}
+#xeDockTabs #xeMeterPower{
+ flex:0 0 auto!important;min-width:155px!important;
+ border-color:#c7a96c!important;color:#ffe7b1!important;
+}
+#xeDockTabs #xeMeterPower[aria-pressed="false"]{
+ color:#c9cbd0!important;border-color:#62676d!important;
+ background:linear-gradient(#35373a,#131417)!important;
+}
+#xeDockContent{border:1px solid #645338;border-radius:0 0 9px 9px}
+#xeToolDock.xeMeterOff #floatingMeter{display:none!important}
+#xeToolDock.xeMeterOff #xeDockTabs button[data-panel="floatingMeter"]{opacity:.75}
+</style>
+<script id="xeV44WorkshopScript">
+(function(){
+ const dock=document.getElementById('xeToolDock');
+ const tabs=document.getElementById('xeDockTabs');
+ const content=document.getElementById('xeDockContent');
+ const meter=document.getElementById('floatingMeter');
+ if(!dock||!tabs||!content||!meter)return;
+ const meterTab=tabs.querySelector('button[data-panel="floatingMeter"]');
+ if(!meterTab)return;
+ let powered=true;
+ const power=document.createElement('button');
+ power.type='button';power.id='xeMeterPower';
+ power.setAttribute('aria-label','Encender o apagar multímetro');
+ power.setAttribute('aria-pressed','true');
+ tabs.insertBefore(power,tabs.firstChild);
+ const other=()=>[...tabs.querySelectorAll('button[data-panel]')].find(b=>b.dataset.panel!=='floatingMeter');
+ function apply(){
+  power.setAttribute('aria-pressed',String(powered));
+  power.textContent=powered?'⏻ APAGAR MULTÍMETRO':'⏻ ENCENDER MULTÍMETRO';
+  dock.classList.toggle('xeMeterOff',!powered);
+  if(typeof window.xeMeterPower==='function')window.xeMeterPower(powered);
+  if(!powered&&meterTab.getAttribute('aria-selected')==='true')other()?.click();
+ }
+ power.addEventListener('click',()=>{powered=!powered;apply()});
+ meterTab.addEventListener('click',()=>{
+  if(!powered){powered=true;apply()}
+ });
+ for(const [panel,icon] of Object.entries({
+  floatingMeter:'◉',xeImageClickNotes:'▣',boardInfoCard:'⌖',
+  knowledgePanel:'✚',xeComponentCard:'⚙'
+ })){
+  const b=tabs.querySelector('button[data-panel="'+panel+'"]');
+  if(b)b.textContent=icon+'  '+b.textContent;
+ }
+ apply();
 })();
 </script>
 </body></html>

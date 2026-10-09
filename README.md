@@ -93,3 +93,9 @@ V4.1 — Se elimina el duplicado de títulos H2 encima de cada menú (el título
 
 
 V4.2 — Dos caras sincronizadas en espejo: la cara opuesta utiliza viewBox reflejado sobre el eje de la placa, tanto en desplazamiento como en zoom. Arrastrar o ampliar cualquiera de las caras actualiza ambas conservando la posición física. El cursor de referencia se transforma al mismo punto físico. La sincronización se fuerza durante la vista doble y se restaura la preferencia anterior al salir. Se preservan los archivos técnicos, anotaciones, mediciones e imágenes originales.
+
+
+V4.3 — Multímetro: asignación automática de GND a punta negra; cada selección de pad asigna punta roja. Botón para desactivar el modo automático y usar las puntas manuales. Botón de inversión: punta roja a GND y punta negra al pad elegido, con comparación de pertenencia a red en modo continuidad documental. No mide resistencia ni continuidad real: el resultado refleja la topología del BoardView. Compatible con selección desde ambas caras y el historial existente.
+
+
+V4.4 — Interruptor visible APAGAR/ENCENDER MULTÍMETRO en la barra inferior. Apagado: limpia las puntas, detiene asignación automática y oculta el panel; su botón queda disponible para reactivarlo. Los cinco menús inferiores se presentan como botones de estación de reparación, negro grafito y relieve metálico con acentos dorados. No modifica geometría ni fuentes de BoardView.
