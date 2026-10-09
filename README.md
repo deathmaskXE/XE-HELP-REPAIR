@@ -146,3 +146,6 @@ V5.5: Panel de capas por familia de componentes (R/C/D/Q/U/J/L/SW/Otros) y nomen
 
 
 V5.6: Los datos agregados por usuarios NO se pintan permanentemente. Aparecen junto al punto solo cuando ese pad o componente está seleccionado. Las referencias originales y siluetas permanecen visibles según sus controles.
+
+
+V5.7: se eliminan las coordenadas visibles del inspector y del cursor; los datos locales aparecen solo al seleccionar un elemento, usan el mismo tamaño SVG que la nomenclatura base, escalan con el zoom y tienen contorno cyan brillante. Se preservan las coordenadas internas necesarias para el BoardView.
