@@ -1,0 +1,423 @@
+{
+  "source": "componentes_esquema.json + board.json",
+  "resistors": [
+    {
+      "ref": "R3",
+      "value": "33 Ω",
+      "ohms": 33.0,
+      "nets": [
+        "/17",
+        "Net-(J8-Pin_4)"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "/17"
+        },
+        {
+          "num": "2",
+          "net": "Net-(J8-Pin_4)"
+        }
+      ]
+    },
+    {
+      "ref": "R29",
+      "value": "100 Ω",
+      "ohms": 100.0,
+      "nets": [
+        "/21",
+        "Net-(R29-Pad2)"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "/21"
+        },
+        {
+          "num": "2",
+          "net": "Net-(R29-Pad2)"
+        }
+      ]
+    },
+    {
+      "ref": "R24",
+      "value": "1.5k",
+      "ohms": 1500.0,
+      "nets": [
+        "/5",
+        "Net-(D15-K)"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "/5"
+        },
+        {
+          "num": "2",
+          "net": "Net-(D15-K)"
+        }
+      ]
+    },
+    {
+      "ref": "R8",
+      "value": "100k",
+      "ohms": 100000.0,
+      "nets": [
+        "Net-(D15-K)",
+        "GND"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "Net-(D15-K)"
+        },
+        {
+          "num": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "R7",
+      "value": "100k",
+      "ohms": 100000.0,
+      "nets": [
+        "VBUS",
+        "Net-(D15-K)"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "VBUS"
+        },
+        {
+          "num": "2",
+          "net": "Net-(D15-K)"
+        }
+      ]
+    },
+    {
+      "ref": "R79",
+      "value": "1k",
+      "ohms": 1000.0,
+      "nets": [
+        "Net-(EG2-K)",
+        "/30"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "Net-(EG2-K)"
+        },
+        {
+          "num": "2",
+          "net": "/30"
+        }
+      ]
+    },
+    {
+      "ref": "R21",
+      "value": "33 Ω",
+      "ohms": 33.0,
+      "nets": [
+        "/69",
+        "Net-(R21-Pad2)"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "/69"
+        },
+        {
+          "num": "2",
+          "net": "Net-(R21-Pad2)"
+        }
+      ]
+    },
+    {
+      "ref": "R2",
+      "value": "33 Ω",
+      "ohms": 33.0,
+      "nets": [
+        "/22",
+        "Net-(J8-Pin_8)"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "/22"
+        },
+        {
+          "num": "2",
+          "net": "Net-(J8-Pin_8)"
+        }
+      ]
+    },
+    {
+      "ref": "R14",
+      "value": "0 Ω",
+      "ohms": 0.0,
+      "nets": [
+        "Net-(R14-Pad1)",
+        "Net-(J8-Pin_9)"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "Net-(R14-Pad1)"
+        },
+        {
+          "num": "2",
+          "net": "Net-(J8-Pin_9)"
+        }
+      ]
+    },
+    {
+      "ref": "R23",
+      "value": "10k",
+      "ohms": 10000.0,
+      "nets": [
+        "+3.3V",
+        "/28"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "+3.3V"
+        },
+        {
+          "num": "2",
+          "net": "/28"
+        }
+      ]
+    },
+    {
+      "ref": "R38",
+      "value": "0 Ω",
+      "ohms": 0.0,
+      "nets": [
+        "Net-(U9-EN)",
+        "/37"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "Net-(U9-EN)"
+        },
+        {
+          "num": "2",
+          "net": "/37"
+        }
+      ]
+    },
+    {
+      "ref": "R36",
+      "value": "100k",
+      "ohms": 100000.0,
+      "nets": [
+        "GND",
+        "/46"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "GND"
+        },
+        {
+          "num": "2",
+          "net": "/46"
+        }
+      ]
+    },
+    {
+      "ref": "R40",
+      "value": "100k",
+      "ohms": 100000.0,
+      "nets": [
+        "GND",
+        "Net-(U9-EN)"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "GND"
+        },
+        {
+          "num": "2",
+          "net": "Net-(U9-EN)"
+        }
+      ]
+    },
+    {
+      "ref": "R32",
+      "value": "0 Ω",
+      "ohms": 0.0,
+      "nets": [
+        "/38",
+        "Net-(Q1-G)"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "/38"
+        },
+        {
+          "num": "2",
+          "net": "Net-(Q1-G)"
+        }
+      ]
+    },
+    {
+      "ref": "R12",
+      "value": "DNI",
+      "ohms": null,
+      "nets": [
+        "+3.3V",
+        "/36"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "+3.3V"
+        },
+        {
+          "num": "2",
+          "net": "/36"
+        }
+      ]
+    },
+    {
+      "ref": "R15",
+      "value": "0 Ω",
+      "ohms": 0.0,
+      "nets": [
+        "SCL2",
+        "Net-(J7-Pin_2)"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "SCL2"
+        },
+        {
+          "num": "2",
+          "net": "Net-(J7-Pin_2)"
+        }
+      ]
+    },
+    {
+      "ref": "R42",
+      "value": "100 Ω",
+      "ohms": 100.0,
+      "nets": [
+        "Net-(U11-VOUT)",
+        "/54"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "Net-(U11-VOUT)"
+        },
+        {
+          "num": "2",
+          "net": "/54"
+        }
+      ]
+    },
+    {
+      "ref": "R22",
+      "value": "0 Ω",
+      "ohms": 0.0,
+      "nets": [
+        "Net-(FB3-Pad1)",
+        "/31"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "Net-(FB3-Pad1)"
+        },
+        {
+          "num": "2",
+          "net": "/31"
+        }
+      ]
+    },
+    {
+      "ref": "R1",
+      "value": "33 Ω",
+      "ohms": 33.0,
+      "nets": [
+        "/9",
+        "Net-(J8-Pin_5)"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "/9"
+        },
+        {
+          "num": "2",
+          "net": "Net-(J8-Pin_5)"
+        }
+      ]
+    },
+    {
+      "ref": "R16",
+      "value": "33 Ω",
+      "ohms": 33.0,
+      "nets": [
+        "Net-(R16-Pad1)",
+        "/58"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "Net-(R16-Pad1)"
+        },
+        {
+          "num": "2",
+          "net": "/58"
+        }
+      ]
+    },
+    {
+      "ref": "R39",
+      "value": "100 Ω",
+      "ohms": 100.0,
+      "nets": [
+        "Net-(U10-VOUT)",
+        "/67"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "Net-(U10-VOUT)"
+        },
+        {
+          "num": "2",
+          "net": "/67"
+        }
+      ]
+    },
+    {
+      "ref": "R6",
+      "value": "10k",
+      "ohms": 10000.0,
+      "nets": [
+        "+3.3V",
+        "/44"
+      ],
+      "pads": [
+        {
+          "num": "1",
+          "net": "+3.3V"
+        },
+        {
+          "num": "2",
+          "net": "/44"
+        }
+      ]
+    }
+  ]
+}

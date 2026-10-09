@@ -110,3 +110,9 @@ V4.7: correo de recepción fijo deathmask1403@gmail.com; el técnico ya no tiene
 
 
 V4.8 — Referencias: los registros con descripción técnica equivalente se muestran una sola vez en la ficha del punto, en datos de imagen y en el índice. Los registros repetidos se agrupan en un desplegable contraído con sus títulos/fuentes originales; se mantienen los archivos y datos completos sin borrar aportaciones. La agrupación es por texto normalizado, por lo que descripciones distintas permanecen independientes.
+
+
+V4.9 — Multímetro: al invertir las puntas se muestra polaridad negativa en voltajes numéricos disponibles. Botón independiente para activar continuidad solo con puntas invertidas; al seleccionar un pad GND (negativo) se emite un beep breve, en puntos que no son GND no. Es un indicador documental de pertenencia a GND, no continuidad eléctrica medida.
+
+
+V5.0 — Tabla documental de resistencias extraída del esquema y pads del PCB. El multímetro evalúa GND directo y rutas a GND por una resistencia documentada bajo umbral ajustable, con beep en modo puntas invertidas. Ficha de cada resistencia y advertencia contextual sobre capacitores, caminos paralelos y límites de la predicción. No es una medición real.
