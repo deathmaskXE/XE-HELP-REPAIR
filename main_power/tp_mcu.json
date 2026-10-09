@@ -1,0 +1,170 @@
+{
+  "TP13": {
+    "description": "USB 5 V",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP14": {
+    "description": "D-pad derecha",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP15": {
+    "description": "D-pad izquierda",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP16": {
+    "description": "D-pad arriba",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP18": {
+    "description": "SYNC",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP19": {
+    "description": "LB",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP20": {
+    "description": "RB",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP21": {
+    "description": "A",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP22": {
+    "description": "X",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP23": {
+    "description": "Y",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP24": {
+    "description": "Menú",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP25": {
+    "description": "Vista",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP26": {
+    "description": "U4 pin 16",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP27": {
+    "description": "CC1/CC2: R55/R56 no instaladas según hoja",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP28": {
+    "description": "Control LED",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP30": {
+    "description": "SDA (U4)",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP31": {
+    "description": "SCL (U4)",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP34": {
+    "description": "3V/B+",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP35": {
+    "description": "3.3 V",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP36": {
+    "description": "3.6 V, motores",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP37": {
+    "description": "3.6 V",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP38": {
+    "description": "5VA USB tras Q13",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP39": {
+    "description": "Compartir",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP40": {
+    "description": "LED ánodo después de R5",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP41": {
+    "description": "LED cátodo",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP42": {
+    "description": "Control LED en Q3",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP43": {
+    "description": "Guía",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  },
+  "TP44": {
+    "description": "D-pad abajo",
+    "source": "datos control series(2).txt · BUTTON/POWER Board",
+    "pcb_present": true,
+    "verification": "Referencia documental; no implica voltaje medido"
+  }
+}

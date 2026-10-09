@@ -116,3 +116,18 @@ V4.9 — Multímetro: al invertir las puntas se muestra polaridad negativa en vo
 
 
 V5.0 — Tabla documental de resistencias extraída del esquema y pads del PCB. El multímetro evalúa GND directo y rutas a GND por una resistencia documentada bajo umbral ajustable, con beep en modo puntas invertidas. Ficha de cada resistencia y advertencia contextual sobre capacitores, caminos paralelos y límites de la predicción. No es una medición real.
+
+
+## V5.1 — Selector de placas Xbox Series 1914
+
+- `index.html`: MAIN CONTROL (MCU), conserva sus datos y referencias originales.
+- `main_power.html`: MAIN POWER (POWER/BUTTON), visor propio con datos derivados del KiCad de la placa de energía.
+- El selector está en el menú izquierdo y navega entre las dos páginas sin mezclar archivos ni aportes locales.
+- `main_power/` contiene el PCB y esquema originales, el BoardView JSON derivado, catálogo de componentes, pads, pistas, vías y contorno, tabla de resistencias, referencias de TP, imagen de diagnóstico y PDF TOP BOARD.
+- Los puntos de prueba son referencias documentales, no mediciones verificadas. No se inventan valores de tensión.
+- La fotografía de MAIN POWER es documental, no está calibrada como textura del BoardView. Solo se recibió una fotografía; no se simula una imagen de la cara inferior.
+- El analizador de continuidad es estimado y no mide eléctricamente la placa. Las rutas paralelas no se calculan.
+
+Ejecutar en la carpeta extraída: `py -m http.server 8041`; abrir `http://localhost:8041/`.
+
+V5.2: imagen frontal overlay de MAIN POWER añadida al panel de referencias, abierta por defecto. Se conserva la imagen de diagnóstico anterior.

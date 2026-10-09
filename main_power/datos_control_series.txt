@@ -1,0 +1,101 @@
+Pinout del conector J3/J5
+
+1 - 3.6v
+2 - GU (a través de D27) Solo la Guía funcionará si se usa J3/J5 pin 2 para el botón Guía nuevo/alterno y el controlador no se encenderá. Use TP43 para un botón de Guía duplicado adecuado.
+3 - 3v/B+
+4 - 3.3v
+5 - SCL
+6 - Control LED
+7 - SDA
+8 - D+
+9 - ~RESTABLECER
+10 - D-
+11 -
+12 - VBUS
+13 -
+14 - GND
+
+
+PUNTOS DE PRUEBA en BUTTON/POWER Board (algunos)
+
+USB TP13 - 5v
+TP14 - DR
+TP15 - DL
+TP16 - DU
+
+TP18 - SY
+TP19 - LB
+TP20 - RB
+TP21 - A
+TP22 - X
+TP23 - Y
+TP24 - MN
+TP25 - VW
+TP26 - U4p16
+TP27 - CC1 (a través de R55*) CC2 (a través de R56*) *no instalado
+TP28 - Control LED
+
+TP30 - SDA (U4)
+SCL (U4) - TP31
+
+TP34 - 3v/B+
+TP35 - 3.3v
+TP36 - 3.6v (Rumble V+)
+TP37 - 3.6v
+TP38 - 5vA USB (después de Q13)
+TP39 - SH (Compartir)
+TP40 - LED (Anodo, después de R5)
+TP41 - LED (Cátodo)
+TP42 - Control LED (en Base/Puerta de Q3)
+TP43 - GU
+TP44 - DD
+
+
+PUNTOS DE PRUEBA en la Junta de MCU (algunos)
+
+FT1 - GND
+FT2 - GND
+
+TP5 - VBUS
+
+TP7 - 3.6v (Rumble V+)
+
+TP9 - 3.3v
+
+TP21 - GND
+TP22 - GND
+
+TP24 - GND
+
+TP26 - GND
+TP27 - LT MOTOR+
+TP28 - HEAVY MOTOR+
+TP29 - RT MOTOR+
+TP30 - MOTOR+ LIGERO
+TP31 - SDA2
+TP32 - SCL2
+TP33 - SDA
+TP34 - SCL
+TP35 - ~RESTABLECER
+TP36 - AN+ Habilitar
+
+TP41 - B (a través de R29, 100ohm)
+TP42 - LSC (a través de R16, 33ohm)
+TP43 - RSC (a través de R21, 33ohm)
+
+TP49 - TRG+ 3.2v, 125Hz, 17% Duty (Hall Sensor VCC)
+TP50 - TRG+
+
+TP54 - MICRÓFONO
+
+TP63 - LSY
+TP64 - LSX
+TP65 - RSY
+
+TP67 - RT
+TP68 - LT
+
+TP103 - AN+
+TP104, TP105, TP106 Y TP107 - MOTOR PESADO Y CONTROL DE MOTOR LT
+TP108, TP109, TP110 Y TP111 - CONTROL DE MOTOR LIGERO Y MOTOR RT
+TP112 - RSX
